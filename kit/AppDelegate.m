@@ -8,9 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "LeftViewController.h"
-#import "AcountViewController.h"
-#import "AccountGroupViewController.h"
 
 @interface AppDelegate ()
 

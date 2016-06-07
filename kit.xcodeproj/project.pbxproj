@@ -111,6 +111,19 @@
 		90E3CC941D05850600F4AD20 /* AccontGroupContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 90E3CC8A1D05850600F4AD20 /* AccontGroupContent.json */; };
 		90E3CC951D05850600F4AD20 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC8C1D05850600F4AD20 /* AccountModel.m */; };
 		90E3CC961D05850600F4AD20 /* AcountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC8F1D05850600F4AD20 /* AcountViewController.m */; };
+		90F0BAD51D06569F00CD24D6 /* JSBaseProductCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAB71D06569F00CD24D6 /* JSBaseProductCollectionCell.m */; };
+		90F0BAD61D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAB91D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.m */; };
+		90F0BAD71D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BABB1D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel.m */; };
+		90F0BAD81D06569F00CD24D6 /* JSBaseProductCollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BABD1D06569F00CD24D6 /* JSBaseProductCollectionCellModel.m */; };
+		90F0BAD91D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAC21D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.m */; };
+		90F0BADA1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAC41D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.m */; };
+		90F0BADB1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAC61D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m */; };
+		90F0BADC1D06569F00CD24D6 /* JSProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAC91D06569F00CD24D6 /* JSProductCollectionViewCell.m */; };
+		90F0BADD1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BACB1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.m */; };
+		90F0BADE1D06569F00CD24D6 /* JSProductCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BACD1D06569F00CD24D6 /* JSProductCollectionViewCellModel.m */; };
+		90F0BADF1D06569F00CD24D6 /* JSProductListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAD01D06569F00CD24D6 /* JSProductListCollectionViewCell.m */; };
+		90F0BAE01D06569F00CD24D6 /* JSProductListCollectionViewCellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAD21D06569F00CD24D6 /* JSProductListCollectionViewCellFrameModel.m */; };
+		90F0BAE11D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAD41D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -358,6 +371,32 @@
 		90E3CC8E1D05850600F4AD20 /* AcountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcountViewController.h; sourceTree = "<group>"; };
 		90E3CC8F1D05850600F4AD20 /* AcountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcountViewController.m; sourceTree = "<group>"; };
 		90E3CC991D05856000F4AD20 /* kit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kit.pch; sourceTree = "<group>"; };
+		90F0BAB61D06569F00CD24D6 /* JSBaseProductCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseProductCollectionCell.h; sourceTree = "<group>"; };
+		90F0BAB71D06569F00CD24D6 /* JSBaseProductCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseProductCollectionCell.m; sourceTree = "<group>"; };
+		90F0BAB81D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSBaseProductCollectionCellFrameModel+Layout.h"; sourceTree = "<group>"; };
+		90F0BAB91D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSBaseProductCollectionCellFrameModel+Layout.m"; sourceTree = "<group>"; };
+		90F0BABA1D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseProductCollectionCellFrameModel.h; sourceTree = "<group>"; };
+		90F0BABB1D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseProductCollectionCellFrameModel.m; sourceTree = "<group>"; };
+		90F0BABC1D06569F00CD24D6 /* JSBaseProductCollectionCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseProductCollectionCellModel.h; sourceTree = "<group>"; };
+		90F0BABD1D06569F00CD24D6 /* JSBaseProductCollectionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseProductCollectionCellModel.m; sourceTree = "<group>"; };
+		90F0BAC11D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlaceOrderCollectionViewCell.h; sourceTree = "<group>"; };
+		90F0BAC21D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaceOrderCollectionViewCell.m; sourceTree = "<group>"; };
+		90F0BAC31D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlaceOrderCollectionViewCellFrameModel.h; sourceTree = "<group>"; };
+		90F0BAC41D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaceOrderCollectionViewCellFrameModel.m; sourceTree = "<group>"; };
+		90F0BAC51D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPlaceOrderCollectionViewCellModel.h; sourceTree = "<group>"; };
+		90F0BAC61D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPlaceOrderCollectionViewCellModel.m; sourceTree = "<group>"; };
+		90F0BAC81D06569F00CD24D6 /* JSProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProductCollectionViewCell.h; sourceTree = "<group>"; };
+		90F0BAC91D06569F00CD24D6 /* JSProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProductCollectionViewCell.m; sourceTree = "<group>"; };
+		90F0BACA1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProductCollectionViewCellFrameModel.h; sourceTree = "<group>"; };
+		90F0BACB1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProductCollectionViewCellFrameModel.m; sourceTree = "<group>"; };
+		90F0BACC1D06569F00CD24D6 /* JSProductCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProductCollectionViewCellModel.h; sourceTree = "<group>"; };
+		90F0BACD1D06569F00CD24D6 /* JSProductCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProductCollectionViewCellModel.m; sourceTree = "<group>"; };
+		90F0BACF1D06569F00CD24D6 /* JSProductListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProductListCollectionViewCell.h; sourceTree = "<group>"; };
+		90F0BAD01D06569F00CD24D6 /* JSProductListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProductListCollectionViewCell.m; sourceTree = "<group>"; };
+		90F0BAD11D06569F00CD24D6 /* JSProductListCollectionViewCellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProductListCollectionViewCellFrameModel.h; sourceTree = "<group>"; };
+		90F0BAD21D06569F00CD24D6 /* JSProductListCollectionViewCellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProductListCollectionViewCellFrameModel.m; sourceTree = "<group>"; };
+		90F0BAD31D06569F00CD24D6 /* JSProductListCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSProductListCollectionViewCellModel.h; sourceTree = "<group>"; };
+		90F0BAD41D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSProductListCollectionViewCellModel.m; sourceTree = "<group>"; };
 		AA4DF6D4455F513206F99F7B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F3AF553FEEBEF8E7D28429 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -423,6 +462,7 @@
 		90E3CAE01D05845900F4AD20 /* kit */ = {
 			isa = PBXGroup;
 			children = (
+				90F0BAB41D06569F00CD24D6 /* ProductCell */,
 				90E3CC7D1D05850600F4AD20 /* Account */,
 				90E3CC761D05850000F4AD20 /* Home */,
 				90E3CB141D0584FD00F4AD20 /* UIComponent */,
@@ -1288,6 +1328,79 @@
 			path = Single;
 			sourceTree = "<group>";
 		};
+		90F0BAB41D06569F00CD24D6 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BAB51D06569F00CD24D6 /* BaseProductCollectionCell */,
+				90F0BABE1D06569F00CD24D6 /* CarCell */,
+				90F0BAC01D06569F00CD24D6 /* PlaceOrderCell */,
+				90F0BAC71D06569F00CD24D6 /* ProductCell */,
+				90F0BACE1D06569F00CD24D6 /* ProductListCell */,
+			);
+			path = ProductCell;
+			sourceTree = "<group>";
+		};
+		90F0BAB51D06569F00CD24D6 /* BaseProductCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BAB61D06569F00CD24D6 /* JSBaseProductCollectionCell.h */,
+				90F0BAB71D06569F00CD24D6 /* JSBaseProductCollectionCell.m */,
+				90F0BAB81D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.h */,
+				90F0BAB91D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.m */,
+				90F0BABA1D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel.h */,
+				90F0BABB1D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel.m */,
+				90F0BABC1D06569F00CD24D6 /* JSBaseProductCollectionCellModel.h */,
+				90F0BABD1D06569F00CD24D6 /* JSBaseProductCollectionCellModel.m */,
+			);
+			path = BaseProductCollectionCell;
+			sourceTree = "<group>";
+		};
+		90F0BABE1D06569F00CD24D6 /* CarCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CarCell;
+			sourceTree = "<group>";
+		};
+		90F0BAC01D06569F00CD24D6 /* PlaceOrderCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BAC11D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.h */,
+				90F0BAC21D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.m */,
+				90F0BAC31D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.h */,
+				90F0BAC41D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.m */,
+				90F0BAC51D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.h */,
+				90F0BAC61D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m */,
+			);
+			path = PlaceOrderCell;
+			sourceTree = "<group>";
+		};
+		90F0BAC71D06569F00CD24D6 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BAC81D06569F00CD24D6 /* JSProductCollectionViewCell.h */,
+				90F0BAC91D06569F00CD24D6 /* JSProductCollectionViewCell.m */,
+				90F0BACA1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.h */,
+				90F0BACB1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.m */,
+				90F0BACC1D06569F00CD24D6 /* JSProductCollectionViewCellModel.h */,
+				90F0BACD1D06569F00CD24D6 /* JSProductCollectionViewCellModel.m */,
+			);
+			path = ProductCell;
+			sourceTree = "<group>";
+		};
+		90F0BACE1D06569F00CD24D6 /* ProductListCell */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BACF1D06569F00CD24D6 /* JSProductListCollectionViewCell.h */,
+				90F0BAD01D06569F00CD24D6 /* JSProductListCollectionViewCell.m */,
+				90F0BAD11D06569F00CD24D6 /* JSProductListCollectionViewCellFrameModel.h */,
+				90F0BAD21D06569F00CD24D6 /* JSProductListCollectionViewCellFrameModel.m */,
+				90F0BAD31D06569F00CD24D6 /* JSProductListCollectionViewCellModel.h */,
+				90F0BAD41D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m */,
+			);
+			path = ProductListCell;
+			sourceTree = "<group>";
+		};
 		A3290D4E209946D3FF044C85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1492,6 +1605,7 @@
 				90E3CC3B1D0584FD00F4AD20 /* UICollectionView+CYLTableViewPlaceHolder.m in Sources */,
 				90E3CC361D0584FD00F4AD20 /* JSCollectionViewController+UIScrollView.m in Sources */,
 				90E3CC3D1D0584FD00F4AD20 /* XTNetReloader.m in Sources */,
+				90F0BAD71D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel.m in Sources */,
 				90E3CC6E1D0584FD00F4AD20 /* JSApplePay.m in Sources */,
 				90E3CC441D0584FD00F4AD20 /* JSTableViewController+TableHeaderFooter.m in Sources */,
 				90E3CC571D0584FD00F4AD20 /* NSDate+stringFromDate.m in Sources */,
@@ -1509,6 +1623,8 @@
 				90E3CC421D0584FD00F4AD20 /* JSTableViewController+NotWorkView.m in Sources */,
 				90E3CC6C1D0584FD00F4AD20 /* UIViewController+NavigationItem.m in Sources */,
 				90E3CC231D0584FD00F4AD20 /* UIViewController+HYBMoveTransition.m in Sources */,
+				90F0BADA1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.m in Sources */,
+				90F0BADC1D06569F00CD24D6 /* JSProductCollectionViewCell.m in Sources */,
 				90E3CC301D0584FD00F4AD20 /* JSTabBarControllerConfigModel.m in Sources */,
 				90E3CC2A1D0584FD00F4AD20 /* JSItemImageViewController.m in Sources */,
 				90E3CC241D0584FD00F4AD20 /* JSBasicViewController+ThreeDTouch.m in Sources */,
@@ -1528,15 +1644,18 @@
 				90E3CC581D0584FD00F4AD20 /* NSDictionary+Extension.m in Sources */,
 				90E3CC6B1D0584FD00F4AD20 /* UIView+Extend.m in Sources */,
 				90E3CC2C1D0584FD00F4AD20 /* JSItemImgageViewCell.m in Sources */,
+				90F0BADD1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.m in Sources */,
 				90E3CC4E1D0584FD00F4AD20 /* JSNetWork.m in Sources */,
 				90E3CC631D0584FD00F4AD20 /* UIDevice+Extend.m in Sources */,
 				90E3CC6F1D0584FD00F4AD20 /* JSBraintree.m in Sources */,
+				90F0BAE01D06569F00CD24D6 /* JSProductListCollectionViewCellFrameModel.m in Sources */,
 				90E3CC251D0584FD00F4AD20 /* JSBasicViewController.m in Sources */,
 				90E3CC221D0584FD00F4AD20 /* HYBMoveTransition.m in Sources */,
 				90E3CAE61D05845900F4AD20 /* AppDelegate.m in Sources */,
 				90E3CC261D0584FD00F4AD20 /* JSNavigationController.m in Sources */,
 				90E3CC731D0584FD00F4AD20 /* NinaBaseView.m in Sources */,
 				90E3CC961D05850600F4AD20 /* AcountViewController.m in Sources */,
+				90F0BADF1D06569F00CD24D6 /* JSProductListCollectionViewCell.m in Sources */,
 				90E3CC5E1D0584FD00F4AD20 /* NSString+dateFromString.m in Sources */,
 				90E3CC611D0584FD00F4AD20 /* JSDIYButton.m in Sources */,
 				90E3CC491D0584FD00F4AD20 /* JSMD5.m in Sources */,
@@ -1545,8 +1664,11 @@
 				90E3CAE31D05845900F4AD20 /* main.m in Sources */,
 				90E3CC3A1D0584FD00F4AD20 /* JSWaterFlowLayout.m in Sources */,
 				90E3CC5B1D0584FD00F4AD20 /* NSObject+SDWebImage.m in Sources */,
+				90F0BAD51D06569F00CD24D6 /* JSBaseProductCollectionCell.m in Sources */,
 				90E3CC481D0584FD00F4AD20 /* JSTableViewController.m in Sources */,
+				90F0BADE1D06569F00CD24D6 /* JSProductCollectionViewCellModel.m in Sources */,
 				90E3CC551D0584FD00F4AD20 /* NSArray+Extend.m in Sources */,
+				90F0BAD91D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.m in Sources */,
 				90E3CC601D0584FD00F4AD20 /* NSString+Password.m in Sources */,
 				90E3CC4D1D0584FD00F4AD20 /* JSNetWork+POST.m in Sources */,
 				90E3CC271D0584FD00F4AD20 /* JSPresentCommonViewCtrl.m in Sources */,
@@ -1556,14 +1678,17 @@
 				90E3CC511D0584FD00F4AD20 /* CALayer+Anim.m in Sources */,
 				90E3CC451D0584FD00F4AD20 /* JSTableViewController+TableView.m in Sources */,
 				90E3CC3F1D0584FD00F4AD20 /* JSTableGroupViewController.m in Sources */,
+				90F0BAE11D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m in Sources */,
 				90E3CC1E1D0584FD00F4AD20 /* HYBBaseTransition.m in Sources */,
 				90E3CC2D1D0584FD00F4AD20 /* JSSideSlippingControllerConfig.m in Sources */,
 				90E3CC651D0584FD00F4AD20 /* UIImage+Color.m in Sources */,
 				90E3CC561D0584FD00F4AD20 /* NSDate+Extend.m in Sources */,
 				90E3CC291D0584FD00F4AD20 /* JSBigItemImageViewController.m in Sources */,
 				90E3CC411D0584FD00F4AD20 /* JSTableViewController+MJRefresh.m in Sources */,
+				90F0BAD61D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.m in Sources */,
 				90E3CC681D0584FD00F4AD20 /* UIImage+FixOrientation.m in Sources */,
 				90E3CC5D1D0584FD00F4AD20 /* NSObject+Utilty.m in Sources */,
+				90F0BAD81D06569F00CD24D6 /* JSBaseProductCollectionCellModel.m in Sources */,
 				90E3CC5C1D0584FD00F4AD20 /* NSObject+UICateGory.m in Sources */,
 				90E3CC2B1D0584FD00F4AD20 /* JSItemImageViewTransition.m in Sources */,
 				90E3CC501D0584FD00F4AD20 /* UIViewController+ThreeDTouch.m in Sources */,
@@ -1572,6 +1697,7 @@
 				90E3CC3C1D0584FD00F4AD20 /* WeChatStylePlaceHolder.m in Sources */,
 				90E3CC211D0584FD00F4AD20 /* HYBModalTransition.m in Sources */,
 				90E3CC541D0584FD00F4AD20 /* MBProgressHUD+Add.m in Sources */,
+				90F0BADB1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m in Sources */,
 				90E3CC921D05850600F4AD20 /* HeadView.m in Sources */,
 				90E3CC371D0584FD00F4AD20 /* JSCollectionViewController.m in Sources */,
 			);
