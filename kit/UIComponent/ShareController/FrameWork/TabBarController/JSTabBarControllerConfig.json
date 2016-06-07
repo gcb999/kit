@@ -1,0 +1,34 @@
+{
+    
+    "content":[
+               {
+               "title":"首页",
+               "normalImage" : "home_highlight",
+               "selectedImage" : "home_highlight",
+               "ctrl":"LeftViewController"
+               },
+               {
+               "title":"分类页",
+               "normalImage" : "home_highlight",
+               "selectedImage" : "home_highlight",
+               "ctrl":"LeftViewController"
+               },
+               {
+               "title":"购物车",
+               "normalImage" : "home_highlight",
+               "selectedImage" : "home_highlight",
+               "ctrl":"AcountViewController"
+               },
+               {
+               "title":"个人中心",
+               "normalImage" : "home_highlight",
+               "selectedImage" : "home_highlight",
+               "ctrl":"AccountGroupViewController"
+               }
+               ]
+    
+    
+    
+    
+    
+}

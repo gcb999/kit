@@ -1,0 +1,62 @@
+{
+    
+    "content":[
+               {
+               "section":[
+                          {
+                          "title":"Notificatioins",
+                          "iconUrl" : "home_highlight",
+                          "ctrl":"BrandCtrl",
+                          "flag":"1"
+                          }
+                        ]
+               },
+               {
+               "section1":[
+                           {
+                           "title":"Coupon",
+                           "iconUrl" : "home_highlight",
+                           "ctrl":"BrandCtrl",
+                           "flag":"1"
+                           },
+                           {
+                           "title":"My Wallet",
+                           "iconUrl" : "home_highlight",
+                           "ctrl":"BrandCtrl",
+                           "flag":"1"
+                           },
+                           {
+                           "title":"My History",
+                           "iconUrl" : "home_highlight",
+                           "ctrl":"BrandCtrl",
+                           "flag":"1"
+                           }
+                          ]
+               },
+               {
+               "section2":[
+                           {
+                           "title":"Address Book",
+                           "iconUrl" : "home_highlight",
+                           "ctrl":"BrandCtrl",
+                           "flag":"1"
+                           },
+                           {
+                           "title":"My Invitation",
+                           "iconUrl" : "home_highlight",
+                           "ctrl":"BrandCtrl",
+                           "flag":"1"
+                           },
+                           {
+                           "title":"Setting",
+                           "iconUrl" : "home_highlight",
+                           "ctrl":"BrandCtrl",
+                           "flag":"1"
+                           }
+                        ]
+               }
+               
+        ]
+    
+    
+}
