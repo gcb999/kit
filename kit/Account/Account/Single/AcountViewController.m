@@ -64,6 +64,12 @@
 
 //2：点击事件
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+ 
+    AccountModel *model=self.tableViewController.data[indexPath.row];
+    UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
+    if (ctrl) {
+        [self.navigationController pushViewController:ctrl animated:YES];
+    }
     
 }
 

@@ -55,7 +55,7 @@ tableview 集成功能（暂时不考虑分组）
 #pragma mark -分组相关属性
 
 
-//@property(nonatomic,strong)NSMutableArray *sections;//分组
+@property(nonatomic,strong)NSMutableArray *sections;//分组
 
 @property(nonatomic,strong)NSMutableDictionary<NSString *,NSArray *> *rowsOfSectionDic;//组对应列
 

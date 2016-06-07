@@ -28,7 +28,7 @@
     
     self.navigationController.navigationBarHidden = NO;
  
-   // self.fd_prefersNavigationBarHidden = YES;--不需要
+//    self.fd_prefersNavigationBarHidden = YES;//--侧滑不需要
     
     if(IOS7){
         self.edgesForExtendedLayout=UIRectEdgeNone;
@@ -42,6 +42,8 @@
     [super viewWillAppear:animated];
     
 }
+
+
 
 
 

@@ -11,7 +11,7 @@
                "title":"分类页",
                "normalImage" : "home_highlight",
                "selectedImage" : "home_highlight",
-               "ctrl":"LeftViewController"
+               "ctrl":"JSMJNIndexTableViewController"
                },
                {
                "title":"购物车",

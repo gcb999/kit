@@ -134,6 +134,11 @@
 		90F0BAFB1D065D8E00CD24D6 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAF41D065D8E00CD24D6 /* UIView+SDExtension.m */; };
 		90F0BAFF1D065F3C00CD24D6 /* HeadBannerReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAFE1D065F3C00CD24D6 /* HeadBannerReusableView.m */; };
 		90F0BB021D0668B500CD24D6 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB011D0668B500CD24D6 /* HomeDetailViewController.m */; };
+		90F0BB0C1D0672AA00CD24D6 /* JSMJNIndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB0B1D0672AA00CD24D6 /* JSMJNIndexTableViewController.m */; };
+		90F0BB111D06735A00CD24D6 /* CountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB0E1D06735A00CD24D6 /* CountryCell.m */; };
+		90F0BB121D06735A00CD24D6 /* CountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB101D06735A00CD24D6 /* CountryModel.m */; };
+		90F0BB141D0679F900CD24D6 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90F0BB131D0679F900CD24D6 /* address.plist */; };
+		90F0BB171D069AF000CD24D6 /* HotCountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB161D069AF000CD24D6 /* HotCountryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -427,6 +432,15 @@
 		90F0BAFE1D065F3C00CD24D6 /* HeadBannerReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadBannerReusableView.m; sourceTree = "<group>"; };
 		90F0BB001D0668B500CD24D6 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
 		90F0BB011D0668B500CD24D6 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		90F0BB0A1D0672AA00CD24D6 /* JSMJNIndexTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMJNIndexTableViewController.h; sourceTree = "<group>"; };
+		90F0BB0B1D0672AA00CD24D6 /* JSMJNIndexTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMJNIndexTableViewController.m; sourceTree = "<group>"; };
+		90F0BB0D1D06735A00CD24D6 /* CountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryCell.h; sourceTree = "<group>"; };
+		90F0BB0E1D06735A00CD24D6 /* CountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryCell.m; sourceTree = "<group>"; };
+		90F0BB0F1D06735A00CD24D6 /* CountryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryModel.h; sourceTree = "<group>"; };
+		90F0BB101D06735A00CD24D6 /* CountryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryModel.m; sourceTree = "<group>"; };
+		90F0BB131D0679F900CD24D6 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
+		90F0BB151D069AF000CD24D6 /* HotCountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotCountryCell.h; sourceTree = "<group>"; };
+		90F0BB161D069AF000CD24D6 /* HotCountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotCountryCell.m; sourceTree = "<group>"; };
 		AA4DF6D4455F513206F99F7B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F3AF553FEEBEF8E7D28429 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -629,6 +643,7 @@
 		90E3CB2E1D0584FD00F4AD20 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				90F0BB081D06729C00CD24D6 /* UITableView */,
 				90E3CB2F1D0584FD00F4AD20 /* UIDatePicker */,
 				90E3CB341D0584FD00F4AD20 /* UIImageView */,
 			);
@@ -1300,6 +1315,7 @@
 		90E3CC7D1D05850600F4AD20 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				90F0BB031D0670DE00CD24D6 /* Address */,
 				90E3CC7E1D05850600F4AD20 /* Account */,
 			);
 			path = Account;
@@ -1475,6 +1491,37 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		90F0BB031D0670DE00CD24D6 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		90F0BB081D06729C00CD24D6 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BB091D0672AA00CD24D6 /* JSMJNIndexTableViewController */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		90F0BB091D0672AA00CD24D6 /* JSMJNIndexTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BB151D069AF000CD24D6 /* HotCountryCell.h */,
+				90F0BB161D069AF000CD24D6 /* HotCountryCell.m */,
+				90F0BB131D0679F900CD24D6 /* address.plist */,
+				90F0BB0D1D06735A00CD24D6 /* CountryCell.h */,
+				90F0BB0E1D06735A00CD24D6 /* CountryCell.m */,
+				90F0BB0F1D06735A00CD24D6 /* CountryModel.h */,
+				90F0BB101D06735A00CD24D6 /* CountryModel.m */,
+				90F0BB0A1D0672AA00CD24D6 /* JSMJNIndexTableViewController.h */,
+				90F0BB0B1D0672AA00CD24D6 /* JSMJNIndexTableViewController.m */,
+			);
+			path = JSMJNIndexTableViewController;
+			sourceTree = "<group>";
+		};
 		A3290D4E209946D3FF044C85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1589,6 +1636,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F0BB141D0679F900CD24D6 /* address.plist in Resources */,
 				90E3CC2E1D0584FD00F4AD20 /* JSTabBarControllerConfig.json in Resources */,
 				90E3CC931D05850600F4AD20 /* AccontContent.json in Resources */,
 				90E3CAF11D05845900F4AD20 /* LaunchScreen.storyboard in Resources */,
@@ -1734,6 +1782,7 @@
 				90E3CC261D0584FD00F4AD20 /* JSNavigationController.m in Sources */,
 				90E3CC731D0584FD00F4AD20 /* NinaBaseView.m in Sources */,
 				90E3CC961D05850600F4AD20 /* AcountViewController.m in Sources */,
+				90F0BB0C1D0672AA00CD24D6 /* JSMJNIndexTableViewController.m in Sources */,
 				90F0BADF1D06569F00CD24D6 /* JSProductListCollectionViewCell.m in Sources */,
 				90E3CC5E1D0584FD00F4AD20 /* NSString+dateFromString.m in Sources */,
 				90E3CC611D0584FD00F4AD20 /* JSDIYButton.m in Sources */,
@@ -1756,6 +1805,7 @@
 				90E3CC741D0584FD00F4AD20 /* NinaPagerView.m in Sources */,
 				90E3CC531D0584FD00F4AD20 /* CoreArchive.m in Sources */,
 				90E3CC511D0584FD00F4AD20 /* CALayer+Anim.m in Sources */,
+				90F0BB171D069AF000CD24D6 /* HotCountryCell.m in Sources */,
 				90E3CC451D0584FD00F4AD20 /* JSTableViewController+TableView.m in Sources */,
 				90E3CC3F1D0584FD00F4AD20 /* JSTableGroupViewController.m in Sources */,
 				90F0BAE11D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m in Sources */,
@@ -1768,8 +1818,10 @@
 				90F0BAD61D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.m in Sources */,
 				90E3CC681D0584FD00F4AD20 /* UIImage+FixOrientation.m in Sources */,
 				90E3CC5D1D0584FD00F4AD20 /* NSObject+Utilty.m in Sources */,
+				90F0BB121D06735A00CD24D6 /* CountryModel.m in Sources */,
 				90F0BAD81D06569F00CD24D6 /* JSBaseProductCollectionCellModel.m in Sources */,
 				90F0BAF61D065D8E00CD24D6 /* TAAnimatedDotView.m in Sources */,
+				90F0BB111D06735A00CD24D6 /* CountryCell.m in Sources */,
 				90E3CC5C1D0584FD00F4AD20 /* NSObject+UICateGory.m in Sources */,
 				90E3CC2B1D0584FD00F4AD20 /* JSItemImageViewTransition.m in Sources */,
 				90E3CC501D0584FD00F4AD20 /* UIViewController+ThreeDTouch.m in Sources */,

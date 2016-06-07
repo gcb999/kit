@@ -28,11 +28,7 @@
 
 
 
-//#import "HomeViewController.h"
-//#import "AccountViewController.h"
-//#import "CYLMessageViewController.h"
-//#import "CYLMineViewController.h"
-//#import "CYLSameCityViewController.h"
+
 #import "JSTabBarControllerConfigModel.h"
 @interface JSTabBarControllerConfig ()
 
@@ -69,6 +65,7 @@
                             
                             //获取控制器集合
                             UIViewController * vc=(UIViewController *)[[NSClassFromString(ctrlStr) alloc] init];
+                            vc.title=model.title;
                             UIViewController *nav = [[CYLBaseNavigationController alloc] initWithRootViewController:vc];
                             [viewControllers addObject:nav];
                             

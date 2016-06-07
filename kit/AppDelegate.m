@@ -17,6 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //设置背景
+    [JSNavigationController initialize];
+    
     // 侧滑
     //JSSideSlippingControllerConfig* config= [[JSSideSlippingControllerConfig alloc] initWithSidePlane:[AccountGroupViewController class] mainClass:[AcountViewController class]  rightClass:[LeftViewController class] ];
     

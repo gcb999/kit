@@ -50,6 +50,7 @@
             for (NSDictionary *dic in contentArr) {
                 //key
                 NSString *key=[[dic allKeys] lastObject];
+                [self.tableGroupViewController.sections addObject:key];
                 //数组
                 NSMutableArray *valuesArray=[NSMutableArray array];
                 
@@ -76,6 +77,12 @@
 //2：点击事件
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    NSString *text= self.tableGroupViewController.sections[indexPath.section];
+    AccountModel *model=self.tableGroupViewController.rowsOfSectionDic[text][indexPath.row];
+    UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
+    if (ctrl) {
+        [self.navigationController pushViewController:ctrl animated:YES];
+    }
 }
 
 -(CGFloat)JSTableViewController:(JSTableViewController *)JSCtrl heightForHeaderInSection:(NSInteger)section{
@@ -89,11 +96,6 @@
 
 
 
--(void)viewDidLayoutSubviews{
-    
-    [super viewDidLayoutSubviews];
-  
-}
 
 #pragma mark -getter
 

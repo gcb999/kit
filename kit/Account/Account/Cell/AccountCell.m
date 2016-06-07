@@ -43,19 +43,14 @@
         [self.contentView addSubview:self.JTImageView];
         
         //线
-//        self.lineLabel=[UILabel LabWithFrame:CGRectZero text:@"" textColor:[UIColor blackColor] textAlign:NSTextAlignmentLeft  font:KNormalFontSize];
-//        self.lineLabel.layer.borderColor=KborderColor.CGColor;
-//        self.lineLabel.layer.borderWidth=0.5f;
-//        [self.contentView addSubview:self.lineLabel];
-//          self.selectionStyle = UITableViewCellSelectionStyleNone;
-        
+
         
     }
     return self;
 }
 
-#pragma mark - 单行
--(void)JSTableViewController:(JSTableViewController *)JSCtrl  rowsOfSections:(NSDictionary<NSString *,NSArray *> *)rowsOfSections content:(id)content indexPath:(NSIndexPath *)indexpath{
+#pragma mark - 分组
+-(void)JSTableViewController:(JSTableViewController *)JSCtrl sections:(NSArray *)sections rowsOfSections:(NSDictionary<NSString *,NSArray *> *)rowsOfSections content:(id)content indexPath:(NSIndexPath *)indexpath{
     
     
     self.model=content;
@@ -66,7 +61,7 @@
     
 }
 
-#pragma mark - 分组
+#pragma mark - 单个
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl TableViewDateArr:(NSArray *)dateArr content:(id)content indexPath:(NSIndexPath *)indexpath{
     self.model=content;
     self.titleLabel.text=self.model.title;

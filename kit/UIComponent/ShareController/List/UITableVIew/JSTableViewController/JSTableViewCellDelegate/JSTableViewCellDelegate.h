@@ -14,7 +14,7 @@
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl   TableViewDateArr:(NSArray *)dateArr content:(id)content indexPath:(NSIndexPath *)indexpath;
 
 //分组
--(void)JSTableViewController:(JSTableViewController *)JSCtrl   rowsOfSections:(NSDictionary<NSString *,NSArray *> *)rowsOfSections content:(id)content indexPath:(NSIndexPath *)indexpath;
+-(void)JSTableViewController:(JSTableViewController *)JSCtrl   sections:(NSArray *)sections rowsOfSections:(NSDictionary<NSString *,NSArray *> *)rowsOfSections content:(id)content indexPath:(NSIndexPath *)indexpath;
 
 
 

@@ -25,7 +25,7 @@
 #pragma mark -支持一个Cell
 - (instancetype)initWithStyle:(UITableViewStyle)style state:(JSTableViewState)state tableViewCellClass:(Class) cellclass delegate:(id<JSTableViewControllerDelegate>)delegate{
     
-
+    self.sections=[NSMutableArray array];
     self.rowsOfSectionDic=[NSMutableDictionary dictionary];
     if (!cellclass) {
         is_CustormCell=YES;
@@ -38,7 +38,7 @@
 
 - (instancetype)nitWithStyle:(UITableViewStyle)style state:(JSTableViewState)state   delegate:(id<JSTableViewControllerDelegate>)delegate{
     
-//    self.sections=[NSMutableArray array];
+   self.sections=[NSMutableArray array];
     self.rowsOfSectionDic=[NSMutableDictionary dictionary];
     is_CustormCell=YES;
     return  [super initWithStyle:style state:state tableViewCellClass:nil delegate:delegate];
@@ -52,7 +52,7 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return self.rowsOfSectionDic.count;
+    return self.sections.count;
     
 }
 
@@ -64,8 +64,7 @@
         return [self.delegate JSTableViewController:self numberOfRowsInSection:section];
     }
     
-    NSString *str=self.rowsOfSectionDic.allKeys[section];
-    NSArray * array = self.rowsOfSectionDic[str];
+    NSArray * array = self.rowsOfSectionDic[self.sections[section]];
     return array.count;
 
     
@@ -88,16 +87,17 @@
     
     
         self.JSTableViewCellDelegate=[tableView dequeueReusableCellWithIdentifier:KSWIdentifier forIndexPath:indexPath];
-    
-       NSString *str=self.rowsOfSectionDic.allKeys[indexPath.section];;
-    
+        
+        NSString *str= self.sections[indexPath.section];
+        
         NSArray *array= self.rowsOfSectionDic[str];
-    
+        
         id content=array[indexPath.row];
-    
-    [self.JSTableViewCellDelegate JSTableViewController:self  rowsOfSections:self.rowsOfSectionDic content:content indexPath:indexPath];
-    
+        
+        [self.JSTableViewCellDelegate JSTableViewController:self sections:self.sections rowsOfSections:self.rowsOfSectionDic content:content indexPath:indexPath];
+        
         return (UITableViewCell *)self.JSTableViewCellDelegate;
+        
         
     }
 

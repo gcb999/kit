@@ -25,7 +25,7 @@
     
     [self.view addSubview:self.collectionViewController.view];
     [self addChildViewController:self.collectionViewController];
-    JSBaseFlowLayout *flowOut=[[JSBaseFlowLayout alloc] initWithDirectionVertical:2 itemHeight:200];
+    JSBaseFlowLayout *flowOut=[[JSBaseFlowLayout alloc] initWithDirectionVertical:2 itemHeight:250];
     self.collectionViewController.flowLayout=flowOut;
     
  

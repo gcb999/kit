@@ -30,7 +30,7 @@
 
     
     // 2:通过barTintColor来设置背景色
-    [navigationBar setBarTintColor:[UIColor whiteColor]];
+    [navigationBar setBarTintColor:[UIColor blackColor]];
     
     
   
