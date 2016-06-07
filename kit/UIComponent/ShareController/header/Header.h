@@ -52,7 +52,9 @@
 
 
 
+//商品详情图片空间
 
+#import "JSItemImageViewController.h"
 
 #pragma mark -----------自定义商品Cell--------------------
 

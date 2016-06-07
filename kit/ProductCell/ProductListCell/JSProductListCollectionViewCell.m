@@ -24,18 +24,7 @@
     if (self) {
         
         
-        
-        
-        
-        
-        
-        
-        
-
-        
-    
-        
-        
+         
 #pragma mark - Edit和Buy
         
         self.editBtn=[[JSDIYButton alloc] initWithFrame:CGRectZero];

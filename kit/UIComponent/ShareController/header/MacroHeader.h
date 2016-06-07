@@ -166,7 +166,11 @@
 //流水瀑布
 #import "JSBaseFlowLayout.h"
 #import "JSLineLayout.h"
+#import "JSWaterFlowLayout.h"
 
+
+//轮播图
+#import "SDCycleScrollView.h"
 
 
 

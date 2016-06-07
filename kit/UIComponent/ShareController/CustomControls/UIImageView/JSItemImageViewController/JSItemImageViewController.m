@@ -139,9 +139,6 @@
     if (_pageControl == nil) {
 
         _pageControl = [[UIPageControl alloc]initWithFrame:CGRectZero];
-
-        
-
         
             }
     return _pageControl;

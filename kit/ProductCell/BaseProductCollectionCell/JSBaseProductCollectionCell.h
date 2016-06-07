@@ -56,7 +56,6 @@
 @property(nonatomic,strong)UIImageView *product_SoldOut_Imgview;
 
 
--(void)JSCollectionViewController:(JSCollectionViewController *)JSCtrl collectionViewDateArr:(NSArray *)dateArr cellValue:(id)date indexPath:(NSIndexPath *)indexpath;
 
 
 
