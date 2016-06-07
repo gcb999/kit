@@ -104,8 +104,6 @@
 		90E3CC731D0584FD00F4AD20 /* NinaBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC101D0584FD00F4AD20 /* NinaBaseView.m */; };
 		90E3CC741D0584FD00F4AD20 /* NinaPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC121D0584FD00F4AD20 /* NinaPagerView.m */; };
 		90E3CC751D0584FD00F4AD20 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC151D0584FD00F4AD20 /* UIView+ViewController.m */; };
-		90E3CC7B1D05850000F4AD20 /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC781D05850000F4AD20 /* LeftTableViewCell.m */; };
-		90E3CC7C1D05850000F4AD20 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC7A1D05850000F4AD20 /* LeftViewController.m */; };
 		90E3CC901D05850600F4AD20 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC811D05850600F4AD20 /* AccountCell.m */; };
 		90E3CC911D05850600F4AD20 /* AccountGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC841D05850600F4AD20 /* AccountGroupViewController.m */; };
 		90E3CC921D05850600F4AD20 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC871D05850600F4AD20 /* HeadView.m */; };
@@ -347,10 +345,6 @@
 		90E3CC1B1D0584FD00F4AD20 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
 		90E3CC1C1D0584FD00F4AD20 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
 		90E3CC1D1D0584FD00F4AD20 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
-		90E3CC771D05850000F4AD20 /* LeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewCell.h; sourceTree = "<group>"; };
-		90E3CC781D05850000F4AD20 /* LeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
-		90E3CC791D05850000F4AD20 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
-		90E3CC7A1D05850000F4AD20 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		90E3CC801D05850600F4AD20 /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
 		90E3CC811D05850600F4AD20 /* AccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
 		90E3CC831D05850600F4AD20 /* AccountGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountGroupViewController.h; sourceTree = "<group>"; };
@@ -1223,10 +1217,6 @@
 		90E3CC761D05850000F4AD20 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				90E3CC771D05850000F4AD20 /* LeftTableViewCell.h */,
-				90E3CC781D05850000F4AD20 /* LeftTableViewCell.m */,
-				90E3CC791D05850000F4AD20 /* LeftViewController.h */,
-				90E3CC7A1D05850000F4AD20 /* LeftViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1503,7 +1493,6 @@
 				90E3CC361D0584FD00F4AD20 /* JSCollectionViewController+UIScrollView.m in Sources */,
 				90E3CC3D1D0584FD00F4AD20 /* XTNetReloader.m in Sources */,
 				90E3CC6E1D0584FD00F4AD20 /* JSApplePay.m in Sources */,
-				90E3CC7C1D05850000F4AD20 /* LeftViewController.m in Sources */,
 				90E3CC441D0584FD00F4AD20 /* JSTableViewController+TableHeaderFooter.m in Sources */,
 				90E3CC571D0584FD00F4AD20 /* NSDate+stringFromDate.m in Sources */,
 				90E3CC201D0584FD00F4AD20 /* HYBEaseInOutTransition.m in Sources */,
@@ -1525,7 +1514,6 @@
 				90E3CC241D0584FD00F4AD20 /* JSBasicViewController+ThreeDTouch.m in Sources */,
 				90E3CC431D0584FD00F4AD20 /* JSTableViewController+StretchableTableHeaderView.m in Sources */,
 				90E3CC591D0584FD00F4AD20 /* NSMutableAttributedString+CBAttributedString.m in Sources */,
-				90E3CC7B1D05850000F4AD20 /* LeftTableViewCell.m in Sources */,
 				90E3CC4A1D0584FD00F4AD20 /* JSUserSingletonModel.m in Sources */,
 				90E3CC3E1D0584FD00F4AD20 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
 				90E3CC721D0584FD00F4AD20 /* MJNIndexView.m in Sources */,
@@ -1729,7 +1717,7 @@
 			baseConfigurationReference = AA4DF6D4455F513206F99F7B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/kit.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)//kit/kit.pch";
 				INFOPLIST_FILE = kit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1746,7 +1734,7 @@
 			baseConfigurationReference = F5F3AF553FEEBEF8E7D28429 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/kit.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)//kit/kit.pch";
 				INFOPLIST_FILE = kit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
