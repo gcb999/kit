@@ -16,9 +16,8 @@
 @interface JSBasicViewController : UIViewController<UIViewControllerPreviewingDelegate>
 
 
-//导航栏
-@property(nonatomic,strong,readonly) UIView *navigationBarView;
 
 
+- (void)showOrHidde:(BOOL)show animation:(BOOL)animation;
 
 @end

@@ -11,5 +11,5 @@
 
 @interface JSTabBarControllerConfig : NSObject
 @property (nonatomic, readonly, strong) CYLTabBarController *tabBarController;
-
++(instancetype) shareInstance;
 @end

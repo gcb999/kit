@@ -14,6 +14,7 @@
     JSTableViewState _state;
     BOOL _isFirstLoadPage;//是否第一进入页面
     Class _cellClass;
+    UITableViewStyle _style;
 }
 @end
 
@@ -21,11 +22,13 @@
 
 
 -(instancetype)initWithStyle:(UITableViewStyle)style state:(JSTableViewState)state tableViewCellClass:(Class) cellclass delegate:(id<JSTableViewControllerDelegate>)delegate{
-    if (self=[super initWithStyle:style]) {
+    if (self=[super init]) {
         self.data=[NSMutableArray array];
         _state=state;
         _cellClass=cellclass;
+        _style=style;
         self.delegate=delegate;
+      
     }
     return self;
 }
@@ -37,6 +40,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+ 
+    self.tableView=[UITableView TableViewWithFrame:self.view.bounds style:_style backgroundColor:rgb(234, 234, 234) delegate:self separatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    
+    if (_style==UITableViewStyleGrouped) {
+        
+           self.tableView.backgroundColor=rgb(234, 234, 234);
+    }
+    else{
+     
+        self.tableView.backgroundColor=[UIColor whiteColor];
+    }
+    [self.view addSubview:self.tableView];
     [self setUpMJRefresh:_state];
     [self setUpTableHeaderView];
     [self setUpTableFooterView];

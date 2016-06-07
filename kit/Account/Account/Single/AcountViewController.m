@@ -31,8 +31,10 @@
     avater.center = CGPointMake(IPHONScreenWidth*0.5f, 100);
     
     
-    [self.tableViewController stretchHeaderImgUrl:@"photo.jpg" subViews:avater];
-
+//    [self.tableViewController stretchHeaderImgUrl:@"photo.jpg" subViews:avater];
+    
+    
+    self.shyNavBarManager.scrollView=self.tableViewController.tableView;
     
     
 }

@@ -63,6 +63,7 @@ PODS:
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
+  - TLYShyNavBar (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.1)
@@ -76,6 +77,7 @@ DEPENDENCIES:
   - MJRefresh (~> 2.2.1)
   - Reachability (~> 3.2)
   - SDWebImage (~> 3.7.3)
+  - TLYShyNavBar
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
@@ -88,5 +90,6 @@ SPEC CHECKSUMS:
   MJRefresh: c3fa0387e8e97a11a9666639d2f815607edd1c2f
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  TLYShyNavBar: 3150e9a03ff8ab5fd81de00167e8829b91af8326
 
 COCOAPODS: 0.39.0

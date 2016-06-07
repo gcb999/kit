@@ -25,8 +25,11 @@
 -(JSTableGroupViewController *)tableGroupViewController{
     if (_tableGroupViewController==nil) {
         _tableGroupViewController=[[JSTableGroupViewController alloc] initWithStyle:UITableViewStylePlain state:JSTableViewPullHeader tableViewCellClass:nil delegate:self];
-        _tableGroupViewController.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+
         _tableGroupViewController.view.frame=self.view.bounds;
+        
+        _tableGroupViewController.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+        
     }
     return _tableGroupViewController;
 }

@@ -45,7 +45,14 @@
 
 
 
-
+#pragma mark - prviteMethods
+- (void)showOrHidde:(BOOL)show animation:(BOOL)animation
+{
+    
+    UITabBar *tabbar=[JSTabBarControllerConfig shareInstance].tabBarController.tabBar;
+    tabbar.hidden=YES;
+    
+}
 
 
 

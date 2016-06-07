@@ -33,6 +33,8 @@
     
     [self.tableGroupViewController stretchHeaderImgUrl:@"photo.jpg" subViews:avater];
     
+
+    
     
     
 }
@@ -102,7 +104,7 @@
 -(JSTableGroupViewController *)tableGroupViewController{
     if (_tableGroupViewController==nil) {
         _tableGroupViewController=[[JSTableGroupViewController alloc] initWithStyle:UITableViewStyleGrouped state:JSTableViewNormal tableViewCellClass:[AccountCell class] delegate:self];
-    
+        _tableGroupViewController.separatorStyle=UITableViewCellSeparatorStyleNone;
         _tableGroupViewController.view.frame=CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     }
     return _tableGroupViewController;

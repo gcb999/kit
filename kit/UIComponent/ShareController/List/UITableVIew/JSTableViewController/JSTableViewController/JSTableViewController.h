@@ -50,7 +50,7 @@ tableview 集成功能（暂时不考虑分组）
 
 @protocol JSTableViewControllerDelegate,JSSectionTableViewDelegate,JSTableScrollViewDelegate,JSTableView3DTouchDelegate,JSTableViewHeadFooterDelegate;
 
-@interface JSTableViewController : UITableViewController<UIViewControllerPreviewingDelegate>
+@interface JSTableViewController : UIViewController<UIViewControllerPreviewingDelegate,UITableViewDelegate,UITableViewDataSource>
 
 #pragma mark -分组相关属性
 
@@ -69,6 +69,7 @@ tableview 集成功能（暂时不考虑分组）
 
 @property(nonatomic,strong)NSMutableArray *data;//数据源
 
+@property(nonatomic,assign)UITableViewCellSeparatorStyle separatorStyle;
 
 @property(nonatomic,weak)id<JSTableViewControllerDelegate> delegate;//代理
 

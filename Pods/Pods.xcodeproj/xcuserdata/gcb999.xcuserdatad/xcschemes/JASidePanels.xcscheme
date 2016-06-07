@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DA2A1846D3289FDF09DD3C30'
+               BlueprintIdentifier = '8FE70EF0D789A0A1DE4EC287'
                BlueprintName = 'JASidePanels'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libJASidePanels.a'>

@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 #import "JSProductCollectionViewCell.h"
 #import "HomeDetailViewController.h"
-
+#import "AcountViewController.h"
 @interface HomeViewController ()<JSCollectionViewControllerDelegate,JSWaterFlowLayoutDelegate>
 
 
@@ -21,12 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
     [self.view addSubview:self.collectionViewController.view];
     [self addChildViewController:self.collectionViewController];
     JSBaseFlowLayout *flowOut=[[JSBaseFlowLayout alloc] initWithDirectionVertical:2 itemHeight:250];
     self.collectionViewController.flowLayout=flowOut;
+    
+   self.shyNavBarManager.scrollView = self.collectionViewController.collectionView;
     
  
     
@@ -49,7 +50,7 @@
     
 
     
-     HomeDetailViewController *ctrl=[[HomeDetailViewController alloc] init];
+     AcountViewController *ctrl=[[AcountViewController alloc] init];
 
     
     //        self.navigationController.delegate=self.transition;

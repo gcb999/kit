@@ -39,6 +39,9 @@
 //侧滑框架头文件
 #import "JASidePanelController.h"
 
+//隐藏头部导航栏
+#import <TLYShyNavBar/TLYShyNavBarManager.h>
+
 
 #pragma mark -----------框架------------
 
