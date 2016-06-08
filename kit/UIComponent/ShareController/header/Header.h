@@ -49,6 +49,9 @@
 
 #import "MacroHeader.h"
 
+//FB
+#define FBAPPLINK @"https://fb.me/831925016915934"
+
 
 
 

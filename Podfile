@@ -12,3 +12,4 @@ pod 'JASidePanels', '~> 1.3.2'
 pod 'Braintree', '~> 3.9'
 pod 'Braintree/Data', '~> 3.9'
 pod 'TLYShyNavBar'# 隐藏导航栏问题
+pod 'Google/Analytics'

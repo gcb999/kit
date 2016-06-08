@@ -5,7 +5,7 @@
                {
                "title":"Notificatioins",
                "iconUrl" : "home_highlight",
-               "ctrl":"BrandCtrl",
+               "ctrl":"JSLoginViewController",
                "flag":"1"
                },
                {

@@ -17,8 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+   
     
-    //设置背景
+#pragma mark -配置FB
+    [[JSFaceBook shareInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+#pragma mark -配置导航栏
     [JSNavigationController initialize];
     
     // 侧滑
@@ -30,6 +34,15 @@
     [self.window setRootViewController:config.tabBarController];
     self.window.backgroundColor=[UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+
     return YES;
 }
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    
+    return [[JSFaceBook shareInstance] application:application openURL:url openCtrlClass:nil sourceApplication:sourceApplication annotation:annotation];
+    
+}
+
 @end

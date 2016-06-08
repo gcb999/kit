@@ -178,6 +178,11 @@
 
 
 
+#pragma mark -----------FB,GA,ShareSDK--------------
+
+#import "JSFaceBook.h"
+
+
 
 #pragma mark -----------基本类+Category--------------
 

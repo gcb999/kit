@@ -139,6 +139,15 @@
 		90F0BB121D06735A00CD24D6 /* CountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB101D06735A00CD24D6 /* CountryModel.m */; };
 		90F0BB141D0679F900CD24D6 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90F0BB131D0679F900CD24D6 /* address.plist */; };
 		90F0BB171D069AF000CD24D6 /* HotCountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB161D069AF000CD24D6 /* HotCountryCell.m */; };
+		90F0BB231D07AAD200CD24D6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB1C1D07AAD200CD24D6 /* Bolts.framework */; };
+		90F0BB241D07AAD200CD24D6 /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 90F0BB1D1D07AAD200CD24D6 /* FacebookSDKStrings.bundle */; };
+		90F0BB251D07AAD200CD24D6 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB1E1D07AAD200CD24D6 /* FBAudienceNetwork.framework */; };
+		90F0BB261D07AAD200CD24D6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB1F1D07AAD200CD24D6 /* FBSDKCoreKit.framework */; };
+		90F0BB271D07AAD200CD24D6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB201D07AAD200CD24D6 /* FBSDKLoginKit.framework */; };
+		90F0BB281D07AAD200CD24D6 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB211D07AAD200CD24D6 /* FBSDKMessengerShareKit.framework */; };
+		90F0BB291D07AAD200CD24D6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB221D07AAD200CD24D6 /* FBSDKShareKit.framework */; };
+		90F0BB2D1D07AB7900CD24D6 /* JSFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */; };
+		90F0BB311D07CB0A00CD24D6 /* JSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -441,6 +450,17 @@
 		90F0BB131D0679F900CD24D6 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		90F0BB151D069AF000CD24D6 /* HotCountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotCountryCell.h; sourceTree = "<group>"; };
 		90F0BB161D069AF000CD24D6 /* HotCountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotCountryCell.m; sourceTree = "<group>"; };
+		90F0BB1C1D07AAD200CD24D6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		90F0BB1D1D07AAD200CD24D6 /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		90F0BB1E1D07AAD200CD24D6 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		90F0BB1F1D07AAD200CD24D6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		90F0BB201D07AAD200CD24D6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		90F0BB211D07AAD200CD24D6 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		90F0BB221D07AAD200CD24D6 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		90F0BB2B1D07AB7900CD24D6 /* JSFaceBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFaceBook.h; sourceTree = "<group>"; };
+		90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFaceBook.m; sourceTree = "<group>"; };
+		90F0BB2F1D07CB0A00CD24D6 /* JSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginViewController.h; sourceTree = "<group>"; };
+		90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginViewController.m; sourceTree = "<group>"; };
 		AA4DF6D4455F513206F99F7B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F3AF553FEEBEF8E7D28429 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -450,8 +470,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F0BB291D07AAD200CD24D6 /* FBSDKShareKit.framework in Frameworks */,
+				90F0BB261D07AAD200CD24D6 /* FBSDKCoreKit.framework in Frameworks */,
+				90F0BB231D07AAD200CD24D6 /* Bolts.framework in Frameworks */,
+				90F0BB271D07AAD200CD24D6 /* FBSDKLoginKit.framework in Frameworks */,
 				90E3CC711D0584FD00F4AD20 /* libCardIO.a in Frameworks */,
 				47B0D1699B79813D5F5812AC /* libPods.a in Frameworks */,
+				90F0BB251D07AAD200CD24D6 /* FBAudienceNetwork.framework in Frameworks */,
+				90F0BB281D07AAD200CD24D6 /* FBSDKMessengerShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +588,7 @@
 		90E3CB151D0584FD00F4AD20 /* ShareController */ = {
 			isa = PBXGroup;
 			children = (
+				90F0BB2A1D07AB5300CD24D6 /* Social&GA */,
 				90E3CB161D0584FD00F4AD20 /* Aniamtion */,
 				90E3CB251D0584FD00F4AD20 /* BasicUI */,
 				90E3CB2E1D0584FD00F4AD20 /* CustomControls */,
@@ -1238,6 +1265,7 @@
 		90E3CC001D0584FD00F4AD20 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				90F0BB1B1D07AAD200CD24D6 /* FaceBook */,
 				90F0BAE51D065D8E00CD24D6 /* SDCycleScrollView */,
 				90E3CC011D0584FD00F4AD20 /* CardIO */,
 				90E3CC0B1D0584FD00F4AD20 /* MJNIndexView */,
@@ -1315,6 +1343,7 @@
 		90E3CC7D1D05850600F4AD20 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				90F0BB2E1D07CAF700CD24D6 /* Login */,
 				90F0BB031D0670DE00CD24D6 /* Address */,
 				90E3CC7E1D05850600F4AD20 /* Account */,
 			);
@@ -1522,6 +1551,38 @@
 			path = JSMJNIndexTableViewController;
 			sourceTree = "<group>";
 		};
+		90F0BB1B1D07AAD200CD24D6 /* FaceBook */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BB1C1D07AAD200CD24D6 /* Bolts.framework */,
+				90F0BB1D1D07AAD200CD24D6 /* FacebookSDKStrings.bundle */,
+				90F0BB1E1D07AAD200CD24D6 /* FBAudienceNetwork.framework */,
+				90F0BB1F1D07AAD200CD24D6 /* FBSDKCoreKit.framework */,
+				90F0BB201D07AAD200CD24D6 /* FBSDKLoginKit.framework */,
+				90F0BB211D07AAD200CD24D6 /* FBSDKMessengerShareKit.framework */,
+				90F0BB221D07AAD200CD24D6 /* FBSDKShareKit.framework */,
+			);
+			path = FaceBook;
+			sourceTree = "<group>";
+		};
+		90F0BB2A1D07AB5300CD24D6 /* Social&GA */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BB2B1D07AB7900CD24D6 /* JSFaceBook.h */,
+				90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */,
+			);
+			path = "Social&GA";
+			sourceTree = "<group>";
+		};
+		90F0BB2E1D07CAF700CD24D6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				90F0BB2F1D07CB0A00CD24D6 /* JSLoginViewController.h */,
+				90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		A3290D4E209946D3FF044C85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1643,6 +1704,7 @@
 				90E3CAEE1D05845900F4AD20 /* Assets.xcassets in Resources */,
 				90E3CAEC1D05845900F4AD20 /* Main.storyboard in Resources */,
 				90E3CC941D05850600F4AD20 /* AccontGroupContent.json in Resources */,
+				90F0BB241D07AAD200CD24D6 /* FacebookSDKStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1717,6 +1779,7 @@
 			files = (
 				90E3CC2F1D0584FD00F4AD20 /* JSTabBarControllerConfig.m in Sources */,
 				90E3CC901D05850600F4AD20 /* AccountCell.m in Sources */,
+				90F0BB2D1D07AB7900CD24D6 /* JSFaceBook.m in Sources */,
 				90E3CC4C1D0584FD00F4AD20 /* JSNetWork+GET.m in Sources */,
 				90E3CC351D0584FD00F4AD20 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
 				90E3CC471D0584FD00F4AD20 /* JSTableViewController+UIScrollView.m in Sources */,
@@ -1744,6 +1807,7 @@
 				90F0BAE41D06583800CD24D6 /* HomeViewController.m in Sources */,
 				90E3CC381D0584FD00F4AD20 /* JSBaseFlowLayout.m in Sources */,
 				90E3CC1F1D0584FD00F4AD20 /* HYBBubbleTransition.m in Sources */,
+				90F0BB311D07CB0A00CD24D6 /* JSLoginViewController.m in Sources */,
 				90E3CC5F1D0584FD00F4AD20 /* NSString+Extend.m in Sources */,
 				90E3CC751D0584FD00F4AD20 /* UIView+ViewController.m in Sources */,
 				90E3CC421D0584FD00F4AD20 /* JSTableViewController+NotWorkView.m in Sources */,
@@ -1979,6 +2043,10 @@
 			baseConfigurationReference = AA4DF6D4455F513206F99F7B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/kit/UIComponent/Vendor/FaceBook",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)//kit/kit.pch";
 				INFOPLIST_FILE = kit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1996,6 +2064,10 @@
 			baseConfigurationReference = F5F3AF553FEEBEF8E7D28429 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/kit/UIComponent/Vendor/FaceBook",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)//kit/kit.pch";
 				INFOPLIST_FILE = kit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

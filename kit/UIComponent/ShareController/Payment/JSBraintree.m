@@ -8,6 +8,16 @@
 
 #import "JSBraintree.h"
 
+/*
+BT交互步骤
+
+1：ios客户端会传递“一些描述和钱”。
+
+2：然后服务端返回一个“唯一标识”给客户端。
+
+3：客户端拿到这个“唯一标识”，在和我们服务交互。
+ 
+ */
 
 
 @implementation JSBraintree
