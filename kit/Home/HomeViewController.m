@@ -27,7 +27,7 @@
     JSBaseFlowLayout *flowOut=[[JSBaseFlowLayout alloc] initWithDirectionVertical:2 itemHeight:250];
     self.collectionViewController.flowLayout=flowOut;
     
-   self.shyNavBarManager.scrollView = self.collectionViewController.collectionView;
+//   self.shyNavBarManager.scrollView = self.collectionViewController.collectionView;
     
  
     

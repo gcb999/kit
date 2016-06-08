@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) JASidePanelController * sidePanelController;
 
--(void )leftPanel:(Class)leftPanel centerPanel:(Class)centerPanel  rightPanel:(Class)rightPanel;
+-(instancetype )initWithLeftPanel:(Class)leftPanel centerPanel:(Class)centerPanel  rightPanel:(Class)rightPanel;
 
 #pragma mark -显示中间控制器
 -(void)showCenterPanel;

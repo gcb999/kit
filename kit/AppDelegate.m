@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 
 @interface AppDelegate ()
@@ -27,10 +28,10 @@
     
    
     // 侧滑
-    //JSSideSlippingControllerConfig* config= [[JSSideSlippingControllerConfig alloc] initWithSidePlane:[AccountGroupViewController class] mainClass:[AcountViewController class]  rightClass:[LeftViewController class] ];
+//    JSSideSlippingControllerConfig* config= [[JSSideSlippingControllerConfig alloc] initWithLeftPanel:[HomeViewController class] centerPanel:[HomeViewController class] rightPanel:[HomeViewController class]];
     
     //横栏
-    JSTabBarControllerConfig *config=[[JSTabBarControllerConfig alloc] init];
+   JSTabBarControllerConfig *config=[[JSTabBarControllerConfig alloc] init];
     
     [self.window setRootViewController:config.tabBarController];
     self.window.backgroundColor=[UIColor whiteColor];

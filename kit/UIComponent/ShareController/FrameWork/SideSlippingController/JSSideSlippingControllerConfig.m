@@ -38,9 +38,10 @@
 
 
 
--(void )leftPanel:(Class)leftPanel centerPanel:(Class)centerPanel  rightPanel:(Class)rightPanel{
+-(instancetype )initWithLeftPanel:(Class)leftPanel centerPanel:(Class)centerPanel  rightPanel:(Class)rightPanel{
    
-    
+    if (self=[super init]) {
+        
     //左边控制器
     
     if(leftPanel){
@@ -65,6 +66,9 @@
         UIViewController *rightVc=[[rightPanel alloc] init];
         self.sidePanelController.rightPanel=rightVc;//添加右边的viewcontroller
     }
+        
+    }
+    return self;
     
 
 }
