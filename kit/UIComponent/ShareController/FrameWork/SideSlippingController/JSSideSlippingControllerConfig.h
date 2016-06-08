@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JSSideSlippingControllerConfig : NSObject
 
-+(instancetype) shareInstance;
+@interface JSSideSlippingControllerConfig : JSSingletonModel
+
+
 
 @property (nonatomic, strong) JASidePanelController * sidePanelController;
 
--(instancetype)initWithSidePlane:(Class)leftClass mainClass:(Class)mainClass  rightClass:(Class)rightClass;
+-(void )leftPanel:(Class)leftPanel centerPanel:(Class)centerPanel  rightPanel:(Class)rightPanel;
 
 #pragma mark -显示中间控制器
 -(void)showCenterPanel;

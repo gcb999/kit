@@ -37,40 +37,36 @@
 
 
 
--(instancetype )initWithSidePlane:(Class)leftClass mainClass:(Class)mainClass  rightClass:(Class)rightClass{
-    
-    if (self=[super init]) {
+
+-(void )leftPanel:(Class)leftPanel centerPanel:(Class)centerPanel  rightPanel:(Class)rightPanel{
+   
     
     //左边控制器
     
-    if(leftClass){
+    if(leftPanel){
         
-        UIViewController *leftVc=[[leftClass  alloc] init];
+        UIViewController *leftVc=[[leftPanel  alloc] init];
         self.sidePanelController.leftPanel = leftVc;  //添加左边的viewcontroller
 
     }
    
 
     //中间
-    if (mainClass) {
+    if (centerPanel) {
         
-        UIViewController *mainCtrl = [[mainClass  alloc] init];
+        UIViewController *mainCtrl = [[centerPanel  alloc] init];
         JSNavigationController *nav=[[JSNavigationController alloc] initWithRootViewController:mainCtrl];
         self.sidePanelController.centerPanel = nav;  //添加中间的viewcontroller
     }
     
     
     //右边控制器
-    if (rightClass) {
-       
-        UIViewController *rightVc=[[rightClass alloc] init];
+    if (rightPanel) {
+        UIViewController *rightVc=[[rightPanel alloc] init];
         self.sidePanelController.rightPanel=rightVc;//添加右边的viewcontroller
     }
     
-    
-}
 
-    return self;
 }
 
 
@@ -104,27 +100,6 @@ UINavigationController *nav=(UINavigationController *)self.sidePanelController.c
 
 
 
-#pragma mark -单例类
-static JSSideSlippingControllerConfig * _instance = nil;
 
-+(instancetype) shareInstance
-{
-    static dispatch_once_t onceToken ;
-    dispatch_once(&onceToken, ^{
-        _instance = [[super allocWithZone:NULL] init] ;
-    }) ;
-    
-    return _instance ;
-}
-
-+(id) allocWithZone:(struct _NSZone *)zone
-{
-    return [JSSideSlippingControllerConfig shareInstance] ;
-}
-
--(id) copyWithZone:(struct _NSZone *)zone
-{
-    return [JSSideSlippingControllerConfig shareInstance] ;
-}
 
 @end

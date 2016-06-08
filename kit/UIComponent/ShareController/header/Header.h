@@ -33,21 +33,23 @@
 #endif
 
 
+#import <UIKit/UIKit.h>
+//宏头文件
+#import "MacroHeader.h"
+
+
 
 #import "JSPayPal.h"
 #import "JSBraintree.h"
 
 
 
-#import <UIKit/UIKit.h>
+
 
 
 #define DLURL @""
 
 
-//宏头文件
-
-#import "MacroHeader.h"
 
 //FB
 #define FBAPPLINK @"https://fb.me/831925016915934"

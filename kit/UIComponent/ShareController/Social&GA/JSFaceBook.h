@@ -34,10 +34,9 @@ typedef void (^ShareCompleteBlock) (JSFaceBookShareState shareState);
 
 
 
-@interface JSFaceBook : NSObject
+@interface JSFaceBook : JSSingletonModel
 
 
-+(instancetype) shareInstance;
 
 
 /*--------------------FaceBook  配置注意点-------

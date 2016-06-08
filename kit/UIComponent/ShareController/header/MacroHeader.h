@@ -11,8 +11,14 @@
 #define MacroHeader_h
 
 
+#pragma mark -基本类
+//实体
+#import "JSUserSingletonModel.h"
+#import "JSSingletonModel.h" //单例父类
 
 #pragma mark -----------第三方头文件------------
+
+
 
 
 //AFN
@@ -116,8 +122,6 @@
 
 
 
-//实体
-#import "JSUserSingletonModel.h"
 
 
 
