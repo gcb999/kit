@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CYLTabBarController.h"
 
-@interface JSTabBarControllerConfig : JSSingletonModel
+@interface JSTabBarControllerConfig : NSObject
 @property (nonatomic, readonly, strong) CYLTabBarController *tabBarController;
-
++(instancetype) shareInstance;
 @end

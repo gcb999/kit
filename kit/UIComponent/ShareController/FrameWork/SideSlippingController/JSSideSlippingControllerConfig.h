@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+@interface JSSideSlippingControllerConfig : NSObject
 
-@interface JSSideSlippingControllerConfig : JSSingletonModel
-
-
++(instancetype) shareInstance;
 
 @property (nonatomic, strong) JASidePanelController * sidePanelController;
 

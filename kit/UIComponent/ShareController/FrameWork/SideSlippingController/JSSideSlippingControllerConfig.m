@@ -99,7 +99,28 @@ UINavigationController *nav=(UINavigationController *)self.sidePanelController.c
 
 
 
+#pragma mark -单例类
+static JSSideSlippingControllerConfig * _instance = nil;
 
++(instancetype) shareInstance
+{
+    static dispatch_once_t onceToken ;
+    dispatch_once(&onceToken, ^{
+        _instance = [[super allocWithZone:NULL] init] ;
+    }) ;
+    
+    return _instance ;
+}
+
++(id) allocWithZone:(struct _NSZone *)zone
+{
+    return [JSSideSlippingControllerConfig shareInstance] ;
+}
+
+-(id) copyWithZone:(struct _NSZone *)zone
+{
+    return [JSSideSlippingControllerConfig shareInstance] ;
+}
 
 
 @end

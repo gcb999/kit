@@ -34,7 +34,7 @@ typedef void (^ShareCompleteBlock) (JSFaceBookShareState shareState);
 
 
 
-@interface JSFaceBook : JSSingletonModel
+@interface JSFaceBook : NSObject
 
 
 
@@ -67,7 +67,7 @@ fb1558481964435547
 */
 
 
-
++(instancetype) shareInstance;
 
 #pragma mark-  1：初始化方法 (appDelegate)
 

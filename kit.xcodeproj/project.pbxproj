@@ -148,7 +148,6 @@
 		90F0BB291D07AAD200CD24D6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB221D07AAD200CD24D6 /* FBSDKShareKit.framework */; };
 		90F0BB2D1D07AB7900CD24D6 /* JSFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */; };
 		90F0BB311D07CB0A00CD24D6 /* JSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */; };
-		90F0BB341D07E83C00CD24D6 /* JSSingletonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB331D07E83C00CD24D6 /* JSSingletonModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -462,8 +461,6 @@
 		90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFaceBook.m; sourceTree = "<group>"; };
 		90F0BB2F1D07CB0A00CD24D6 /* JSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginViewController.h; sourceTree = "<group>"; };
 		90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginViewController.m; sourceTree = "<group>"; };
-		90F0BB321D07E83C00CD24D6 /* JSSingletonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSingletonModel.h; sourceTree = "<group>"; };
-		90F0BB331D07E83C00CD24D6 /* JSSingletonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSingletonModel.m; sourceTree = "<group>"; };
 		AA4DF6D4455F513206F99F7B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F3AF553FEEBEF8E7D28429 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1020,8 +1017,6 @@
 			children = (
 				90E3CB9D1D0584FD00F4AD20 /* JSUserSingletonModel.h */,
 				90E3CB9E1D0584FD00F4AD20 /* JSUserSingletonModel.m */,
-				90F0BB321D07E83C00CD24D6 /* JSSingletonModel.h */,
-				90F0BB331D07E83C00CD24D6 /* JSSingletonModel.m */,
 			);
 			path = JSModel;
 			sourceTree = "<group>";
@@ -1900,7 +1895,6 @@
 				90F0BAF91D065D8E00CD24D6 /* SDCollectionViewCell.m in Sources */,
 				90F0BAFB1D065D8E00CD24D6 /* UIView+SDExtension.m in Sources */,
 				90E3CC211D0584FD00F4AD20 /* HYBModalTransition.m in Sources */,
-				90F0BB341D07E83C00CD24D6 /* JSSingletonModel.m in Sources */,
 				90F0BAF71D065D8E00CD24D6 /* TADotView.m in Sources */,
 				90E3CC541D0584FD00F4AD20 /* MBProgressHUD+Add.m in Sources */,
 				90F0BADB1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m in Sources */,
