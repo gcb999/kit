@@ -47,9 +47,11 @@
 
 -(void)JSCollectionViewController:(JSCollectionViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    //隐藏
+    [self.tabBarController.tabBar hideBadgeOnItemIndex:2];
+//      [self.navigationController.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", 12]];
 
-    
+    return;
      AcountViewController *ctrl=[[AcountViewController alloc] init];
 
     
@@ -101,6 +103,19 @@
     return CGSizeMake(IPHONScreenWidth, 200);
 }
 
+
+#pragma mark -显示数目
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+
+    UITabBarItem *firstItem = self.tabBarController.tabBar.items.firstObject;
+    //it is necessary to adjust badge position
+//    firstItem.badgeCenterOffset = CGPointMake(-50, 8);
+//    [firstItem showBadge];
+    //显示
+    [firstItem showBadgeWithStyle:WBadgeStyleNumber value:55 animationType:WBadgeAnimTypeNone];
+
+}
 
 
 

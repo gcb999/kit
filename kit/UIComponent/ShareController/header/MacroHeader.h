@@ -15,6 +15,9 @@
 //实体
 #import "JSUserSingletonModel.h"
 
+#import "UITabBar+Badge.h"
+#import "WZLBadgeImport.h"
+
 
 #pragma mark -----------第三方头文件------------
 

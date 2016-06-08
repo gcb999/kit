@@ -3,26 +3,26 @@
     "content":[
                {
                "title":"首页",
-               "normalImage" : "home_highlight",
-               "selectedImage" : "home_highlight",
+               "normal" : "home_highlight",
+               "highlighted" : "home_highlight",
                "ctrl":"HomeViewController"
                },
                {
                "title":"分类页",
-               "normalImage" : "home_highlight",
-               "selectedImage" : "home_highlight",
+               "normal" : "home_highlight",
+               "highlighted" : "home_highlight",
                "ctrl":"JSMJNIndexTableViewController"
                },
                {
                "title":"购物车",
-               "normalImage" : "home_highlight",
-               "selectedImage" : "home_highlight",
+               "normal" : "home_highlight",
+               "highlighted" : "home_highlight",
                "ctrl":"AcountViewController"
                },
                {
                "title":"个人中心",
-               "normalImage" : "home_highlight",
-               "selectedImage" : "home_highlight",
+               "normal" : "home_highlight",
+               "highlighted" : "home_highlight",
                "ctrl":"AccountGroupViewController"
                }
                ]
