@@ -1,26 +1,26 @@
 //
-//  AccountCell.m
-//  UIComponent
+//  JSSingleTableVIewCell.m
+//  kit
 //
-//  Created by gcb999 on 16/6/6.
+//  Created by gcb999 on 16/6/10.
 //  Copyright © 2016年 com.sailvan.gcb999. All rights reserved.
 //
 
-#import "AccountCell.h"
+#import "JSSimpleTableViewCell.h"
 
-
-@interface AccountCell ()
+@interface JSSimpleTableViewCell ()
 
 @property (nonatomic , strong) UIImageView *bgImageView;
 @property (nonatomic , strong) UIImageView *iconImageView;
 @property (nonatomic , strong) UILabel *titleLabel;
 @property (nonatomic , strong) UIImageView *JTImageView;
-@property(nonatomic,strong)AccountModel *model;
+@property (nonatomic , strong) JSSimpleTableViewCellModel *model;
 
 @end
 
 
-@implementation AccountCell
+@implementation JSSimpleTableViewCell
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -36,14 +36,14 @@
         //名字
         self.titleLabel=[UILabel LabWithFrame:CGRectZero text:@"" textColor:[UIColor blackColor] textAlign:NSTextAlignmentLeft  font:KNormalFontSize];
         [self.bgImageView addSubview:self.titleLabel];
-
+        
         
         //箭头
         self.JTImageView=[UIImageView ImageViewImageName:@"" frame:CGRectZero];
         [self.contentView addSubview:self.JTImageView];
         
         //线
-
+        
         
     }
     return self;
@@ -65,7 +65,7 @@
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl TableViewDateArr:(NSArray *)dateArr content:(id)content indexPath:(NSIndexPath *)indexpath{
     self.model=content;
     self.titleLabel.text=self.model.title;
-     self.iconImageView.image=[UIImage imageNamed:self.model.iconUrl];
+    self.iconImageView.image=[UIImage imageNamed:self.model.iconUrl];
     self.JTImageView.image = [UIImage imageNamed:@"accountarrow"];;
 }
 
@@ -77,7 +77,7 @@
     
     CGRect lrect, rect=self.contentView.bounds;
     rect=UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(0, 5, 0, 0));
-   
+    
     //图标
     if (IS_NSString(self.model.iconUrl)) {
         CGRectDivide(rect, &lrect, &rect, 40, CGRectMinXEdge);
@@ -86,11 +86,11 @@
     }
     else{
         self.iconImageView.frame=CGRectZero;
-         CGRectDivide(rect, &lrect, &rect, 10, CGRectMinXEdge);
+        CGRectDivide(rect, &lrect, &rect, 10, CGRectMinXEdge);
         
     }
     
- //标题和箭头
+    //标题和箭头
     if(self.model.flag){
         
         CGFloat width =rect.size.width-40;

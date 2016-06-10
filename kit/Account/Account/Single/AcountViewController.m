@@ -7,9 +7,8 @@
 //
 
 #import "AcountViewController.h"
-#import "AccountCell.h"
+
 #import "MJExtension.h"
-#import "AccountModelHelper.h"
 
 @interface AcountViewController ()<JSTableViewControllerDelegate>
 {
@@ -45,7 +44,7 @@
 //1：加载数据源
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
    
-    [self.tableViewController.data addObjectsFromArray:[AccountModelHelper shareInstance].accountSingleModels];
+    [self.tableViewController.data addObjectsFromArray:[JSSimpleTableViewCellModelSingleHelper shareInstance].singleTableViewModel];
    [self.tableViewController reloadHeader];
 
 }
@@ -54,7 +53,7 @@
 //2：点击事件
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
  
-    AccountModel *model=self.tableViewController.data[indexPath.row];
+    JSSimpleTableViewCellModel *model=self.tableViewController.data[indexPath.row];
     UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
     if (ctrl) {
         [self.navigationController pushViewController:ctrl animated:YES];
@@ -70,7 +69,7 @@
 
 -(JSTableViewController *)tableViewController{
     if (_tableViewController==nil) {
-        _tableViewController=[[JSTableViewController alloc] initWithStyle:UITableViewStylePlain state:JSTableViewNormal tableViewCellClass:[AccountCell class] delegate:self];
+        _tableViewController=[[JSTableViewController alloc] initWithStyle:UITableViewStylePlain state:JSTableViewNormal tableViewCellClass:[JSSimpleTableViewCell class] delegate:self];
         _tableViewController.view.frame=self.view.bounds;
     }
     return _tableViewController;

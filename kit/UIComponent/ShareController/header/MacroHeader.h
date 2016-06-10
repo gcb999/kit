@@ -104,7 +104,6 @@
 
 
 
-
 #pragma mark -----------网络头文件--------------------
 
 
@@ -131,7 +130,7 @@
 
 
 
-#pragma mark -----------自定义TableView和CollectionView头文件--------------------
+#pragma mark -----------自定义TableView--------------------
 
 
 
@@ -159,6 +158,23 @@
 
 
 
+#pragma mark -------UITableViewCell-------
+
+/*
+ 1:图片
+ 
+ 2：文字
+ 
+ 3：箭头
+ 
+ */
+#import "JSSimpleTableViewCell.h"
+#import "JSSimpleTableViewCellModelGroupHelper.h"//单行
+#import "JSSimpleTableViewCellModelSingleHelper.h"//分组
+
+
+
+#pragma mark -----------自定义CollectionView头文件--------------------
 
 
 //Collection头文件

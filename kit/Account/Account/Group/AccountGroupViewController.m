@@ -8,8 +8,7 @@
 
 #import "AccountGroupViewController.h"
 
-#import "AccountCell.h"
-#import "AccountModelHelper.h"
+
 
 @interface AccountGroupViewController ()<JSTableViewControllerDelegate>
 {
@@ -45,10 +44,10 @@
 //1：加载数据源
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
     
-   NSDictionary<NSString *,NSArray<AccountModel*> *>   *accountModels= [AccountModelHelper shareInstance].accountGroupModels;
+   NSDictionary<NSString *,NSArray<JSSimpleTableViewCellModel*> *>   *accountModels= [JSSimpleTableViewCellModelGroupHelper shareInstance].groupTableViewModels;
     
     [self.tableGroupViewController.sections addObjectsFromArray: accountModels.allKeys];
-    self.tableGroupViewController.rowsOfSectionDic= [AccountModelHelper shareInstance].accountGroupModels;
+    self.tableGroupViewController.rowsOfSectionDic= [JSSimpleTableViewCellModelGroupHelper shareInstance].groupTableViewModels;
     [self.tableGroupViewController reloadHeader];
 
     
@@ -59,7 +58,7 @@
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSString *text= self.tableGroupViewController.sections[indexPath.section];
-    AccountModel *model=self.tableGroupViewController.rowsOfSectionDic[text][indexPath.row];
+    JSSimpleTableViewCellModel *model=self.tableGroupViewController.rowsOfSectionDic[text][indexPath.row];
     UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
     if (ctrl) {
         [self.navigationController pushViewController:ctrl animated:YES];
@@ -82,7 +81,7 @@
 
 -(JSTableGroupViewController *)tableGroupViewController{
     if (_tableGroupViewController==nil) {
-        _tableGroupViewController=[[JSTableGroupViewController alloc] initWithStyle:UITableViewStyleGrouped state:JSTableViewNormal tableViewCellClass:[AccountCell class] delegate:self];
+        _tableGroupViewController=[[JSTableGroupViewController alloc] initWithStyle:UITableViewStyleGrouped state:JSTableViewNormal tableViewCellClass:[JSSimpleTableViewCell class] delegate:self];
         _tableGroupViewController.separatorStyle=UITableViewCellSeparatorStyleNone;
         _tableGroupViewController.view.frame=CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     }
