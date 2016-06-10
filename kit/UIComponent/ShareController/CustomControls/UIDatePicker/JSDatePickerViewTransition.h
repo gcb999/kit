@@ -8,7 +8,7 @@
 
 #import "HYBBaseTransition.h"
 
-@interface JSPresentCommonViewTransition : HYBBaseTransition
+@interface JSDatePickerViewTransition : HYBBaseTransition
 
 @property(nonatomic,assign)CGFloat  height;
 

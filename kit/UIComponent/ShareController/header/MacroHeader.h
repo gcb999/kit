@@ -87,10 +87,11 @@
 
 
 
-#pragma mark -----------PickerView--------------------
+#pragma mark -----------PickerView &datePick--------------------
 
-#import "JSPresentView.h"
-#import "JSPresentCommonViewCtrl.h"
+#import "JSPickerViewController.h"
+#import "JSDatePickerViewController.h"
+#import "JSDatePickerViewTransition.h"//动画类
 
 
 #pragma mark -----------UIButton-------------------

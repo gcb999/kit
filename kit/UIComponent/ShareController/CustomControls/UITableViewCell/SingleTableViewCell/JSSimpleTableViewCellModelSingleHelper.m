@@ -15,15 +15,15 @@
     
     return @[
              @{
-                 @"title":@"Notificatioins",
+                 @"title":@"第三方登陆（FB登陆用法）",
                  @"iconUrl" : @"home_highlight",
                  @"ctrl":@"JSLoginViewController",
                  @"flag":@"1"
                  },
              @{
-                 @"title":@"Notificatioins",
+                 @"title":@"动画Transation (UIPicker)",
                  @"iconUrl" : @"home_highlight",
-                 @"ctrl":@"JSLoginViewController",
+                 @"ctrl":@"AnimationViewController",
                  @"flag":@"1"
                  },
              @{

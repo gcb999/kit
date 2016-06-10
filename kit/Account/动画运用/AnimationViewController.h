@@ -1,5 +1,5 @@
 //
-//  AllViewController.h
+//  AnimationViewController.h
 //  kit
 //
 //  Created by gcb999 on 16/6/10.
@@ -8,6 +8,6 @@
 
 #import "JSBasicViewController.h"
 
-@interface AllViewController : JSBasicViewController
+@interface AnimationViewController : JSBasicViewController
 
 @end

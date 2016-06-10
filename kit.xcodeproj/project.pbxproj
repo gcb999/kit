@@ -17,12 +17,14 @@
 		9039988C1D0A61840030C138 /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998861D0A61840030C138 /* JSTabbarViewController.m */; };
 		9039988F1D0A64120030C138 /* JSTabbarViewController+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */; };
 		903998921D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998911D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m */; };
-		903998981D0A8D920030C138 /* JSPresentCommonViewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998971D0A8D920030C138 /* JSPresentCommonViewTransition.m */; };
-		9039989C1D0A8F5C0030C138 /* AllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039989B1D0A8F5C0030C138 /* AllViewController.m */; };
+		903998981D0A8D920030C138 /* JSDatePickerViewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998971D0A8D920030C138 /* JSDatePickerViewTransition.m */; };
 		903998A11D0A90740030C138 /* JSSimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998A01D0A90740030C138 /* JSSimpleTableViewCell.m */; };
 		903998A41D0A90E30030C138 /* JSSimpleTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998A31D0A90E30030C138 /* JSSimpleTableViewCellModel.m */; };
 		903998AD1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998AC1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m */; };
 		903998B01D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */; };
+		903998B41D0AA09E0030C138 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998B31D0AA09E0030C138 /* AnimationViewController.m */; };
+		903998B71D0AA5330030C138 /* JSPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998B61D0AA5330030C138 /* JSPickerViewController.m */; };
+		903998BA1D0AAD900030C138 /* JSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998B91D0AAD900030C138 /* JSDatePickerViewController.m */; };
 		90E3CAE31D05845900F4AD20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE21D05845900F4AD20 /* main.m */; };
 		90E3CAE61D05845900F4AD20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE51D05845900F4AD20 /* AppDelegate.m */; };
 		90E3CAE91D05845900F4AD20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE81D05845900F4AD20 /* ViewController.m */; };
@@ -40,8 +42,6 @@
 		90E3CC241D0584FD00F4AD20 /* JSBasicViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB281D0584FD00F4AD20 /* JSBasicViewController+ThreeDTouch.m */; };
 		90E3CC251D0584FD00F4AD20 /* JSBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB2A1D0584FD00F4AD20 /* JSBasicViewController.m */; };
 		90E3CC261D0584FD00F4AD20 /* JSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB2D1D0584FD00F4AD20 /* JSNavigationController.m */; };
-		90E3CC271D0584FD00F4AD20 /* JSPresentCommonViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB311D0584FD00F4AD20 /* JSPresentCommonViewCtrl.m */; };
-		90E3CC281D0584FD00F4AD20 /* JSPresentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB331D0584FD00F4AD20 /* JSPresentView.m */; };
 		90E3CC291D0584FD00F4AD20 /* JSBigItemImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB371D0584FD00F4AD20 /* JSBigItemImageViewController.m */; };
 		90E3CC2A1D0584FD00F4AD20 /* JSItemImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB391D0584FD00F4AD20 /* JSItemImageViewController.m */; };
 		90E3CC2B1D0584FD00F4AD20 /* JSItemImageViewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB3B1D0584FD00F4AD20 /* JSItemImageViewTransition.m */; };
@@ -195,10 +195,8 @@
 		9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+Badge.m"; sourceTree = "<group>"; };
 		903998901D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabbarViewController+NavigationControllerDelegate.h"; sourceTree = "<group>"; };
 		903998911D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+NavigationControllerDelegate.m"; sourceTree = "<group>"; };
-		903998961D0A8D920030C138 /* JSPresentCommonViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPresentCommonViewTransition.h; sourceTree = "<group>"; };
-		903998971D0A8D920030C138 /* JSPresentCommonViewTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPresentCommonViewTransition.m; sourceTree = "<group>"; };
-		9039989A1D0A8F5C0030C138 /* AllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllViewController.h; sourceTree = "<group>"; };
-		9039989B1D0A8F5C0030C138 /* AllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllViewController.m; sourceTree = "<group>"; };
+		903998961D0A8D920030C138 /* JSDatePickerViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDatePickerViewTransition.h; sourceTree = "<group>"; };
+		903998971D0A8D920030C138 /* JSDatePickerViewTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDatePickerViewTransition.m; sourceTree = "<group>"; };
 		9039989F1D0A90740030C138 /* JSSimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCell.h; sourceTree = "<group>"; };
 		903998A01D0A90740030C138 /* JSSimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCell.m; sourceTree = "<group>"; };
 		903998A21D0A90E30030C138 /* JSSimpleTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModel.h; sourceTree = "<group>"; };
@@ -207,6 +205,12 @@
 		903998AC1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModelGroupHelper.m; sourceTree = "<group>"; };
 		903998AE1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModelSingleHelper.h; sourceTree = "<group>"; };
 		903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModelSingleHelper.m; sourceTree = "<group>"; };
+		903998B21D0AA09E0030C138 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		903998B31D0AA09E0030C138 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		903998B51D0AA5330030C138 /* JSPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPickerViewController.h; sourceTree = "<group>"; };
+		903998B61D0AA5330030C138 /* JSPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPickerViewController.m; sourceTree = "<group>"; };
+		903998B81D0AAD900030C138 /* JSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDatePickerViewController.h; sourceTree = "<group>"; };
+		903998B91D0AAD900030C138 /* JSDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDatePickerViewController.m; sourceTree = "<group>"; };
 		90E3CADE1D05845800F4AD20 /* kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E3CAE21D05845900F4AD20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90E3CAE41D05845900F4AD20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -241,10 +245,6 @@
 		90E3CB2A1D0584FD00F4AD20 /* JSBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBasicViewController.m; sourceTree = "<group>"; };
 		90E3CB2C1D0584FD00F4AD20 /* JSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNavigationController.h; sourceTree = "<group>"; };
 		90E3CB2D1D0584FD00F4AD20 /* JSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNavigationController.m; sourceTree = "<group>"; };
-		90E3CB301D0584FD00F4AD20 /* JSPresentCommonViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPresentCommonViewCtrl.h; sourceTree = "<group>"; };
-		90E3CB311D0584FD00F4AD20 /* JSPresentCommonViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPresentCommonViewCtrl.m; sourceTree = "<group>"; };
-		90E3CB321D0584FD00F4AD20 /* JSPresentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPresentView.h; sourceTree = "<group>"; };
-		90E3CB331D0584FD00F4AD20 /* JSPresentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPresentView.m; sourceTree = "<group>"; };
 		90E3CB361D0584FD00F4AD20 /* JSBigItemImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBigItemImageViewController.h; sourceTree = "<group>"; };
 		90E3CB371D0584FD00F4AD20 /* JSBigItemImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBigItemImageViewController.m; sourceTree = "<group>"; };
 		90E3CB381D0584FD00F4AD20 /* JSItemImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSItemImageViewController.h; sourceTree = "<group>"; };
@@ -574,8 +574,6 @@
 		903998991D0A8F400030C138 /* 各种控件用法 */ = {
 			isa = PBXGroup;
 			children = (
-				9039989A1D0A8F5C0030C138 /* AllViewController.h */,
-				9039989B1D0A8F5C0030C138 /* AllViewController.m */,
 			);
 			path = "各种控件用法";
 			sourceTree = "<group>";
@@ -601,6 +599,15 @@
 				903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */,
 			);
 			path = SingleTableViewCell;
+			sourceTree = "<group>";
+		};
+		903998B11D0AA08A0030C138 /* 动画运用 */ = {
+			isa = PBXGroup;
+			children = (
+				903998B21D0AA09E0030C138 /* AnimationViewController.h */,
+				903998B31D0AA09E0030C138 /* AnimationViewController.m */,
+			);
+			path = "动画运用";
 			sourceTree = "<group>";
 		};
 		90E3CAD51D05845800F4AD20 = {
@@ -778,12 +785,12 @@
 		90E3CB2F1D0584FD00F4AD20 /* UIDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				90E3CB301D0584FD00F4AD20 /* JSPresentCommonViewCtrl.h */,
-				90E3CB311D0584FD00F4AD20 /* JSPresentCommonViewCtrl.m */,
-				90E3CB321D0584FD00F4AD20 /* JSPresentView.h */,
-				90E3CB331D0584FD00F4AD20 /* JSPresentView.m */,
-				903998961D0A8D920030C138 /* JSPresentCommonViewTransition.h */,
-				903998971D0A8D920030C138 /* JSPresentCommonViewTransition.m */,
+				903998961D0A8D920030C138 /* JSDatePickerViewTransition.h */,
+				903998971D0A8D920030C138 /* JSDatePickerViewTransition.m */,
+				903998B51D0AA5330030C138 /* JSPickerViewController.h */,
+				903998B61D0AA5330030C138 /* JSPickerViewController.m */,
+				903998B81D0AAD900030C138 /* JSDatePickerViewController.h */,
+				903998B91D0AAD900030C138 /* JSDatePickerViewController.m */,
 			);
 			path = UIDatePicker;
 			sourceTree = "<group>";
@@ -1443,6 +1450,7 @@
 		90E3CC7D1D05850600F4AD20 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				903998B11D0AA08A0030C138 /* 动画运用 */,
 				90F0BB2E1D07CAF700CD24D6 /* Login */,
 				90F0BB031D0670DE00CD24D6 /* Address */,
 				90E3CC7E1D05850600F4AD20 /* Account */,
@@ -1870,7 +1878,7 @@
 				90E3CC6E1D0584FD00F4AD20 /* JSApplePay.m in Sources */,
 				90F0BAF51D065D8E00CD24D6 /* TAAbstractDotView.m in Sources */,
 				90E3CC441D0584FD00F4AD20 /* JSTableViewController+TableHeaderFooter.m in Sources */,
-				903998981D0A8D920030C138 /* JSPresentCommonViewTransition.m in Sources */,
+				903998981D0A8D920030C138 /* JSDatePickerViewTransition.m in Sources */,
 				90E3CC571D0584FD00F4AD20 /* NSDate+stringFromDate.m in Sources */,
 				90E3CC201D0584FD00F4AD20 /* HYBEaseInOutTransition.m in Sources */,
 				90E3CC311D0584FD00F4AD20 /* JSHorizontalPageView.m in Sources */,
@@ -1907,6 +1915,7 @@
 				90F0BAFF1D065F3C00CD24D6 /* HeadBannerReusableView.m in Sources */,
 				90E3CC6A1D0584FD00F4AD20 /* UIView+Coordinates.m in Sources */,
 				90E3CC4F1D0584FD00F4AD20 /* AppDelegate+ThridDTouch.m in Sources */,
+				903998BA1D0AAD900030C138 /* JSDatePickerViewController.m in Sources */,
 				90E3CC671D0584FD00F4AD20 /* UIImage+Extend.m in Sources */,
 				90E3CC321D0584FD00F4AD20 /* JSCollectionViewController+CollectionView.m in Sources */,
 				90E3CC401D0584FD00F4AD20 /* JSStretchableTableHeaderView.m in Sources */,
@@ -1931,19 +1940,19 @@
 				90E3CC5E1D0584FD00F4AD20 /* NSString+dateFromString.m in Sources */,
 				90E3CC611D0584FD00F4AD20 /* JSDIYButton.m in Sources */,
 				90E3CC491D0584FD00F4AD20 /* JSMD5.m in Sources */,
-				90E3CC281D0584FD00F4AD20 /* JSPresentView.m in Sources */,
 				90E3CAE31D05845900F4AD20 /* main.m in Sources */,
 				90E3CC3A1D0584FD00F4AD20 /* JSWaterFlowLayout.m in Sources */,
 				90E3CC5B1D0584FD00F4AD20 /* NSObject+SDWebImage.m in Sources */,
+				903998B41D0AA09E0030C138 /* AnimationViewController.m in Sources */,
 				90F0BAD51D06569F00CD24D6 /* JSBaseProductCollectionCell.m in Sources */,
 				90E3CC481D0584FD00F4AD20 /* JSTableViewController.m in Sources */,
 				90F0BADE1D06569F00CD24D6 /* JSProductCollectionViewCellModel.m in Sources */,
 				90E3CC551D0584FD00F4AD20 /* NSArray+Extend.m in Sources */,
 				90F0BAF81D065D8E00CD24D6 /* TAPageControl.m in Sources */,
+				903998B71D0AA5330030C138 /* JSPickerViewController.m in Sources */,
 				90F0BAD91D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.m in Sources */,
 				90E3CC601D0584FD00F4AD20 /* NSString+Password.m in Sources */,
 				90E3CC4D1D0584FD00F4AD20 /* JSNetWork+POST.m in Sources */,
-				90E3CC271D0584FD00F4AD20 /* JSPresentCommonViewCtrl.m in Sources */,
 				90E3CC331D0584FD00F4AD20 /* JSCollectionViewController+MJRefresh.m in Sources */,
 				90E3CC741D0584FD00F4AD20 /* NinaPagerView.m in Sources */,
 				9039988C1D0A61840030C138 /* JSTabbarViewController.m in Sources */,
@@ -1975,7 +1984,6 @@
 				9039988A1D0A61840030C138 /* JSTabbarItem.m in Sources */,
 				90E3CC661D0584FD00F4AD20 /* UIImage+Cut.m in Sources */,
 				90E3CC641D0584FD00F4AD20 /* UIFont+Extend.m in Sources */,
-				9039989C1D0A8F5C0030C138 /* AllViewController.m in Sources */,
 				90E3CC3C1D0584FD00F4AD20 /* WeChatStylePlaceHolder.m in Sources */,
 				90F0BAF91D065D8E00CD24D6 /* SDCollectionViewCell.m in Sources */,
 				90F0BAFB1D065D8E00CD24D6 /* UIView+SDExtension.m in Sources */,

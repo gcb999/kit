@@ -6,9 +6,9 @@
 //  Copyright © 2016年 com.sailvan.gcb999. All rights reserved.
 //
 
-#import "JSPresentCommonViewTransition.h"
+#import "JSDatePickerViewTransition.h"
 
-@implementation JSPresentCommonViewTransition
+@implementation JSDatePickerViewTransition
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     
@@ -33,15 +33,13 @@
     if (self.transitionMode == kHYBTransitionPresent) {
         
         
-        CGRect hrect,rect=CGRectMake(0, 0, IPHONScreenWidth, IPHONScreenHeight);
-        CGRectDivide(rect, &hrect, &rect, IPHONScreenHeight-self.height, CGRectMinYEdge);
-        toView.frame=rect;
-    
+      
         
-        toView.frame=CGRectMake(0, IPHONScreenHeight, IPHONScreenWidth, IPHONScreenHeight);
+     
+        
         [UIView animateWithDuration:self.duration delay:0 usingSpringWithDamping:self.damp initialSpringVelocity:self.initialSpringVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
-            toView.frame=rect;
+        toView.frame=CGRectMake(0, 0, IPHONScreenWidth, IPHONScreenHeight);
             
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
