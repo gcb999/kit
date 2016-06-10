@@ -47,14 +47,14 @@
                 NSArray *temp=[absoulutString componentsSeparatedByString:@"spu="];
                 if (temp && [temp isKindOfClass:[NSArray class]]) {
                     NSString *spu=[temp lastObject];
-                    
-                    NSArray<UIViewController *>* viewControllers=  [JSTabBarControllerConfig shareInstance].tabBarController.viewControllers;
-                    UINavigationController *nav= (UINavigationController *)viewControllers[0];
-                    if (openCtrlClass) {
-                        UIViewController *detailCtlr=(UIViewController *) [[openCtrlClass alloc] init];
-                        //detailCtlr.spu=spu;
-                        [nav pushViewController:detailCtlr animated:YES];
-                    }
+//                    
+//                    NSArray<UIViewController *>* viewControllers=  [JSTabBarControllerConfig shareInstance].tabBarController.viewControllers;
+//                    UINavigationController *nav= (UINavigationController *)viewControllers[0];
+//                    if (openCtrlClass) {
+//                        UIViewController *detailCtlr=(UIViewController *) [[openCtrlClass alloc] init];
+//                        //detailCtlr.spu=spu;
+//                        [nav pushViewController:detailCtlr animated:YES];
+//                    }
                 }
                 
             }

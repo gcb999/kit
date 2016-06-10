@@ -33,6 +33,7 @@
     
     //横栏
    JSTabbarViewController *config=[[JSTabbarViewController alloc] init];
+
     
     [self.window setRootViewController:config];
     self.window.backgroundColor=[UIColor whiteColor];

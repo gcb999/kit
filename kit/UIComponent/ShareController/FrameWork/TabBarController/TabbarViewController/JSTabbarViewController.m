@@ -7,33 +7,51 @@
 //
 
 #import "JSTabbarViewController.h"
+#import "JSTabbarItemHelpModel.h"
 #define kJSTabbarHeight 49
 
 @interface JSTabbarViewController ()<JSTabbarDelegate>
 
 
-@property(nonatomic,strong)NSArray < JSTabbarItemModel *> *items;
-
 @end
 
 @implementation JSTabbarViewController
 
+
+#pragma mark -生命周期
+
 - (void)viewDidLoad {
   
-    
     [super viewDidLoad];
     
-
-    
-    //添加ContentView
+   //添加ContentView
     [self.view addSubview:self.contentView];
     
     //添加Tabbar
     [self.view addSubview:self.tabbar];
     
-//    [self tabbarItemChangeFrom:0 to:0 ];
+    
+    [self InitController];
+
+    //
+    [self tabbarItemChangeFrom:0 to:0 ];
     
     
+    
+}
+
+-(void)InitController{
+    
+    for (JSTabbarItemModel *model in [JSTabbarItemHelpModel shareInstance].tabbarItemModels) {
+        
+        NSString *title=model.title;
+        NSString *normal=model.normal;
+        NSString *highlighted=model.highlighted;
+        Class cls=NSClassFromString(model.ctrl);
+        UIViewController *vc=(UIViewController *)[[cls alloc] init];
+        [self addController:vc title:title normal:normal highlighted:highlighted];
+        
+    }
     
 }
 
@@ -85,6 +103,8 @@
 
 #pragma mark -UI Getter
 
+
+
 -(UIView *)contentView{
     if (_contentView==nil) {
         CGSize size = self.view.bounds.size;
@@ -100,7 +120,7 @@
     if (_tabbar==nil) {
         CGSize size = self.view.bounds.size;
         CGRect frame = CGRectMake(0, size.height - kJSTabbarHeight, size.width, kJSTabbarHeight);
-         _tabbar = [[JSTabbar alloc] initWithFrame:frame items:self.items];
+         _tabbar = [[JSTabbar alloc] initWithFrame:frame items:[JSTabbarItemHelpModel shareInstance].tabbarItemModels];
         // 设置代理
         _tabbar.delegate = self;
     
@@ -108,31 +128,8 @@
     return _tabbar;
 }
 
--(NSArray<JSTabbarItemModel *> *)items{
-    
-    if (_items==nil) {
- 
-        NSMutableArray<JSTabbarItemModel *> *arr=[NSMutableArray array];
-        //1:读取配置文件
-        NSString *content= [self readBundleFileName:@"JSTabBarControllerConfig.json"];
-        NSDictionary *contentDic= [content JSONObject];
-        if (IS_NSDictionary(contentDic)) {
-            NSArray *contentArr=contentDic[@"content"];
-            if (IS_NSArray(contentArr)) {
-                for (NSDictionary *dic in contentArr) {
-                    JSTabbarItemModel *model = [JSTabbarItemModel objectWithKeyValues:dic];
-                   [ arr addObject:model];
-                }
-                
-                
-            }
-            
-        }
-        _items=arr;
-  
-    }
-    return _items;
-    
-}
+
+
+
 
 @end

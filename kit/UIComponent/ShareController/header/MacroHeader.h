@@ -15,8 +15,6 @@
 //实体
 #import "JSUserSingletonModel.h"
 
-#import "UITabBar+Badge.h"
-#import "WZLBadgeImport.h"
 
 
 #pragma mark -----------第三方头文件------------
@@ -59,7 +57,9 @@
 #import "JSSideSlippingControllerConfig.h"
 
 //横栏
-#import "JSTabBarControllerConfig.h"
+#import "JSTabbarViewController.h"
+#import "JSTabbarViewController+shareInstance.h"
+#import "JSTabbarViewController+Badge.h"
 
 
 
@@ -272,6 +272,7 @@
 //UIView
 #import "UIView+Extend.h"
 #import "UIView+Coordinates.h"
+#import "UIView+Badge.h"
 
 
 

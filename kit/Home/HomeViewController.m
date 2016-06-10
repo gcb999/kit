@@ -47,8 +47,22 @@
 
 -(void)JSCollectionViewController:(JSCollectionViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    if (indexPath.row==0) {
+          [[JSTabbarViewController shareInstance] showBadge:@"50" tabbarIndex:2 Animation:NO];
+    }
+    else if (indexPath.row==1){
+         [[JSTabbarViewController shareInstance] showBadge:@"50" tabbarIndex:2 Animation:YES];
+    }
+    else if (indexPath.row==2){
+         [[JSTabbarViewController shareInstance] showBadge:@"100" tabbarIndex:2 Animation:YES];
+    }
+    else if (indexPath.row==3){
+        [[JSTabbarViewController shareInstance] hideBageWithTabbarIndex:2];
+        
+    }
+    
     //隐藏
-    [self.tabBarController.tabBar hideBadgeOnItemIndex:2];
+//    [self.tabBarController.tabBar hideBadgeOnItemIndex:2];
 //      [self.navigationController.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", 12]];
 
     return;
@@ -108,12 +122,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 
-    UITabBarItem *firstItem = self.tabBarController.tabBar.items.firstObject;
-    //it is necessary to adjust badge position
-//    firstItem.badgeCenterOffset = CGPointMake(-50, 8);
-//    [firstItem showBadge];
-    //显示
-    [firstItem showBadgeWithStyle:WBadgeStyleNumber value:55 animationType:WBadgeAnimTypeNone];
+    [[JSTabbarViewController shareInstance] showBadge:@"10" tabbarIndex:2 Animation:NO];
 
 }
 

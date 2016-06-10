@@ -7,7 +7,7 @@
 //
 
 #import "JSTabbarItem.h"
-#define  KJSTabbarItem 0.75
+#define  KJSTabbarItemImageHeight 0.6
 
 @implementation JSTabbarItem
 - (id)initWithFrame:(CGRect)frame itemDesc:(JSTabbarItemModel *)desc {
@@ -29,10 +29,15 @@
         
         // 设置文字
         [self setTitle:desc.title forState:UIControlStateNormal];
+        
         // 设置文字居中
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         // 设置字体大小
         self.titleLabel.font = [UIFont systemFontOfSize:10];
+        
+        [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        [self setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
     }
     return self;
 }
@@ -41,16 +46,23 @@
 #pragma mark 设置按钮标题的frame
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
     
-    UIImage *image =  [self imageForState:UIControlStateNormal];
-    CGFloat titleY = image.size.height - 3;
-    CGFloat titleHeight = self.bounds.size.height - titleY;
-    return CGRectMake(0, titleY, self.bounds.size.width,  titleHeight);
+    CGRect hrect;
+    CGFloat height=contentRect.size.height*KJSTabbarItemImageHeight;
+    CGRectDivide(contentRect, &hrect, &contentRect, height, CGRectMinYEdge);
+    return contentRect;
 }
 #pragma mark 设置按钮图片的frame
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
-    UIImage *image =  [self imageForState:UIControlStateNormal];
-    return CGRectMake(0, 0, self.bounds.size.width, image.size.height);
+    
+    CGRect hrect;
+    CGFloat height=contentRect.size.height*KJSTabbarItemImageHeight;
+    CGRectDivide(contentRect, &hrect, &contentRect, height, CGRectMinYEdge);
+    return [self centerForParentViewFrame:hrect subsize:CGSizeMake(30, 30)];
 }
+
+
+
+
 
 @end
 

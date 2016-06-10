@@ -13,8 +13,8 @@
 @property (nonatomic, copy) NSString *title; // 标题
 @property (nonatomic, copy) NSString *normal; //默认图标
 @property (nonatomic, copy) NSString *highlighted; // 高亮图标
-
 @property (nonatomic, copy) NSString *ctrl; // 对应控制器
 
 
 @end
+

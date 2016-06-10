@@ -15,12 +15,6 @@
 
 @property(nonatomic,strong)JSTabbar *tabbar;
 
-@property (nonatomic, readwrite, copy) NSArray<UIViewController *> *viewControllers;
-
-/*!
- * The Attributes of items which is displayed on the tab bar.
- */
-@property (nonatomic, readwrite, copy) NSArray<NSDictionary *> *tabBarItemsAttributes;
 
 
 @end

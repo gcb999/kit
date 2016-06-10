@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		47B0D1699B79813D5F5812AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEE6E7B51FE480A31B50DE7 /* libPods.a */; };
+		903998741D0A56740030C138 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998731D0A56740030C138 /* UIView+Badge.m */; };
+		903998871D0A61840030C138 /* JSTabbarItemHelpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987A1D0A61840030C138 /* JSTabbarItemHelpModel.m */; };
+		903998881D0A61840030C138 /* JSTabbarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987C1D0A61840030C138 /* JSTabbarItemModel.m */; };
+		903998891D0A61840030C138 /* JSTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987F1D0A61840030C138 /* JSTabbar.m */; };
+		9039988A1D0A61840030C138 /* JSTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998811D0A61840030C138 /* JSTabbarItem.m */; };
+		9039988B1D0A61840030C138 /* JSTabbarViewController+shareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998841D0A61840030C138 /* JSTabbarViewController+shareInstance.m */; };
+		9039988C1D0A61840030C138 /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998861D0A61840030C138 /* JSTabbarViewController.m */; };
+		9039988F1D0A64120030C138 /* JSTabbarViewController+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */; };
 		90E3CAE31D05845900F4AD20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE21D05845900F4AD20 /* main.m */; };
 		90E3CAE61D05845900F4AD20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE51D05845900F4AD20 /* AppDelegate.m */; };
 		90E3CAE91D05845900F4AD20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE81D05845900F4AD20 /* ViewController.m */; };
@@ -32,9 +40,6 @@
 		90E3CC2B1D0584FD00F4AD20 /* JSItemImageViewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB3B1D0584FD00F4AD20 /* JSItemImageViewTransition.m */; };
 		90E3CC2C1D0584FD00F4AD20 /* JSItemImgageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB3D1D0584FD00F4AD20 /* JSItemImgageViewCell.m */; };
 		90E3CC2D1D0584FD00F4AD20 /* JSSideSlippingControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB411D0584FD00F4AD20 /* JSSideSlippingControllerConfig.m */; };
-		90E3CC2E1D0584FD00F4AD20 /* JSTabBarControllerConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 90E3CB441D0584FD00F4AD20 /* JSTabBarControllerConfig.json */; };
-		90E3CC2F1D0584FD00F4AD20 /* JSTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB451D0584FD00F4AD20 /* JSTabBarControllerConfig.m */; };
-		90E3CC301D0584FD00F4AD20 /* JSTabBarControllerConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB471D0584FD00F4AD20 /* JSTabBarControllerConfigModel.m */; };
 		90E3CC311D0584FD00F4AD20 /* JSHorizontalPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB4D1D0584FD00F4AD20 /* JSHorizontalPageView.m */; };
 		90E3CC321D0584FD00F4AD20 /* JSCollectionViewController+CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB521D0584FD00F4AD20 /* JSCollectionViewController+CollectionView.m */; };
 		90E3CC331D0584FD00F4AD20 /* JSCollectionViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CB541D0584FD00F4AD20 /* JSCollectionViewController+MJRefresh.m */; };
@@ -148,15 +153,6 @@
 		90F0BB291D07AAD200CD24D6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB221D07AAD200CD24D6 /* FBSDKShareKit.framework */; };
 		90F0BB2D1D07AB7900CD24D6 /* JSFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */; };
 		90F0BB311D07CB0A00CD24D6 /* JSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */; };
-		90F0BB441D08129800CD24D6 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB431D08129800CD24D6 /* UITabBar+Badge.m */; };
-		90F0BB541D08176000CD24D6 /* UIBarButtonItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB481D08176000CD24D6 /* UIBarButtonItem+WZLBadge.m */; };
-		90F0BB551D08176000CD24D6 /* UITabBarItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB4A1D08176000CD24D6 /* UITabBarItem+WZLBadge.m */; };
-		90F0BB561D08176000CD24D6 /* CAAnimation+WAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB4D1D08176000CD24D6 /* CAAnimation+WAnimation.m */; };
-		90F0BB571D08176000CD24D6 /* UIView+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB521D08176000CD24D6 /* UIView+WZLBadge.m */; };
-		90F0BB5A1D081A6C00CD24D6 /* JSTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB591D081A6C00CD24D6 /* JSTabbar.m */; };
-		90F0BB5D1D081B2700CD24D6 /* JSTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB5C1D081B2700CD24D6 /* JSTabbarItem.m */; };
-		90F0BB601D081B9B00CD24D6 /* JSTabbarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB5F1D081B9B00CD24D6 /* JSTabbarItemModel.m */; };
-		90F0BB631D081EAB00CD24D6 /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB621D081EAB00CD24D6 /* JSTabbarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +174,22 @@
 
 /* Begin PBXFileReference section */
 		4FEE6E7B51FE480A31B50DE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		903998721D0A56740030C138 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
+		903998731D0A56740030C138 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
+		903998791D0A61840030C138 /* JSTabbarItemHelpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemHelpModel.h; sourceTree = "<group>"; };
+		9039987A1D0A61840030C138 /* JSTabbarItemHelpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItemHelpModel.m; sourceTree = "<group>"; };
+		9039987B1D0A61840030C138 /* JSTabbarItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemModel.h; sourceTree = "<group>"; };
+		9039987C1D0A61840030C138 /* JSTabbarItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItemModel.m; sourceTree = "<group>"; };
+		9039987E1D0A61840030C138 /* JSTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbar.h; sourceTree = "<group>"; };
+		9039987F1D0A61840030C138 /* JSTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbar.m; sourceTree = "<group>"; };
+		903998801D0A61840030C138 /* JSTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItem.h; sourceTree = "<group>"; };
+		903998811D0A61840030C138 /* JSTabbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItem.m; sourceTree = "<group>"; };
+		903998831D0A61840030C138 /* JSTabbarViewController+shareInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabbarViewController+shareInstance.h"; sourceTree = "<group>"; };
+		903998841D0A61840030C138 /* JSTabbarViewController+shareInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+shareInstance.m"; sourceTree = "<group>"; };
+		903998851D0A61840030C138 /* JSTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarViewController.h; sourceTree = "<group>"; };
+		903998861D0A61840030C138 /* JSTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarViewController.m; sourceTree = "<group>"; };
+		9039988D1D0A64120030C138 /* JSTabbarViewController+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabbarViewController+Badge.h"; sourceTree = "<group>"; };
+		9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+Badge.m"; sourceTree = "<group>"; };
 		90E3CADE1D05845800F4AD20 /* kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E3CAE21D05845900F4AD20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90E3CAE41D05845900F4AD20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -226,11 +238,6 @@
 		90E3CB3D1D0584FD00F4AD20 /* JSItemImgageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSItemImgageViewCell.m; sourceTree = "<group>"; };
 		90E3CB401D0584FD00F4AD20 /* JSSideSlippingControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSideSlippingControllerConfig.h; sourceTree = "<group>"; };
 		90E3CB411D0584FD00F4AD20 /* JSSideSlippingControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSideSlippingControllerConfig.m; sourceTree = "<group>"; };
-		90E3CB431D0584FD00F4AD20 /* JSTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBarControllerConfig.h; sourceTree = "<group>"; };
-		90E3CB441D0584FD00F4AD20 /* JSTabBarControllerConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSTabBarControllerConfig.json; sourceTree = "<group>"; };
-		90E3CB451D0584FD00F4AD20 /* JSTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBarControllerConfig.m; sourceTree = "<group>"; };
-		90E3CB461D0584FD00F4AD20 /* JSTabBarControllerConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBarControllerConfigModel.h; sourceTree = "<group>"; };
-		90E3CB471D0584FD00F4AD20 /* JSTabBarControllerConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBarControllerConfigModel.m; sourceTree = "<group>"; };
 		90E3CB491D0584FD00F4AD20 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		90E3CB4A1D0584FD00F4AD20 /* MacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		90E3CB4C1D0584FD00F4AD20 /* JSHorizontalPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHorizontalPageView.h; sourceTree = "<group>"; };
@@ -470,26 +477,6 @@
 		90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFaceBook.m; sourceTree = "<group>"; };
 		90F0BB2F1D07CB0A00CD24D6 /* JSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginViewController.h; sourceTree = "<group>"; };
 		90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginViewController.m; sourceTree = "<group>"; };
-		90F0BB421D08129800CD24D6 /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
-		90F0BB431D08129800CD24D6 /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
-		90F0BB471D08176000CD24D6 /* UIBarButtonItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WZLBadge.h"; sourceTree = "<group>"; };
-		90F0BB481D08176000CD24D6 /* UIBarButtonItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WZLBadge.m"; sourceTree = "<group>"; };
-		90F0BB491D08176000CD24D6 /* UITabBarItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+WZLBadge.h"; sourceTree = "<group>"; };
-		90F0BB4A1D08176000CD24D6 /* UITabBarItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+WZLBadge.m"; sourceTree = "<group>"; };
-		90F0BB4C1D08176000CD24D6 /* CAAnimation+WAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+WAnimation.h"; sourceTree = "<group>"; };
-		90F0BB4D1D08176000CD24D6 /* CAAnimation+WAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+WAnimation.m"; sourceTree = "<group>"; };
-		90F0BB4F1D08176000CD24D6 /* WZLBadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeProtocol.h; sourceTree = "<group>"; };
-		90F0BB511D08176000CD24D6 /* UIView+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZLBadge.h"; sourceTree = "<group>"; };
-		90F0BB521D08176000CD24D6 /* UIView+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZLBadge.m"; sourceTree = "<group>"; };
-		90F0BB531D08176000CD24D6 /* WZLBadgeImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeImport.h; sourceTree = "<group>"; };
-		90F0BB581D081A6C00CD24D6 /* JSTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbar.h; sourceTree = "<group>"; };
-		90F0BB591D081A6C00CD24D6 /* JSTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbar.m; sourceTree = "<group>"; };
-		90F0BB5B1D081B2700CD24D6 /* JSTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItem.h; sourceTree = "<group>"; };
-		90F0BB5C1D081B2700CD24D6 /* JSTabbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItem.m; sourceTree = "<group>"; };
-		90F0BB5E1D081B9B00CD24D6 /* JSTabbarItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemModel.h; sourceTree = "<group>"; };
-		90F0BB5F1D081B9B00CD24D6 /* JSTabbarItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItemModel.m; sourceTree = "<group>"; };
-		90F0BB611D081EAB00CD24D6 /* JSTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarViewController.h; sourceTree = "<group>"; };
-		90F0BB621D081EAB00CD24D6 /* JSTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarViewController.m; sourceTree = "<group>"; };
 		AA4DF6D4455F513206F99F7B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F3AF553FEEBEF8E7D28429 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -534,6 +521,41 @@
 				F5F3AF553FEEBEF8E7D28429 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		903998781D0A61840030C138 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				903998791D0A61840030C138 /* JSTabbarItemHelpModel.h */,
+				9039987A1D0A61840030C138 /* JSTabbarItemHelpModel.m */,
+				9039987B1D0A61840030C138 /* JSTabbarItemModel.h */,
+				9039987C1D0A61840030C138 /* JSTabbarItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9039987D1D0A61840030C138 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				9039987E1D0A61840030C138 /* JSTabbar.h */,
+				9039987F1D0A61840030C138 /* JSTabbar.m */,
+				903998801D0A61840030C138 /* JSTabbarItem.h */,
+				903998811D0A61840030C138 /* JSTabbarItem.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		903998821D0A61840030C138 /* TabbarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				903998831D0A61840030C138 /* JSTabbarViewController+shareInstance.h */,
+				903998841D0A61840030C138 /* JSTabbarViewController+shareInstance.m */,
+				903998851D0A61840030C138 /* JSTabbarViewController.h */,
+				903998861D0A61840030C138 /* JSTabbarViewController.m */,
+				9039988D1D0A64120030C138 /* JSTabbarViewController+Badge.h */,
+				9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */,
+			);
+			path = TabbarViewController;
 			sourceTree = "<group>";
 		};
 		90E3CAD51D05845800F4AD20 = {
@@ -761,15 +783,9 @@
 		90E3CB421D0584FD00F4AD20 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				90F0BB451D08176000CD24D6 /* WZLBadge */,
-				90F0BB351D07FE9900CD24D6 /* CustomUI */,
-				90E3CB431D0584FD00F4AD20 /* JSTabBarControllerConfig.h */,
-				90E3CB441D0584FD00F4AD20 /* JSTabBarControllerConfig.json */,
-				90E3CB451D0584FD00F4AD20 /* JSTabBarControllerConfig.m */,
-				90E3CB461D0584FD00F4AD20 /* JSTabBarControllerConfigModel.h */,
-				90E3CB471D0584FD00F4AD20 /* JSTabBarControllerConfigModel.m */,
-				90F0BB421D08129800CD24D6 /* UITabBar+Badge.h */,
-				90F0BB431D08129800CD24D6 /* UITabBar+Badge.m */,
+				903998781D0A61840030C138 /* Model */,
+				9039987D1D0A61840030C138 /* Tabbar */,
+				903998821D0A61840030C138 /* TabbarViewController */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -1260,6 +1276,8 @@
 				90E3CBF01D0584FD00F4AD20 /* UIView+Coordinates.m */,
 				90E3CBF11D0584FD00F4AD20 /* UIView+Extend.h */,
 				90E3CBF21D0584FD00F4AD20 /* UIView+Extend.m */,
+				903998721D0A56740030C138 /* UIView+Badge.h */,
+				903998731D0A56740030C138 /* UIView+Badge.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1616,70 +1634,6 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		90F0BB351D07FE9900CD24D6 /* CustomUI */ = {
-			isa = PBXGroup;
-			children = (
-				90F0BB581D081A6C00CD24D6 /* JSTabbar.h */,
-				90F0BB591D081A6C00CD24D6 /* JSTabbar.m */,
-				90F0BB5B1D081B2700CD24D6 /* JSTabbarItem.h */,
-				90F0BB5C1D081B2700CD24D6 /* JSTabbarItem.m */,
-				90F0BB5E1D081B9B00CD24D6 /* JSTabbarItemModel.h */,
-				90F0BB5F1D081B9B00CD24D6 /* JSTabbarItemModel.m */,
-				90F0BB611D081EAB00CD24D6 /* JSTabbarViewController.h */,
-				90F0BB621D081EAB00CD24D6 /* JSTabbarViewController.m */,
-			);
-			path = CustomUI;
-			sourceTree = "<group>";
-		};
-		90F0BB451D08176000CD24D6 /* WZLBadge */ = {
-			isa = PBXGroup;
-			children = (
-				90F0BB461D08176000CD24D6 /* BarItem */,
-				90F0BB4B1D08176000CD24D6 /* CategorySupport */,
-				90F0BB4E1D08176000CD24D6 /* Protocol */,
-				90F0BB501D08176000CD24D6 /* View */,
-				90F0BB531D08176000CD24D6 /* WZLBadgeImport.h */,
-			);
-			path = WZLBadge;
-			sourceTree = "<group>";
-		};
-		90F0BB461D08176000CD24D6 /* BarItem */ = {
-			isa = PBXGroup;
-			children = (
-				90F0BB471D08176000CD24D6 /* UIBarButtonItem+WZLBadge.h */,
-				90F0BB481D08176000CD24D6 /* UIBarButtonItem+WZLBadge.m */,
-				90F0BB491D08176000CD24D6 /* UITabBarItem+WZLBadge.h */,
-				90F0BB4A1D08176000CD24D6 /* UITabBarItem+WZLBadge.m */,
-			);
-			path = BarItem;
-			sourceTree = "<group>";
-		};
-		90F0BB4B1D08176000CD24D6 /* CategorySupport */ = {
-			isa = PBXGroup;
-			children = (
-				90F0BB4C1D08176000CD24D6 /* CAAnimation+WAnimation.h */,
-				90F0BB4D1D08176000CD24D6 /* CAAnimation+WAnimation.m */,
-			);
-			path = CategorySupport;
-			sourceTree = "<group>";
-		};
-		90F0BB4E1D08176000CD24D6 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				90F0BB4F1D08176000CD24D6 /* WZLBadgeProtocol.h */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		90F0BB501D08176000CD24D6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				90F0BB511D08176000CD24D6 /* UIView+WZLBadge.h */,
-				90F0BB521D08176000CD24D6 /* UIView+WZLBadge.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		A3290D4E209946D3FF044C85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1795,7 +1749,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F0BB141D0679F900CD24D6 /* address.plist in Resources */,
-				90E3CC2E1D0584FD00F4AD20 /* JSTabBarControllerConfig.json in Resources */,
 				90E3CC931D05850600F4AD20 /* AccontContent.json in Resources */,
 				90E3CAF11D05845900F4AD20 /* LaunchScreen.storyboard in Resources */,
 				90E3CAEE1D05845900F4AD20 /* Assets.xcassets in Resources */,
@@ -1874,26 +1827,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E3CC2F1D0584FD00F4AD20 /* JSTabBarControllerConfig.m in Sources */,
 				90E3CC901D05850600F4AD20 /* AccountCell.m in Sources */,
 				90F0BB2D1D07AB7900CD24D6 /* JSFaceBook.m in Sources */,
 				90E3CC4C1D0584FD00F4AD20 /* JSNetWork+GET.m in Sources */,
 				90E3CC351D0584FD00F4AD20 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
 				90E3CC471D0584FD00F4AD20 /* JSTableViewController+UIScrollView.m in Sources */,
-				90F0BB551D08176000CD24D6 /* UITabBarItem+WZLBadge.m in Sources */,
 				90E3CC6D1D0584FD00F4AD20 /* UIWindow+Launch.m in Sources */,
 				90E3CC911D05850600F4AD20 /* AccountGroupViewController.m in Sources */,
+				903998881D0A61840030C138 /* JSTabbarItemModel.m in Sources */,
 				90F0BAFA1D065D8E00CD24D6 /* SDCycleScrollView.m in Sources */,
 				90E3CC391D0584FD00F4AD20 /* JSLineLayout.m in Sources */,
 				90E3CC701D0584FD00F4AD20 /* JSPayPal.m in Sources */,
 				90E3CC3B1D0584FD00F4AD20 /* UICollectionView+CYLTableViewPlaceHolder.m in Sources */,
 				90E3CC361D0584FD00F4AD20 /* JSCollectionViewController+UIScrollView.m in Sources */,
 				90E3CC3D1D0584FD00F4AD20 /* XTNetReloader.m in Sources */,
-				90F0BB5D1D081B2700CD24D6 /* JSTabbarItem.m in Sources */,
 				90F0BAD71D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel.m in Sources */,
 				90E3CC6E1D0584FD00F4AD20 /* JSApplePay.m in Sources */,
 				90F0BAF51D065D8E00CD24D6 /* TAAbstractDotView.m in Sources */,
-				90F0BB601D081B9B00CD24D6 /* JSTabbarItemModel.m in Sources */,
 				90E3CC441D0584FD00F4AD20 /* JSTableViewController+TableHeaderFooter.m in Sources */,
 				90E3CC571D0584FD00F4AD20 /* NSDate+stringFromDate.m in Sources */,
 				90E3CC201D0584FD00F4AD20 /* HYBEaseInOutTransition.m in Sources */,
@@ -1901,7 +1851,6 @@
 				90E3CC5A1D0584FD00F4AD20 /* NSObject+Extend.m in Sources */,
 				90E3CAE91D05845900F4AD20 /* ViewController.m in Sources */,
 				90E3CC521D0584FD00F4AD20 /* CALayer+Transition.m in Sources */,
-				90F0BB631D081EAB00CD24D6 /* JSTabbarViewController.m in Sources */,
 				90E3CC4B1D0584FD00F4AD20 /* JSError.m in Sources */,
 				90F0BB021D0668B500CD24D6 /* HomeDetailViewController.m in Sources */,
 				90E3CC341D0584FD00F4AD20 /* JSCollectionViewController+NotWorkView.m in Sources */,
@@ -1911,19 +1860,18 @@
 				90F0BB311D07CB0A00CD24D6 /* JSLoginViewController.m in Sources */,
 				90E3CC5F1D0584FD00F4AD20 /* NSString+Extend.m in Sources */,
 				90E3CC751D0584FD00F4AD20 /* UIView+ViewController.m in Sources */,
+				9039988B1D0A61840030C138 /* JSTabbarViewController+shareInstance.m in Sources */,
 				90E3CC421D0584FD00F4AD20 /* JSTableViewController+NotWorkView.m in Sources */,
 				90E3CC6C1D0584FD00F4AD20 /* UIViewController+NavigationItem.m in Sources */,
 				90E3CC231D0584FD00F4AD20 /* UIViewController+HYBMoveTransition.m in Sources */,
 				90F0BADA1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.m in Sources */,
 				90F0BADC1D06569F00CD24D6 /* JSProductCollectionViewCell.m in Sources */,
-				90E3CC301D0584FD00F4AD20 /* JSTabBarControllerConfigModel.m in Sources */,
 				90E3CC2A1D0584FD00F4AD20 /* JSItemImageViewController.m in Sources */,
 				90E3CC241D0584FD00F4AD20 /* JSBasicViewController+ThreeDTouch.m in Sources */,
 				90E3CC431D0584FD00F4AD20 /* JSTableViewController+StretchableTableHeaderView.m in Sources */,
 				90E3CC591D0584FD00F4AD20 /* NSMutableAttributedString+CBAttributedString.m in Sources */,
 				90E3CC4A1D0584FD00F4AD20 /* JSUserSingletonModel.m in Sources */,
 				90E3CC3E1D0584FD00F4AD20 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
-				90F0BB541D08176000CD24D6 /* UIBarButtonItem+WZLBadge.m in Sources */,
 				90E3CC721D0584FD00F4AD20 /* MJNIndexView.m in Sources */,
 				90E3CC691D0584FD00F4AD20 /* UIImage+Water.m in Sources */,
 				90E3CC461D0584FD00F4AD20 /* JSTableViewController+ThreeDTouch.m in Sources */,
@@ -1932,7 +1880,6 @@
 				90E3CC4F1D0584FD00F4AD20 /* AppDelegate+ThridDTouch.m in Sources */,
 				90E3CC671D0584FD00F4AD20 /* UIImage+Extend.m in Sources */,
 				90E3CC321D0584FD00F4AD20 /* JSCollectionViewController+CollectionView.m in Sources */,
-				90F0BB441D08129800CD24D6 /* UITabBar+Badge.m in Sources */,
 				90E3CC401D0584FD00F4AD20 /* JSStretchableTableHeaderView.m in Sources */,
 				90E3CC621D0584FD00F4AD20 /* UIColor+Extend.m in Sources */,
 				90E3CC581D0584FD00F4AD20 /* NSDictionary+Extension.m in Sources */,
@@ -1947,6 +1894,7 @@
 				90E3CC221D0584FD00F4AD20 /* HYBMoveTransition.m in Sources */,
 				90E3CAE61D05845900F4AD20 /* AppDelegate.m in Sources */,
 				90E3CC261D0584FD00F4AD20 /* JSNavigationController.m in Sources */,
+				903998871D0A61840030C138 /* JSTabbarItemHelpModel.m in Sources */,
 				90E3CC731D0584FD00F4AD20 /* NinaBaseView.m in Sources */,
 				90E3CC961D05850600F4AD20 /* AcountViewController.m in Sources */,
 				90F0BB0C1D0672AA00CD24D6 /* JSMJNIndexTableViewController.m in Sources */,
@@ -1970,12 +1918,12 @@
 				90E3CC271D0584FD00F4AD20 /* JSPresentCommonViewCtrl.m in Sources */,
 				90E3CC331D0584FD00F4AD20 /* JSCollectionViewController+MJRefresh.m in Sources */,
 				90E3CC741D0584FD00F4AD20 /* NinaPagerView.m in Sources */,
+				9039988C1D0A61840030C138 /* JSTabbarViewController.m in Sources */,
 				90E3CC531D0584FD00F4AD20 /* CoreArchive.m in Sources */,
 				90E3CC511D0584FD00F4AD20 /* CALayer+Anim.m in Sources */,
 				90F0BB171D069AF000CD24D6 /* HotCountryCell.m in Sources */,
 				90E3CC451D0584FD00F4AD20 /* JSTableViewController+TableView.m in Sources */,
 				90E3CC3F1D0584FD00F4AD20 /* JSTableGroupViewController.m in Sources */,
-				90F0BB571D08176000CD24D6 /* UIView+WZLBadge.m in Sources */,
 				90F0BAE11D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m in Sources */,
 				90E3CC1E1D0584FD00F4AD20 /* HYBBaseTransition.m in Sources */,
 				90E3CC2D1D0584FD00F4AD20 /* JSSideSlippingControllerConfig.m in Sources */,
@@ -1984,16 +1932,18 @@
 				90E3CC291D0584FD00F4AD20 /* JSBigItemImageViewController.m in Sources */,
 				90E3CC411D0584FD00F4AD20 /* JSTableViewController+MJRefresh.m in Sources */,
 				90F0BAD61D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.m in Sources */,
+				9039988F1D0A64120030C138 /* JSTabbarViewController+Badge.m in Sources */,
 				90E3CC681D0584FD00F4AD20 /* UIImage+FixOrientation.m in Sources */,
 				90E3CC5D1D0584FD00F4AD20 /* NSObject+Utilty.m in Sources */,
 				90F0BB121D06735A00CD24D6 /* CountryModel.m in Sources */,
+				903998891D0A61840030C138 /* JSTabbar.m in Sources */,
 				90F0BAD81D06569F00CD24D6 /* JSBaseProductCollectionCellModel.m in Sources */,
 				90F0BAF61D065D8E00CD24D6 /* TAAnimatedDotView.m in Sources */,
 				90F0BB111D06735A00CD24D6 /* CountryCell.m in Sources */,
 				90E3CC5C1D0584FD00F4AD20 /* NSObject+UICateGory.m in Sources */,
-				90F0BB561D08176000CD24D6 /* CAAnimation+WAnimation.m in Sources */,
 				90E3CC2B1D0584FD00F4AD20 /* JSItemImageViewTransition.m in Sources */,
 				90E3CC501D0584FD00F4AD20 /* UIViewController+ThreeDTouch.m in Sources */,
+				9039988A1D0A61840030C138 /* JSTabbarItem.m in Sources */,
 				90E3CC661D0584FD00F4AD20 /* UIImage+Cut.m in Sources */,
 				90E3CC641D0584FD00F4AD20 /* UIFont+Extend.m in Sources */,
 				90E3CC3C1D0584FD00F4AD20 /* WeChatStylePlaceHolder.m in Sources */,
@@ -2003,8 +1953,8 @@
 				90F0BAF71D065D8E00CD24D6 /* TADotView.m in Sources */,
 				90E3CC541D0584FD00F4AD20 /* MBProgressHUD+Add.m in Sources */,
 				90F0BADB1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m in Sources */,
+				903998741D0A56740030C138 /* UIView+Badge.m in Sources */,
 				90E3CC921D05850600F4AD20 /* HeadView.m in Sources */,
-				90F0BB5A1D081A6C00CD24D6 /* JSTabbar.m in Sources */,
 				90E3CC371D0584FD00F4AD20 /* JSCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
