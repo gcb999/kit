@@ -9,12 +9,13 @@
 
 #import "AnimationViewController.h"
 #import "JSPickerViewController.h"
-#import "JSDatePickerViewTransition.h"
 #import "JSDatePickerViewController.h"
+#import "HomeDetailViewController.h"
 
 @interface AnimationViewController ()
 
-@property(nonatomic,strong)JSDatePickerViewTransition *transition;
+@property(nonatomic,strong)JSPresentBaseTransition *transition;
+@property(nonatomic,strong)JSPresentTransformScaleTransition *scaleTransition;
 @end
 
 
@@ -29,7 +30,11 @@
     
     
     rect=CGRectMake(0, 40, IPHONScreenWidth, 40);
-    btn=[UIButton ButtonWithSystemImage:rect title:@"DatePicker" titleColor:KCOLOR_RED font:KNormalFontSize target:self action:@selector(datePick)];
+    btn=[UIButton ButtonWithSystemImage:rect title:@"DatePicker动画" titleColor:KCOLOR_RED font:KNormalFontSize target:self action:@selector(datePick)];
+    [self.view addSubview:btn];
+    
+    rect=CGRectMake(0, 80, IPHONScreenWidth, 40);
+    btn=[UIButton ButtonWithSystemImage:rect title:@"商品详情动画" titleColor:KCOLOR_RED font:KNormalFontSize target:self action:@selector(detail)];
     [self.view addSubview:btn];
     
     
@@ -42,7 +47,7 @@
     }];
 
     
-    self.transition=[[JSDatePickerViewTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
+    self.transition=[[JSPresentBaseTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
         
     } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
         self.transition.transitionMode = kHYBTransitionDismiss;
@@ -65,7 +70,7 @@
     }];
     
     
-    self.transition=[[JSDatePickerViewTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
+    self.transition=[[JSPresentBaseTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
         
     } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
         self.transition.transitionMode = kHYBTransitionDismiss;
@@ -77,6 +82,13 @@
     [self presentViewController:ctrl animated:YES completion:^{
         
     }];
+    
+}
+-(void)detail{
+    HomeDetailViewController *ctrl=[[HomeDetailViewController alloc] init];
+   
+    [self.navigationController pushViewController:ctrl animated:YES];
+    
     
 }
 @end

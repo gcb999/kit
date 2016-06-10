@@ -1,15 +1,14 @@
 //
-//  JSPresentCommonViewTransition.m
+//  JSPresentTransformScaleTransition.m
 //  kit
 //
 //  Created by gcb999 on 16/6/10.
 //  Copyright © 2016年 com.sailvan.gcb999. All rights reserved.
 //
 
-#import "JSDatePickerViewTransition.h"
+#import "JSPresentTransformScaleTransition.h"
 
-@implementation JSDatePickerViewTransition
-
+@implementation JSPresentTransformScaleTransition
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     
     //1: 得到 containerView
@@ -18,8 +17,7 @@
     //2: 得到 toview fromView
     UIView *toView = [self toView:transitionContext];
     UIView *fromView=[self fromView:transitionContext];
-
-   
+    
     //3: 添加
     toView.alpha = 1.0;
     [containerView addSubview:toView];
@@ -32,14 +30,13 @@
     
     if (self.transitionMode == kHYBTransitionPresent) {
         
+        toView.transform = CGAffineTransformMakeScale(0.001, 0.001);
         
-      
-        
-     
         
         [UIView animateWithDuration:self.duration delay:0 usingSpringWithDamping:self.damp initialSpringVelocity:self.initialSpringVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
-        toView.frame=CGRectMake(0, 0, IPHONScreenWidth, IPHONScreenHeight);
+            toView.transform = CGAffineTransformIdentity;
+            toView.alpha = 1.0;
             
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
@@ -50,7 +47,8 @@
         
         [UIView animateWithDuration:self.duration delay:0 usingSpringWithDamping:self.damp initialSpringVelocity:self.initialSpringVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
-              fromView.frame=CGRectMake(0, IPHONScreenHeight, IPHONScreenWidth, IPHONScreenHeight);
+            fromView.transform = CGAffineTransformMakeScale(0.001, 0.001);
+            fromView.alpha = 0.0;
             
         } completion:^(BOOL finished) {
             

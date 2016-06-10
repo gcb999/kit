@@ -1,5 +1,5 @@
 //
-//  JSPresentCommonViewTransition.h
+//  JSPresentTransformScaleTransition.h
 //  kit
 //
 //  Created by gcb999 on 16/6/10.
@@ -8,8 +8,6 @@
 
 #import "HYBBaseTransition.h"
 
-@interface JSDatePickerViewTransition : HYBBaseTransition
-
-@property(nonatomic,assign)CGFloat  height;
+@interface JSPresentTransformScaleTransition : HYBBaseTransition
 
 @end

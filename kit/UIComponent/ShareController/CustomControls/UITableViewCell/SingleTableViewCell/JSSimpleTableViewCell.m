@@ -29,7 +29,8 @@
         //背景图片
         self.bgImageView=[UIImageView ImageViewImageName:@"" frame:CGRectZero];
         [self.contentView addSubview:self.bgImageView];
-        //图片
+       
+        //图标
         self.iconImageView=[UIImageView ImageViewImageName:@"" frame:CGRectZero];
         [self.bgImageView addSubview:self.iconImageView];
         

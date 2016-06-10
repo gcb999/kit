@@ -91,7 +91,7 @@
 
 #import "JSPickerViewController.h"
 #import "JSDatePickerViewController.h"
-#import "JSDatePickerViewTransition.h"//动画类
+
 
 
 #pragma mark -----------UIButton-------------------
@@ -200,6 +200,10 @@
 //轮播图
 #import "SDCycleScrollView.h"
 
+
+#pragma mark --动画
+#import "JSPresentBaseTransition.h"
+#import "JSPresentTransformScaleTransition.h"
 
 
 

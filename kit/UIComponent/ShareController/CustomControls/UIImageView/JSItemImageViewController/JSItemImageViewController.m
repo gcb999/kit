@@ -9,7 +9,7 @@
 #import "JSItemImageViewController.h"
 #import "JSItemImgageViewCell.h"
 #import "JSBigItemImageViewController.h"
-#import "JSItemImageViewTransition.h"
+
 
 @interface JSItemImageViewController ()<JSCollectionViewControllerDelegate>
 {
@@ -26,7 +26,7 @@
 
 @property (nonatomic , strong) JSBaseFlowLayout *baseFlowLayOut;
 
-@property(nonnull ,strong)JSItemImageViewTransition *transition;
+@property(nonnull ,strong)JSPresentTransformScaleTransition *transition;
 
 @end
 
@@ -90,7 +90,7 @@
     JSBigItemImageViewController *ctrl=[[JSBigItemImageViewController alloc] init];
     ctrl.bigImgUrl=self.bigImgUrls;
     
-    self.transition=[[JSItemImageViewTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
+    self.transition=[[JSPresentTransformScaleTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
         
     } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
          self.transition.transitionMode = kHYBTransitionDismiss;
