@@ -17,7 +17,4 @@
 
 
 
-
-- (void)showOrHidde:(BOOL)show animation:(BOOL)animation;
-
 @end

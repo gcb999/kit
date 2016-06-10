@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[JSTableGroupViewController numberOfSectionsInTableView:]:JSTableGroupViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.sections">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HomeViewController scrollViewDidScroll:]:HomeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.collectionViewController.collectionView.contentOffset.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

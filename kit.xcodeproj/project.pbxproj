@@ -571,13 +571,6 @@
 			path = TabbarViewController;
 			sourceTree = "<group>";
 		};
-		903998991D0A8F400030C138 /* 各种控件用法 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "各种控件用法";
-			sourceTree = "<group>";
-		};
 		9039989D1D0A900C0030C138 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -646,7 +639,6 @@
 		90E3CAE01D05845900F4AD20 /* kit */ = {
 			isa = PBXGroup;
 			children = (
-				903998991D0A8F400030C138 /* 各种控件用法 */,
 				90F0BAB41D06569F00CD24D6 /* ProductCell */,
 				90E3CC7D1D05850600F4AD20 /* Account */,
 				90E3CC761D05850000F4AD20 /* Home */,
@@ -1460,7 +1452,6 @@
 			children = (
 				903998B11D0AA08A0030C138 /* 动画运用 */,
 				90F0BB2E1D07CAF700CD24D6 /* Login */,
-				90F0BB031D0670DE00CD24D6 /* Address */,
 				90E3CC7E1D05850600F4AD20 /* Account */,
 			);
 			path = Account;
@@ -1612,13 +1603,6 @@
 				90F0BAFE1D065F3C00CD24D6 /* HeadBannerReusableView.m */,
 			);
 			path = Header;
-			sourceTree = "<group>";
-		};
-		90F0BB031D0670DE00CD24D6 /* Address */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Address;
 			sourceTree = "<group>";
 		};
 		90F0BB081D06729C00CD24D6 /* UITableView */ = {

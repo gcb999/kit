@@ -104,6 +104,7 @@
     _collectionView.scrollEnabled=YES;
     _collectionView.showsVerticalScrollIndicator=NO;
     
+    
      [self setUpMJRefresh:_state];
     
     //cell
@@ -128,6 +129,7 @@
         [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:JSCollectionFooterIdentifier];
         
     }
+    
     
     
     [self.view addSubview:_collectionView];
