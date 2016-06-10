@@ -16,6 +16,6 @@
 
 
 #pragma mark -hidden badge
--(void)hideBageWithTabbarIndex:(NSInteger)index;
+-(void)hiddenBageWithTabbarIndex:(NSInteger)index;
 
 @end

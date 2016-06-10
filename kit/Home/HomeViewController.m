@@ -57,15 +57,11 @@
          [[JSTabbarViewController shareInstance] showBadge:@"100" tabbarIndex:2 Animation:YES];
     }
     else if (indexPath.row==3){
-        [[JSTabbarViewController shareInstance] hideBageWithTabbarIndex:2];
+
         
     }
     
-    //隐藏
-//    [self.tabBarController.tabBar hideBadgeOnItemIndex:2];
-//      [self.navigationController.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", 12]];
 
-    return;
      AcountViewController *ctrl=[[AcountViewController alloc] init];
 
     
@@ -127,6 +123,19 @@
 }
 
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+   //1；隐藏底部
+    if (self.collectionViewController.collectionView.contentOffset.y<IPHONScreenHeight-80) {//隐藏
+        [[JSTabbarViewController shareInstance] showTabbar];
+    }
+    else{//显示
+        [[JSTabbarViewController shareInstance] hiddenTabbar];
+        
+    }
+    
+    
+}
 
 
 

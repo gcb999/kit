@@ -16,6 +16,8 @@
 		9039988B1D0A61840030C138 /* JSTabbarViewController+shareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998841D0A61840030C138 /* JSTabbarViewController+shareInstance.m */; };
 		9039988C1D0A61840030C138 /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998861D0A61840030C138 /* JSTabbarViewController.m */; };
 		9039988F1D0A64120030C138 /* JSTabbarViewController+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */; };
+		903998921D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998911D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m */; };
+		903998951D0A6F710030C138 /* AccountModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998941D0A6F710030C138 /* AccountModelHelper.m */; };
 		90E3CAE31D05845900F4AD20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE21D05845900F4AD20 /* main.m */; };
 		90E3CAE61D05845900F4AD20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE51D05845900F4AD20 /* AppDelegate.m */; };
 		90E3CAE91D05845900F4AD20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CAE81D05845900F4AD20 /* ViewController.m */; };
@@ -112,8 +114,6 @@
 		90E3CC901D05850600F4AD20 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC811D05850600F4AD20 /* AccountCell.m */; };
 		90E3CC911D05850600F4AD20 /* AccountGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC841D05850600F4AD20 /* AccountGroupViewController.m */; };
 		90E3CC921D05850600F4AD20 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC871D05850600F4AD20 /* HeadView.m */; };
-		90E3CC931D05850600F4AD20 /* AccontContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 90E3CC891D05850600F4AD20 /* AccontContent.json */; };
-		90E3CC941D05850600F4AD20 /* AccontGroupContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 90E3CC8A1D05850600F4AD20 /* AccontGroupContent.json */; };
 		90E3CC951D05850600F4AD20 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC8C1D05850600F4AD20 /* AccountModel.m */; };
 		90E3CC961D05850600F4AD20 /* AcountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3CC8F1D05850600F4AD20 /* AcountViewController.m */; };
 		90F0BAD51D06569F00CD24D6 /* JSBaseProductCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BAB71D06569F00CD24D6 /* JSBaseProductCollectionCell.m */; };
@@ -190,6 +190,10 @@
 		903998861D0A61840030C138 /* JSTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarViewController.m; sourceTree = "<group>"; };
 		9039988D1D0A64120030C138 /* JSTabbarViewController+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabbarViewController+Badge.h"; sourceTree = "<group>"; };
 		9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+Badge.m"; sourceTree = "<group>"; };
+		903998901D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabbarViewController+NavigationControllerDelegate.h"; sourceTree = "<group>"; };
+		903998911D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+NavigationControllerDelegate.m"; sourceTree = "<group>"; };
+		903998931D0A6F710030C138 /* AccountModelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModelHelper.h; sourceTree = "<group>"; };
+		903998941D0A6F710030C138 /* AccountModelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModelHelper.m; sourceTree = "<group>"; };
 		90E3CADE1D05845800F4AD20 /* kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E3CAE21D05845900F4AD20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90E3CAE41D05845900F4AD20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -404,8 +408,6 @@
 		90E3CC841D05850600F4AD20 /* AccountGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountGroupViewController.m; sourceTree = "<group>"; };
 		90E3CC861D05850600F4AD20 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
 		90E3CC871D05850600F4AD20 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
-		90E3CC891D05850600F4AD20 /* AccontContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AccontContent.json; sourceTree = "<group>"; };
-		90E3CC8A1D05850600F4AD20 /* AccontGroupContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AccontGroupContent.json; sourceTree = "<group>"; };
 		90E3CC8B1D05850600F4AD20 /* AccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
 		90E3CC8C1D05850600F4AD20 /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		90E3CC8E1D05850600F4AD20 /* AcountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcountViewController.h; sourceTree = "<group>"; };
@@ -554,6 +556,8 @@
 				903998861D0A61840030C138 /* JSTabbarViewController.m */,
 				9039988D1D0A64120030C138 /* JSTabbarViewController+Badge.h */,
 				9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */,
+				903998901D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.h */,
+				903998911D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m */,
 			);
 			path = TabbarViewController;
 			sourceTree = "<group>";
@@ -1443,10 +1447,10 @@
 		90E3CC881D05850600F4AD20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				90E3CC891D05850600F4AD20 /* AccontContent.json */,
-				90E3CC8A1D05850600F4AD20 /* AccontGroupContent.json */,
 				90E3CC8B1D05850600F4AD20 /* AccountModel.h */,
 				90E3CC8C1D05850600F4AD20 /* AccountModel.m */,
+				903998931D0A6F710030C138 /* AccountModelHelper.h */,
+				903998941D0A6F710030C138 /* AccountModelHelper.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1749,11 +1753,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F0BB141D0679F900CD24D6 /* address.plist in Resources */,
-				90E3CC931D05850600F4AD20 /* AccontContent.json in Resources */,
 				90E3CAF11D05845900F4AD20 /* LaunchScreen.storyboard in Resources */,
 				90E3CAEE1D05845900F4AD20 /* Assets.xcassets in Resources */,
 				90E3CAEC1D05845900F4AD20 /* Main.storyboard in Resources */,
-				90E3CC941D05850600F4AD20 /* AccontGroupContent.json in Resources */,
 				90F0BB241D07AAD200CD24D6 /* FacebookSDKStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1829,6 +1831,7 @@
 			files = (
 				90E3CC901D05850600F4AD20 /* AccountCell.m in Sources */,
 				90F0BB2D1D07AB7900CD24D6 /* JSFaceBook.m in Sources */,
+				903998921D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m in Sources */,
 				90E3CC4C1D0584FD00F4AD20 /* JSNetWork+GET.m in Sources */,
 				90E3CC351D0584FD00F4AD20 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
 				90E3CC471D0584FD00F4AD20 /* JSTableViewController+UIScrollView.m in Sources */,
@@ -1879,6 +1882,7 @@
 				90E3CC6A1D0584FD00F4AD20 /* UIView+Coordinates.m in Sources */,
 				90E3CC4F1D0584FD00F4AD20 /* AppDelegate+ThridDTouch.m in Sources */,
 				90E3CC671D0584FD00F4AD20 /* UIImage+Extend.m in Sources */,
+				903998951D0A6F710030C138 /* AccountModelHelper.m in Sources */,
 				90E3CC321D0584FD00F4AD20 /* JSCollectionViewController+CollectionView.m in Sources */,
 				90E3CC401D0584FD00F4AD20 /* JSStretchableTableHeaderView.m in Sources */,
 				90E3CC621D0584FD00F4AD20 /* UIColor+Extend.m in Sources */,

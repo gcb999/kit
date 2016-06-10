@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JSTabbar.h"
 
-@interface JSTabbarViewController : UIViewController
+@interface JSTabbarViewController : UIViewController<UINavigationControllerDelegate>
 
 @property(nonatomic,strong)UIView *contentView;
 

@@ -22,7 +22,7 @@
     }
 }
 
--(void)hideBageWithTabbarIndex:(NSInteger)index{
+-(void)hiddenBageWithTabbarIndex:(NSInteger)index{
      JSTabbarItem *item=[self.tabbar tabbarItem:index];//得到当前TabbarItem
     [item hideBadge];
 }

@@ -63,7 +63,7 @@
     vc.title = title;
     
     // 包装控制器
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc];
+    JSNavigationController *nav1 = [[JSNavigationController alloc] initWithRootViewController:vc];
     
     nav1.delegate = self;
     
@@ -127,6 +127,7 @@
     }
     return _tabbar;
 }
+
 
 
 

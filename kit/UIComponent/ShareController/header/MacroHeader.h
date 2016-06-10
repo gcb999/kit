@@ -60,6 +60,7 @@
 #import "JSTabbarViewController.h"
 #import "JSTabbarViewController+shareInstance.h"
 #import "JSTabbarViewController+Badge.h"
+#import "JSTabbarViewController+NavigationControllerDelegate.h"
 
 
 

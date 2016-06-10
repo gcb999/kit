@@ -9,6 +9,7 @@
 #import "AccountGroupViewController.h"
 
 #import "AccountCell.h"
+#import "AccountModelHelper.h"
 
 @interface AccountGroupViewController ()<JSTableViewControllerDelegate>
 {
@@ -44,34 +45,12 @@
 //1：加载数据源
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
     
-    NSString *content= [self readBundleFileName:@"AccontGroupContent.json"];
-    NSDictionary *contentDic= [content JSONObject];
-    if (IS_NSDictionary(contentDic)) {
-        NSArray *contentArr=contentDic[@"content"];
-        if (IS_NSArray(contentArr)) {
-            for (NSDictionary *dic in contentArr) {
-                //key
-                NSString *key=[[dic allKeys] lastObject];
-                [self.tableGroupViewController.sections addObject:key];
-                //数组
-                NSMutableArray *valuesArray=[NSMutableArray array];
-                
-                NSArray *values=dic[key];
-                for (NSDictionary *tempDic in values) {
-                    AccountModel *model = [AccountModel objectWithKeyValues:tempDic];
-                    [valuesArray addObject:model];
-                }
-                
-                
-                [self.tableGroupViewController.rowsOfSectionDic addEntriesFromDictionary:@{key:valuesArray}];
-            }
-           [self.tableGroupViewController reloadHeader];
-        }
-    }
+   NSDictionary<NSString *,NSArray<AccountModel*> *>   *accountModels= [AccountModelHelper shareInstance].accountGroupModels;
     
+    [self.tableGroupViewController.sections addObjectsFromArray: accountModels.allKeys];
+    self.tableGroupViewController.rowsOfSectionDic= [AccountModelHelper shareInstance].accountGroupModels;
+    [self.tableGroupViewController reloadHeader];
 
-    
-   
     
   }
 

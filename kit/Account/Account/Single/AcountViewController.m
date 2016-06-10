@@ -9,6 +9,7 @@
 #import "AcountViewController.h"
 #import "AccountCell.h"
 #import "MJExtension.h"
+#import "AccountModelHelper.h"
 
 @interface AcountViewController ()<JSTableViewControllerDelegate>
 {
@@ -44,22 +45,8 @@
 //1：加载数据源
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
    
-    
-   NSString *content= [self readBundleFileName:@"AccontContent.json"];
-    NSDictionary *dic= [content JSONObject];
-    if (IS_NSDictionary(dic)) {
-        NSArray *tempArr=dic[@"content"];
-        if (IS_NSArray(tempArr)) {
-            for (NSDictionary *dic in tempArr) {
-                 AccountModel *model = [AccountModel objectWithKeyValues:dic];
-
-                [self.tableViewController.data addObject:model];
-            }
-             [self.tableViewController reloadHeader];
-        }
-    }
-    
-   
+    [self.tableViewController.data addObjectsFromArray:[AccountModelHelper shareInstance].accountSingleModels];
+   [self.tableViewController reloadHeader];
 
 }
 
