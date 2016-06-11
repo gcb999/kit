@@ -19,33 +19,6 @@
 
 
 
-//get the left top origin's x,y of a view
-#define KVIEW_TOP_X(view) (view.frame.origin.x)//view 的x
-#define KVIEW_TOP_Y(view) (view.frame.origin.y)// view 的y
-
-
-//get the width size of the view:width,height
-#define KVIEW_W(view)  (view.frame.size.width)
-#define KVIEW_H(view)  (view.frame.size.height)
-
-//get the right bottom origin's x,y of a view
-#define KVIEW_BOTTOM_X(view) (view.frame.origin.x + view.frame.size.width)
-#define KVIEW_BOTTOM_Y(view) (view.frame.origin.y + view.frame.size.height )
-
-
-//get the x,y of the frame
-#define KFRAME_TOP_X(frame)  (frame.origin.x)
-#define KFRAME_TOP_Y(frame)  (frame.origin.y)
-
-//get the size of the frame
-#define KFRAME_W(frame)  (frame.size.width)
-#define KFRAME_H(frame)  (frame.size.height)
-
-
-
-
-
-
 
 //获取RGB颜色
 

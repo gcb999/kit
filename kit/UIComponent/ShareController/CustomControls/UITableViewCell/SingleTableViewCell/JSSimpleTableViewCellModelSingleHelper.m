@@ -21,7 +21,7 @@
                  @"flag":@"1"
                  },
              @{
-                 @"title":@"test列表",
+                 @"title":@"Home",
                  @"iconUrl" : @"home_highlight",
                  @"ctrl":@"TestViewController",
                  @"flag":@"1"

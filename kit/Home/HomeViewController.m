@@ -24,14 +24,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
     [self.view addSubview:self.collectionViewController.view];
     [self addChildViewController:self.collectionViewController];
     JSBaseFlowLayout *flowOut=[[JSBaseFlowLayout alloc] initWithDirectionVertical:2 itemHeight:250];
     self.collectionViewController.flowLayout=flowOut;
     
-//   self.shyNavBarManager.scrollView = self.collectionViewController.collectionView;
     
- 
+    [ self ShyNavBar:self.collectionViewController.collectionView];
     
 
     
@@ -49,19 +49,7 @@
 
 -(void)JSCollectionViewController:(JSCollectionViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (indexPath.row==0) {
-          [[JSTabbarViewController shareInstance] showBadge:@"50" tabbarIndex:2 Animation:NO];
-    }
-    else if (indexPath.row==1){
-         [[JSTabbarViewController shareInstance] showBadge:@"50" tabbarIndex:2 Animation:YES];
-    }
-    else if (indexPath.row==2){
-         [[JSTabbarViewController shareInstance] showBadge:@"100" tabbarIndex:2 Animation:YES];
-    }
-    else if (indexPath.row==3){
 
-        
-    }
     
 
      AcountViewController *ctrl=[[AcountViewController alloc] init];
@@ -120,28 +108,27 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 
-    [[JSTabbarViewController shareInstance] showBadge:@"10" tabbarIndex:2 Animation:NO];
 
 }
 
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
-   //1；隐藏底部
-    CGFloat y=self.collectionViewController.collectionView.contentOffset.y;
-    NSLog(@"--y=%f",y);
-    if (self.collectionViewController.collectionView.contentOffset.y<IPHONScreenHeight-100) {//隐藏
-        [[JSTabbarViewController shareInstance] showTabbar];
-    }
-    else{//显示
-        [[JSTabbarViewController shareInstance] hiddenTabbar];
-        
-
-        
-    }
-    
-    
-}
+//-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+//    
+//   //1；隐藏底部
+//    CGFloat y=self.collectionViewController.collectionView.contentOffset.y;
+//    NSLog(@"--y=%f",y);
+//    if (self.collectionViewController.collectionView.contentOffset.y<IPHONScreenHeight-100) {//隐藏
+//        [[JSTabbarViewController shareInstance] showTabbar];
+//    }
+//    else{//显示
+//        [[JSTabbarViewController shareInstance] hiddenTabbar];
+//        
+//
+//        
+//    }
+//    
+//    
+//}
 
 
 
