@@ -280,18 +280,18 @@
         return 20.0f;
     }
 }
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
-    //1；隐藏底部
-    if (self.tableGroupViewController.tableView.contentOffset.y<IPHONScreenHeight-80) {//隐藏
-        [[JSTabbarViewController shareInstance] showTabbar];
-    }
-    else{//显示
-        [[JSTabbarViewController shareInstance] hiddenTabbar];
-        
-    }
-    
-    
-}
+//-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+//    
+//    //1；隐藏底部
+//    if (self.tableGroupViewController.tableView.contentOffset.y<IPHONScreenHeight-80) {//隐藏
+//        [[JSTabbarViewController shareInstance] showTabbar];
+//    }
+//    else{//显示
+//        [[JSTabbarViewController shareInstance] hiddenTabbar];
+//        
+//    }
+//    
+//    
+//}
 
 @end

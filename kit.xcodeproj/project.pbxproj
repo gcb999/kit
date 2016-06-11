@@ -21,7 +21,6 @@
 		903998A41D0A90E30030C138 /* JSSimpleTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998A31D0A90E30030C138 /* JSSimpleTableViewCellModel.m */; };
 		903998AD1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998AC1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m */; };
 		903998B01D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */; };
-		903998B41D0AA09E0030C138 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998B31D0AA09E0030C138 /* AnimationViewController.m */; };
 		903998B71D0AA5330030C138 /* JSPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998B61D0AA5330030C138 /* JSPickerViewController.m */; };
 		903998BA1D0AAD900030C138 /* JSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998B91D0AAD900030C138 /* JSDatePickerViewController.m */; };
 		903998BE1D0AB5640030C138 /* JSPresentBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998BD1D0AB5640030C138 /* JSPresentBaseTransition.m */; };
@@ -203,8 +202,6 @@
 		903998AC1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModelGroupHelper.m; sourceTree = "<group>"; };
 		903998AE1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModelSingleHelper.h; sourceTree = "<group>"; };
 		903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModelSingleHelper.m; sourceTree = "<group>"; };
-		903998B21D0AA09E0030C138 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
-		903998B31D0AA09E0030C138 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		903998B51D0AA5330030C138 /* JSPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPickerViewController.h; sourceTree = "<group>"; };
 		903998B61D0AA5330030C138 /* JSPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPickerViewController.m; sourceTree = "<group>"; };
 		903998B81D0AAD900030C138 /* JSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDatePickerViewController.h; sourceTree = "<group>"; };
@@ -592,15 +589,6 @@
 				903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */,
 			);
 			path = SingleTableViewCell;
-			sourceTree = "<group>";
-		};
-		903998B11D0AA08A0030C138 /* 动画运用 */ = {
-			isa = PBXGroup;
-			children = (
-				903998B21D0AA09E0030C138 /* AnimationViewController.h */,
-				903998B31D0AA09E0030C138 /* AnimationViewController.m */,
-			);
-			path = "动画运用";
 			sourceTree = "<group>";
 		};
 		903998BB1D0AB5110030C138 /* JSControllerTransitions */ = {
@@ -1450,7 +1438,6 @@
 		90E3CC7D1D05850600F4AD20 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				903998B11D0AA08A0030C138 /* 动画运用 */,
 				90F0BB2E1D07CAF700CD24D6 /* Login */,
 				90E3CC7E1D05850600F4AD20 /* Account */,
 			);
@@ -1936,7 +1923,6 @@
 				90E3CAE31D05845900F4AD20 /* main.m in Sources */,
 				90E3CC3A1D0584FD00F4AD20 /* JSWaterFlowLayout.m in Sources */,
 				90E3CC5B1D0584FD00F4AD20 /* NSObject+SDWebImage.m in Sources */,
-				903998B41D0AA09E0030C138 /* AnimationViewController.m in Sources */,
 				90F0BAD51D06569F00CD24D6 /* JSBaseProductCollectionCell.m in Sources */,
 				90E3CC481D0584FD00F4AD20 /* JSTableViewController.m in Sources */,
 				90F0BADE1D06569F00CD24D6 /* JSProductCollectionViewCellModel.m in Sources */,

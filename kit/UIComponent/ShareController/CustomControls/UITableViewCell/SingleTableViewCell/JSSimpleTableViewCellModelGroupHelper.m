@@ -20,60 +20,72 @@
     return @[
              
              @{
-                 @"section":@[
-                         @{
-                             @"title":@"Notificatioins",
-                             @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"JSLoginViewController",
-                             @"flag":@"1"
-                             }
-                         ]
-                 },
-             @{
-                 @"section1":@[
-                         @{
-                             @"title":@"Coupon",
-                             @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"BrandCtrl",
-                             @"flag":@"1"
-                             },
-                         @{
-                             @"title":@"My Wallet",
-                             @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"BrandCtrl",
-                             @"flag":@"1"
-                             },
-                         @{
-                             @"title":@"My History",
-                             @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"BrandCtrl",
-                             @"flag":@"1"
-                             }
-                         ]
-                 },
-             @{
-                 @"section2":@[
-                         @{
-                             @"title":@"Address Book",
-                             @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"BrandCtrl",
-                             @"flag":@"1"
-                             },
-                         @{
-                             @"title":@"My Invitation",
-                             @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"BrandCtrl",
-                             @"flag":@"1"
-                             },
-                         @{
-                             @"title":@"Setting",
-                             @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"BrandCtrl",
-                             @"flag":@"1"
-                             }
-                         ]
-                 }
+                 @"DatePickerView":@[
+                         
+                                                     @{
+                                                         @"title":@"DatePicker",
+                                                         @"iconUrl" : @"home_highlight",
+                                                         @"ctrl":@"",
+                                                         @"flag":@"1"
+                                                       },
+                                                      @{
+                                                         @"title":@"PickerView",
+                                                         @"iconUrl" : @"home_highlight",
+                                                         @"ctrl":@"",
+                                                         @"flag":@"1"
+                                                        }
+                                                     
+                                     ]
+                },
              
+             @{
+                 @"UITabbar":@[
+                         
+                                                        @{
+                                                        @"title":@"显示Tabbar Badge",
+                                                        @"iconUrl" : @"home_highlight",
+                                                        @"ctrl":@"",
+                                                        @"flag":@"1"
+                                                        },
+                                                        @{
+                                                        @"title":@"显示Tabbar Badge 带动画",
+                                                        @"iconUrl" : @"home_highlight",
+                                                        @"ctrl":@"",
+                                                        @"flag":@"1"
+                                                        },
+                                                        @{
+                                                            @"title":@"隐藏Tabbar Badge",
+                                                            @"iconUrl" : @"home_highlight",
+                                                            @"ctrl":@"",
+                                                            @"flag":@"1"
+                                                        }
+
+                                  ]
+                 },
+             
+             @{
+                 @"商品详情":@[
+
+                                @{
+                                @"title":@"商品详情",
+                                @"iconUrl" : @"home_highlight",
+                                @"ctrl":@"HomeDetailViewController",
+                                @"flag":@"1"
+                                },
+                                @{
+                                @"title":@"FB登陆",
+                                @"iconUrl" : @"home_highlight",
+                                @"ctrl":@"JSLoginViewController",
+                                @"flag":@"1"
+                                },     @{
+                                @"title":@"热门国家",
+                                @"iconUrl" : @"home_highlight",
+                                @"ctrl":@"JSMJNIndexTableViewController",
+                                @"flag":@"1"
+                                }
+
+                         ]
+                 },
              
              ];
     

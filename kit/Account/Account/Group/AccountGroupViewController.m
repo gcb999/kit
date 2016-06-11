@@ -7,13 +7,15 @@
 //
 
 #import "AccountGroupViewController.h"
-
+#import "HomeDetailViewController.h"
 
 
 @interface AccountGroupViewController ()<JSTableViewControllerDelegate>
 {
 }
 @property(nonatomic,strong)JSTableGroupViewController *tableGroupViewController;
+@property(nonatomic,strong)JSPresentBaseTransition *transition;
+@property(nonatomic,strong)JSPresentTransformScaleTransition *scaleTransition;
 @end
 
 
@@ -21,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+     self.fd_prefersNavigationBarHidden = YES;
     
     [self.view addSubview:self.tableGroupViewController.view];
     [self addChildViewController:self.tableGroupViewController];
@@ -45,7 +47,6 @@
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
     
    NSDictionary<NSString *,NSArray<JSSimpleTableViewCellModel*> *>   *accountModels= [JSSimpleTableViewCellModelGroupHelper shareInstance].groupTableViewModels;
-    
     [self.tableGroupViewController.sections addObjectsFromArray: accountModels.allKeys];
     self.tableGroupViewController.rowsOfSectionDic= [JSSimpleTableViewCellModelGroupHelper shareInstance].groupTableViewModels;
     [self.tableGroupViewController reloadHeader];
@@ -58,6 +59,65 @@
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSString *text= self.tableGroupViewController.sections[indexPath.section];
+    if ([text isEqualToString:@"DatePickerView"]) {
+        if (indexPath.row==0) {
+            JSPickerViewController *ctrl=[[JSPickerViewController alloc] initWithData:@[@"1",@"2"] height:300 complete:^(JSPickerViewController *ctrl, NSString *text) {
+                
+                NSLog(@"---text=%@",text);
+            }];
+            
+            
+            self.transition=[[JSPresentBaseTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
+                
+            } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
+                self.transition.transitionMode = kHYBTransitionDismiss;
+            }];
+            
+            //     vc.modalPresentationStyle = UIModalPresentationCustom;
+            ctrl.transitioningDelegate = self.transition;
+            
+            [self presentViewController:ctrl animated:YES completion:^{
+                
+            }];
+
+        }
+        else if (indexPath.row==1){
+            
+            JSDatePickerViewController *ctrl=[[JSDatePickerViewController alloc] initWitHeight:300 complete:^(JSDatePickerViewController *datePickerCtrl, NSString *text) {
+                
+                
+                NSLog(@"---text=%@",text);
+            }];
+            
+            
+            self.transition=[[JSPresentBaseTransition alloc] initWithPresented:^(UIViewController *presented, UIViewController *presenting, UIViewController *source, HYBBaseTransition *transition) {
+                
+            } dismissed:^(UIViewController *dismissed, HYBBaseTransition *transition) {
+                self.transition.transitionMode = kHYBTransitionDismiss;
+            }];
+            
+            //     vc.modalPresentationStyle = UIModalPresentationCustom;
+            ctrl.transitioningDelegate = self.transition;
+            
+            [self presentViewController:ctrl animated:YES completion:^{
+                
+            }];
+
+        }
+    }
+    else if ([text isEqualToString:@"UITabbar"]){
+        if (indexPath.row==0) {
+            [[JSTabbarViewController shareInstance] showBadge:@"50" tabbarIndex:2 Animation:NO];
+        }
+        else if (indexPath.row==1){
+                 [[JSTabbarViewController shareInstance] showBadge:@"100" tabbarIndex:2 Animation:YES];
+        }
+        else if (indexPath.row==2){
+                [[JSTabbarViewController shareInstance] hiddenBageWithTabbarIndex:2];
+        }
+        
+    }
+
     JSSimpleTableViewCellModel *model=self.tableGroupViewController.rowsOfSectionDic[text][indexPath.row];
     UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
     if (ctrl) {
@@ -65,16 +125,30 @@
     }
 }
 
+
+
+
 -(CGFloat)JSTableViewController:(JSTableViewController *)JSCtrl heightForHeaderInSection:(NSInteger)section{
-    if (section==0) {
-        return 0;
-    }
-    else{
-        return 12;
-    }
+ 
+        return 22;
+
 }
 
 
+
+
+-(UIView *)JSTableViewController:(JSTableViewController *)JSCtrl viewForHeaderInSection:(NSInteger)section{
+    UIView *view=[[UIView alloc]initWithFrame:CGRectMake(0, 0, IPHONScreenWidth, 20)];
+    view.backgroundColor= [UIColor whiteColor];
+    UILabel *lablel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, IPHONScreenWidth , 20)];
+    lablel.textColor = RGB(51, 51, 51);
+    lablel.font=[UIFont systemFontOfSize:12];
+    lablel.backgroundColor = RGB(242, 242, 242);
+    lablel.text = [NSString stringWithFormat:@"   %@",self.tableGroupViewController.sections[section]];
+    [view addSubview:lablel];
+    return view;
+  
+}
 
 
 #pragma mark -getter

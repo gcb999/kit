@@ -11,7 +11,9 @@
 #import "HomeDetailViewController.h"
 #import "AcountViewController.h"
 @interface HomeViewController ()<JSCollectionViewControllerDelegate,JSWaterFlowLayoutDelegate>
-
+{
+    CGFloat offsety;
+}
 
 @property(nonatomic,strong) JSCollectionViewController *collectionViewController;
 
@@ -126,11 +128,15 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
    //1；隐藏底部
-    if (self.collectionViewController.collectionView.contentOffset.y<IPHONScreenHeight-80) {//隐藏
+    CGFloat y=self.collectionViewController.collectionView.contentOffset.y;
+    NSLog(@"--y=%f",y);
+    if (self.collectionViewController.collectionView.contentOffset.y<IPHONScreenHeight-100) {//隐藏
         [[JSTabbarViewController shareInstance] showTabbar];
     }
     else{//显示
         [[JSTabbarViewController shareInstance] hiddenTabbar];
+        
+
         
     }
     
