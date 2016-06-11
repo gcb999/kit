@@ -7,8 +7,7 @@
 //
 
 #import "AcountViewController.h"
-
-#import "MJExtension.h"
+#import "TestViewController.h"
 
 @interface AcountViewController ()<JSTableViewControllerDelegate>
 {
@@ -31,10 +30,10 @@
     avater.center = CGPointMake(IPHONScreenWidth*0.5f, 100);
     
     
-//    [self.tableViewController stretchHeaderImgUrl:@"photo.jpg" subViews:avater];
+   [self.tableViewController stretchHeaderImgUrl:@"photo.jpg" subViews:avater];
     
     
-    self.shyNavBarManager.scrollView=self.tableViewController.tableView;
+    [self ShyNavBar:self.tableViewController.tableView];
     
     
 }
@@ -45,9 +44,17 @@
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
    
     [self.tableViewController.data addObjectsFromArray:[JSSimpleTableViewCellModelSingleHelper shareInstance].singleTableViewModel];
-   [self.tableViewController reloadHeader];
+    if (currentPage==1) {
+        [self.tableViewController reloadHeader];
+    }
+    else{
+        [self.tableViewController reloadFooter];
+    }
+   
 
 }
+
+
 
 
 //2：点击事件
@@ -62,14 +69,16 @@
 }
 
 
-
+-(CGFloat)JSTableViewController:(JSTableViewController *)JSCtrl heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
 
 
 #pragma mark -getter
 
 -(JSTableViewController *)tableViewController{
     if (_tableViewController==nil) {
-        _tableViewController=[[JSTableViewController alloc] initWithStyle:UITableViewStylePlain state:JSTableViewNormal tableViewCellClass:[JSSimpleTableViewCell class] delegate:self];
+        _tableViewController=[[JSTableViewController alloc] initWithStyle:UITableViewStylePlain state:JSTableViewPullHeaderFooter tableViewCellClass:[JSSimpleTableViewCell class] delegate:self];
         _tableViewController.view.frame=self.view.bounds;
     }
     return _tableViewController;

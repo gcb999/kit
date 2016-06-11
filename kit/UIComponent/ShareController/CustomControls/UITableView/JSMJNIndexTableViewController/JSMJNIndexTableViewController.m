@@ -79,11 +79,9 @@
     UIView *view = view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 40.f)];
     view.backgroundColor = [UIColor redColor];
     
-    
-    /* Library code */
-    self.shyNavBarManager.scrollView = self.tableGroupViewController.tableView;
-    /* Can then be remove by setting the ExtensionView to nil */
-//    [self.shyNavBarManager setExtensionView:view];
+    //3:自动添加导航栏滚动条
+    [self ShyNavBar:self.tableGroupViewController.tableView];
+
     
     
     

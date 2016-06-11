@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MJRefresh.h"
 #import "JSListViewEmptyView.h"
 #import "JSStretchableTableHeaderView.h"
 

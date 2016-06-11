@@ -34,13 +34,18 @@
 
 
 #import <UIKit/UIKit.h>
+
+
+
+#import "JSShareControllerHeader.h"
+
+
 //宏头文件
 #import "MacroHeader.h"
 
 
 
-#import "JSPayPal.h"
-#import "JSBraintree.h"
+
 
 
 

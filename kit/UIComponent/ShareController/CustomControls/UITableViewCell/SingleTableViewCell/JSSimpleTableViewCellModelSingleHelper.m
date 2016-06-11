@@ -21,9 +21,39 @@
                  @"flag":@"1"
                  },
              @{
-                 @"title":@"动画Transation (UIPicker)",
+                 @"title":@"test列表",
                  @"iconUrl" : @"home_highlight",
-                 @"ctrl":@"AnimationViewController",
+                 @"ctrl":@"TestViewController",
+                 @"flag":@"1"
+                 },
+             @{
+                 @"title":@"Notificatioins",
+                 @"iconUrl" : @"home_highlight",
+                 @"ctrl":@"JSLoginViewController",
+                 @"flag":@"1"
+                 },
+             @{
+                 @"title":@"Notificatioins",
+                 @"iconUrl" : @"home_highlight",
+                 @"ctrl":@"JSLoginViewController",
+                 @"flag":@"1"
+                 },
+             @{
+                 @"title":@"Notificatioins",
+                 @"iconUrl" : @"home_highlight",
+                 @"ctrl":@"JSLoginViewController",
+                 @"flag":@"1"
+                 },
+             @{
+                 @"title":@"Notificatioins",
+                 @"iconUrl" : @"home_highlight",
+                 @"ctrl":@"JSLoginViewController",
+                 @"flag":@"1"
+                 },
+             @{
+                 @"title":@"Notificatioins",
+                 @"iconUrl" : @"home_highlight",
+                 @"ctrl":@"JSLoginViewController",
                  @"flag":@"1"
                  },
              @{

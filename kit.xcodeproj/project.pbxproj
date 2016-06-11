@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		47B0D1699B79813D5F5812AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEE6E7B51FE480A31B50DE7 /* libPods.a */; };
+		90175B311D0BA93600F40976 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B301D0BA93600F40976 /* TestViewController.m */; };
+		90175B371D0BACED00F40976 /* UIViewController+ShyNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B361D0BACED00F40976 /* UIViewController+ShyNavBar.m */; };
+		90175B481D0BB91C00F40976 /* JSFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B471D0BB91C00F40976 /* JSFaceBook.m */; };
 		903998741D0A56740030C138 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998731D0A56740030C138 /* UIView+Badge.m */; };
 		903998871D0A61840030C138 /* JSTabbarItemHelpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987A1D0A61840030C138 /* JSTabbarItemHelpModel.m */; };
 		903998881D0A61840030C138 /* JSTabbarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987C1D0A61840030C138 /* JSTabbarItemModel.m */; };
@@ -153,7 +156,6 @@
 		90F0BB271D07AAD200CD24D6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB201D07AAD200CD24D6 /* FBSDKLoginKit.framework */; };
 		90F0BB281D07AAD200CD24D6 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB211D07AAD200CD24D6 /* FBSDKMessengerShareKit.framework */; };
 		90F0BB291D07AAD200CD24D6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F0BB221D07AAD200CD24D6 /* FBSDKShareKit.framework */; };
-		90F0BB2D1D07AB7900CD24D6 /* JSFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */; };
 		90F0BB311D07CB0A00CD24D6 /* JSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +178,26 @@
 
 /* Begin PBXFileReference section */
 		4FEE6E7B51FE480A31B50DE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		90175B2F1D0BA93600F40976 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		90175B301D0BA93600F40976 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		90175B351D0BACED00F40976 /* UIViewController+ShyNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShyNavBar.h"; sourceTree = "<group>"; };
+		90175B361D0BACED00F40976 /* UIViewController+ShyNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ShyNavBar.m"; sourceTree = "<group>"; };
+		90175B391D0BB03B00F40976 /* JSTableViewControllerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTableViewControllerHeader.h; sourceTree = "<group>"; };
+		90175B3A1D0BB06300F40976 /* JSCollectionViewControllerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCollectionViewControllerHeader.h; sourceTree = "<group>"; };
+		90175B3B1D0BB0CB00F40976 /* JSCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCategoryHeader.h; sourceTree = "<group>"; };
+		90175B3C1D0BB15400F40976 /* JSTableViewCellHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTableViewCellHeader.h; sourceTree = "<group>"; };
+		90175B3D1D0BB1EA00F40976 /* JSControllerTransitionsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSControllerTransitionsHeader.h; sourceTree = "<group>"; };
+		90175B3E1D0BB28700F40976 /* JSNetWorkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSNetWorkHeader.h; sourceTree = "<group>"; };
+		90175B3F1D0BB2DC00F40976 /* JSTabbarViewControllerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTabbarViewControllerHeader.h; sourceTree = "<group>"; };
+		90175B401D0BB37900F40976 /* JSCustomControlsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCustomControlsHeader.h; sourceTree = "<group>"; };
+		90175B411D0BB62900F40976 /* JSPaymentHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSPaymentHeader.h; sourceTree = "<group>"; };
+		90175B421D0BB7E400F40976 /* JSTableCollectionViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTableCollectionViewHeader.h; sourceTree = "<group>"; };
+		90175B431D0BB84600F40976 /* JSBasicViewControllerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBasicViewControllerHeader.h; sourceTree = "<group>"; };
+		90175B441D0BB8DD00F40976 /* JSSocialHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSSocialHeader.h; sourceTree = "<group>"; };
+		90175B461D0BB91C00F40976 /* JSFaceBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFaceBook.h; sourceTree = "<group>"; };
+		90175B471D0BB91C00F40976 /* JSFaceBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFaceBook.m; sourceTree = "<group>"; };
+		90175B491D0BB98900F40976 /* JSFrameWorkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFrameWorkHeader.h; sourceTree = "<group>"; };
+		90175B4A1D0BBC8F00F40976 /* JSShareControllerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSShareControllerHeader.h; sourceTree = "<group>"; };
 		903998721D0A56740030C138 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		903998731D0A56740030C138 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		903998791D0A61840030C138 /* JSTabbarItemHelpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemHelpModel.h; sourceTree = "<group>"; };
@@ -481,8 +503,6 @@
 		90F0BB201D07AAD200CD24D6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		90F0BB211D07AAD200CD24D6 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		90F0BB221D07AAD200CD24D6 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		90F0BB2B1D07AB7900CD24D6 /* JSFaceBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFaceBook.h; sourceTree = "<group>"; };
-		90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFaceBook.m; sourceTree = "<group>"; };
 		90F0BB2F1D07CB0A00CD24D6 /* JSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginViewController.h; sourceTree = "<group>"; };
 		90F0BB301D07CB0A00CD24D6 /* JSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginViewController.m; sourceTree = "<group>"; };
 		AA4DF6D4455F513206F99F7B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -531,6 +551,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		90175B451D0BB91C00F40976 /* FaceBook */ = {
+			isa = PBXGroup;
+			children = (
+				90175B461D0BB91C00F40976 /* JSFaceBook.h */,
+				90175B471D0BB91C00F40976 /* JSFaceBook.m */,
+			);
+			path = FaceBook;
+			sourceTree = "<group>";
+		};
 		903998781D0A61840030C138 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +601,7 @@
 			isa = PBXGroup;
 			children = (
 				9039989E1D0A90590030C138 /* SingleTableViewCell */,
+				90175B3C1D0BB15400F40976 /* JSTableViewCellHeader.h */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -703,6 +733,7 @@
 			children = (
 				903998BB1D0AB5110030C138 /* JSControllerTransitions */,
 				90E3CB171D0584FD00F4AD20 /* HYBControllerTransitions */,
+				90175B3D1D0BB1EA00F40976 /* JSControllerTransitionsHeader.h */,
 			);
 			path = Aniamtion;
 			sourceTree = "<group>";
@@ -739,6 +770,7 @@
 			children = (
 				90E3CB261D0584FD00F4AD20 /* JSBasicViewController */,
 				90E3CB2B1D0584FD00F4AD20 /* JSNavigationController */,
+				90175B431D0BB84600F40976 /* JSBasicViewControllerHeader.h */,
 			);
 			path = BasicUI;
 			sourceTree = "<group>";
@@ -770,6 +802,7 @@
 				90F0BB081D06729C00CD24D6 /* UITableView */,
 				90E3CB2F1D0584FD00F4AD20 /* UIDatePicker */,
 				90E3CB341D0584FD00F4AD20 /* UIImageView */,
+				90175B401D0BB37900F40976 /* JSCustomControlsHeader.h */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -811,6 +844,7 @@
 			children = (
 				90E3CB3F1D0584FD00F4AD20 /* SideSlippingController */,
 				90E3CB421D0584FD00F4AD20 /* TabBarController */,
+				90175B491D0BB98900F40976 /* JSFrameWorkHeader.h */,
 			);
 			path = FrameWork;
 			sourceTree = "<group>";
@@ -830,6 +864,7 @@
 				903998781D0A61840030C138 /* Model */,
 				9039987D1D0A61840030C138 /* Tabbar */,
 				903998821D0A61840030C138 /* TabbarViewController */,
+				90175B3F1D0BB2DC00F40976 /* JSTabbarViewControllerHeader.h */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -839,6 +874,7 @@
 			children = (
 				90E3CB491D0584FD00F4AD20 /* Header.h */,
 				90E3CB4A1D0584FD00F4AD20 /* MacroHeader.h */,
+				90175B4A1D0BBC8F00F40976 /* JSShareControllerHeader.h */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -858,6 +894,7 @@
 				90E3CB4F1D0584FD00F4AD20 /* UICollectionView */,
 				90E3CB691D0584FD00F4AD20 /* UIEmptyView */,
 				90E3CB7B1D0584FD00F4AD20 /* UITableVIew */,
+				90175B421D0BB7E400F40976 /* JSTableCollectionViewHeader.h */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -868,6 +905,7 @@
 				90E3CB501D0584FD00F4AD20 /* JSCollectionViewController */,
 				90E3CB5D1D0584FD00F4AD20 /* JSCollectionViewDelegate */,
 				90E3CB5F1D0584FD00F4AD20 /* JSFlowLayout */,
+				90175B3A1D0BB06300F40976 /* JSCollectionViewControllerHeader.h */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -1014,6 +1052,7 @@
 			children = (
 				90E3CB7C1D0584FD00F4AD20 /* JSTableGroupViewController */,
 				90E3CB7F1D0584FD00F4AD20 /* JSTableViewController */,
+				90175B391D0BB03B00F40976 /* JSTableViewControllerHeader.h */,
 			);
 			path = UITableVIew;
 			sourceTree = "<group>";
@@ -1092,6 +1131,7 @@
 				90E3CB991D0584FD00F4AD20 /* JSMD5 */,
 				90E3CB9C1D0584FD00F4AD20 /* JSModel */,
 				90E3CB9F1D0584FD00F4AD20 /* JSNetWork */,
+				90175B3E1D0BB28700F40976 /* JSNetWorkHeader.h */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -1150,6 +1190,7 @@
 				90E3CBEE1D0584FD00F4AD20 /* UIView */,
 				90E3CBF31D0584FD00F4AD20 /* UIViewController */,
 				90E3CBF61D0584FD00F4AD20 /* UIWindow */,
+				90175B3B1D0BB0CB00F40976 /* JSCategoryHeader.h */,
 			);
 			path = NSCategory;
 			sourceTree = "<group>";
@@ -1331,6 +1372,8 @@
 			children = (
 				90E3CBF41D0584FD00F4AD20 /* UIViewController+NavigationItem.h */,
 				90E3CBF51D0584FD00F4AD20 /* UIViewController+NavigationItem.m */,
+				90175B351D0BACED00F40976 /* UIViewController+ShyNavBar.h */,
+				90175B361D0BACED00F40976 /* UIViewController+ShyNavBar.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1353,6 +1396,7 @@
 				90E3CBFD1D0584FD00F4AD20 /* JSBraintree.m */,
 				90E3CBFE1D0584FD00F4AD20 /* JSPayPal.h */,
 				90E3CBFF1D0584FD00F4AD20 /* JSPayPal.m */,
+				90175B411D0BB62900F40976 /* JSPaymentHeader.h */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -1440,6 +1484,8 @@
 			children = (
 				90F0BB2E1D07CAF700CD24D6 /* Login */,
 				90E3CC7E1D05850600F4AD20 /* Account */,
+				90175B2F1D0BA93600F40976 /* TestViewController.h */,
+				90175B301D0BA93600F40976 /* TestViewController.m */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -1633,8 +1679,8 @@
 		90F0BB2A1D07AB5300CD24D6 /* Social&GA */ = {
 			isa = PBXGroup;
 			children = (
-				90F0BB2B1D07AB7900CD24D6 /* JSFaceBook.h */,
-				90F0BB2C1D07AB7900CD24D6 /* JSFaceBook.m */,
+				90175B451D0BB91C00F40976 /* FaceBook */,
+				90175B441D0BB8DD00F40976 /* JSSocialHeader.h */,
 			);
 			path = "Social&GA";
 			sourceTree = "<group>";
@@ -1839,7 +1885,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F0BB2D1D07AB7900CD24D6 /* JSFaceBook.m in Sources */,
 				903998921D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m in Sources */,
 				90E3CC4C1D0584FD00F4AD20 /* JSNetWork+GET.m in Sources */,
 				90E3CC351D0584FD00F4AD20 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
@@ -1873,6 +1918,7 @@
 				90E3CC5F1D0584FD00F4AD20 /* NSString+Extend.m in Sources */,
 				90E3CC751D0584FD00F4AD20 /* UIView+ViewController.m in Sources */,
 				9039988B1D0A61840030C138 /* JSTabbarViewController+shareInstance.m in Sources */,
+				90175B371D0BACED00F40976 /* UIViewController+ShyNavBar.m in Sources */,
 				90E3CC421D0584FD00F4AD20 /* JSTableViewController+NotWorkView.m in Sources */,
 				90E3CC6C1D0584FD00F4AD20 /* UIViewController+NavigationItem.m in Sources */,
 				90E3CC231D0584FD00F4AD20 /* UIViewController+HYBMoveTransition.m in Sources */,
@@ -1943,6 +1989,7 @@
 				90F0BAE11D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m in Sources */,
 				90E3CC1E1D0584FD00F4AD20 /* HYBBaseTransition.m in Sources */,
 				90E3CC2D1D0584FD00F4AD20 /* JSSideSlippingControllerConfig.m in Sources */,
+				90175B481D0BB91C00F40976 /* JSFaceBook.m in Sources */,
 				903998A41D0A90E30030C138 /* JSSimpleTableViewCellModel.m in Sources */,
 				90E3CC651D0584FD00F4AD20 /* UIImage+Color.m in Sources */,
 				90E3CC561D0584FD00F4AD20 /* NSDate+Extend.m in Sources */,
@@ -1965,6 +2012,7 @@
 				90E3CC3C1D0584FD00F4AD20 /* WeChatStylePlaceHolder.m in Sources */,
 				90F0BAF91D065D8E00CD24D6 /* SDCollectionViewCell.m in Sources */,
 				90F0BAFB1D065D8E00CD24D6 /* UIView+SDExtension.m in Sources */,
+				90175B311D0BA93600F40976 /* TestViewController.m in Sources */,
 				90E3CC211D0584FD00F4AD20 /* HYBModalTransition.m in Sources */,
 				90F0BAF71D065D8E00CD24D6 /* TADotView.m in Sources */,
 				90E3CC541D0584FD00F4AD20 /* MBProgressHUD+Add.m in Sources */,

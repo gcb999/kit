@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIImageView+WebCache.h"
 
 @interface NSObject (SDWebImage)
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UICollectionView+CYLTableViewPlaceHolder.h"
+#import "MJRefresh.h"
 
 @protocol JSCollectionViewControllerDelegate;
 @protocol JSCollectionViewCellDelegate;

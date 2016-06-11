@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-
-
-
-
+//导航手势
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 @interface JSBasicViewController : UIViewController<UIViewControllerPreviewingDelegate>
 
