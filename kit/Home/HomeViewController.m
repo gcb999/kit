@@ -41,7 +41,7 @@
 
 -(JSCollectionViewController *)collectionViewController{
     if (_collectionViewController==nil) {
-        _collectionViewController=[[JSCollectionViewController alloc] initWithState:JSCollectionViewPullHeaderFooter CollectionViewCellClass:[JSProductCollectionViewCell class] delegate:self HeaderViewType:[HeadBannerReusableView class]];
+        _collectionViewController=[[JSCollectionViewController alloc] initWithState:JSCollectionViewNormal CollectionViewCellClass:[JSProductCollectionViewCell class] delegate:self HeaderViewType:[HeadBannerReusableView class]];
         _collectionViewController.view.frame=self.view.bounds;
     }
     return _collectionViewController;

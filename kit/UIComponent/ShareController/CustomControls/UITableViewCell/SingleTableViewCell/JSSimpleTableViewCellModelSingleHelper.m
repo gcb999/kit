@@ -29,7 +29,7 @@
              @{
                  @"title":@"Notificatioins",
                  @"iconUrl" : @"home_highlight",
-                 @"ctrl":@"JSLoginViewController",
+                 @"ctrl":@"AcountViewController",
                  @"flag":@"1"
                  },
              @{

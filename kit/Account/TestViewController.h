@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
-@property(nonatomic,strong) JSCollectionViewController *collectionViewController;
+@interface TestViewController : UIViewController
+
 @end

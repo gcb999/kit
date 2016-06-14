@@ -77,13 +77,40 @@
                                 @"iconUrl" : @"home_highlight",
                                 @"ctrl":@"JSLoginViewController",
                                 @"flag":@"1"
-                                },     @{
-                                @"title":@"热门国家",
-                                @"iconUrl" : @"home_highlight",
-                                @"ctrl":@"JSMJNIndexTableViewController",
-                                @"flag":@"1"
                                 }
 
+                         ]
+                 },
+             
+             @{
+                 @"导航栏滚动用法":@[
+                         
+                         @{
+                             @"title":@"TableView导航栏滚动隐藏",
+                             @"iconUrl" : @"home_highlight",
+                             @"ctrl":@"AcountViewController",
+                             @"flag":@"1"
+                             },
+                         @{
+                             @"title":@"TableView分组导航栏滚动隐藏",
+                             @"iconUrl" : @"home_highlight",
+                             @"ctrl":@"JSMJNIndexTableViewController",
+                             @"flag":@"1"
+                             },
+                         @{
+                             @"title":@"UICollectionView导航栏滚动隐藏",
+                             @"iconUrl" : @"home_highlight",
+                             @"ctrl":@"JSMJNIndexTableViewController",
+                             @"flag":@"1"
+                             }
+                         ,
+                         @{
+                             @"title":@"UISCrollerView 导航栏滚动隐藏",
+                             @"iconUrl" : @"home_highlight",
+                             @"ctrl":@"JSMJNIndexTableViewController",
+                             @"flag":@"1"
+                             }
+                         
                          ]
                  },
              

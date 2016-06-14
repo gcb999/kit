@@ -3,10 +3,45 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[JSTabbarViewController(NavigationControllerDelegate) showTabbar]:JSTabbarViewController+NavigationControllerDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.contentView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AcountViewController viewDidLoad]:AcountViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[JSTabbarViewController tabbarItemChangeFrom:to:]:JSTabbarViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = " new.view.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AcountViewController viewDidLayoutSubviews]:AcountViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[JSTableGroupViewController numberOfSectionsInTableView:]:JSTableGroupViewController.m">
          <PersistentStrings>
             <PersistentString
                value = "self.sections">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AcountViewController tableViewController]:AcountViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = " self.view.bounds.size.width">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

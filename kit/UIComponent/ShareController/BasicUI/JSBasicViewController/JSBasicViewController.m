@@ -24,14 +24,15 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     //解决滚动视图20像素的偏移
-    self.automaticallyAdjustsScrollViewInsets = NO;
+
     
     self.navigationController.navigationBarHidden = NO;
  
 //    self.fd_prefersNavigationBarHidden = YES;//--侧滑不需要
     
     if(IOS7){
-        self.edgesForExtendedLayout=UIRectEdgeNone;
+//        self.edgesForExtendedLayout=UIRectEdgeNone;
+//        self.automaticallyAdjustsScrollViewInsets = NO;
     }
 
    

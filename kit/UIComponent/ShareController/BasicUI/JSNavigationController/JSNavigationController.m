@@ -34,7 +34,7 @@
     
     
   
-    if(KIOS_VERSION>=8.0f) navigationBar.translucent=NO;
+//    if(KIOS_VERSION>=8.0f) navigationBar.translucent=NO;
 
     
     //3: 设置字体大小与颜色
@@ -60,11 +60,11 @@
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    // fix strange animate when use `-[UIViewController cyl_jumpToOtherTabBarControllerItem:(Class)ClassType performSelector:arguments:returnValue:]` ,like this http://i63.tinypic.com/bg766g.jpg . If you have not used this method delete this line blow.
+
 //    [(CYLTabBarController *)self.tabBarController rootWindow].backgroundColor = [UIColor whiteColor];
-    if (self.viewControllers.count > 0) {
-        viewController.hidesBottomBarWhenPushed = YES;
-    }
+//    if (self.viewControllers.count > 0) {
+//        viewController.hidesBottomBarWhenPushed = YES;
+//    }
     [super pushViewController:viewController animated:animated];
 }
 

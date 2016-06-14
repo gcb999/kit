@@ -199,7 +199,7 @@
 
     }
 
-    
+    self.collectionView.frame=self.view.bounds;
 
     
     

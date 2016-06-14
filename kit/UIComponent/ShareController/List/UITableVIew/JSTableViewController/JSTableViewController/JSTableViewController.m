@@ -119,6 +119,8 @@
         }
         
     }
+    //最后必须重新设置坐标
+    self.tableView.frame=self.view.bounds;
     
 }
 

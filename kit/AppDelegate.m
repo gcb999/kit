@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "JSTabbarViewController.h"
+#import "TestViewController.h"
 
 
 @interface AppDelegate ()
@@ -25,7 +26,7 @@
     [[JSFaceBook shareInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
 #pragma mark -配置导航栏
-    [JSNavigationController initialize];
+//    [JSNavigationController initialize];
     
    
     // 侧滑
@@ -33,7 +34,21 @@
     
     //横栏
    JSTabbarViewController *config=[[JSTabbarViewController alloc] init];
-
+//    
+//    TestViewController *ctrl1=[[TestViewController alloc] init];
+//    UINavigationController *nav1=[[UINavigationController alloc] initWithRootViewController:ctrl1];
+//    
+//     TestViewController *ctrl2=[[TestViewController alloc] init];
+//     UINavigationController *nav2=[[UINavigationController alloc] initWithRootViewController:ctrl2];
+//    
+//     TestViewController *ctrl3=[[TestViewController alloc] init];
+//     UINavigationController *nav3=[[UINavigationController alloc] initWithRootViewController:ctrl3];
+//    
+//    UITabBarController *config=[[UITabBarController alloc] init];
+////    config.viewControllers = @[ctrl1,ctrl2,ctrl3];
+//    config.viewControllers = @[nav1,nav2,nav3];
+    
+    
     
     [self.window setRootViewController:config];
     self.window.backgroundColor=[UIColor whiteColor];
