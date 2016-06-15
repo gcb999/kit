@@ -23,7 +23,7 @@
     tableview.frame=CGRectMake(0, 0, IPHONScreenWidth, self.view.bounds.size.height);
     tableview.rowHeight=80;
     [self.view addSubview:tableview];
-//    [self ShyNavBar:tableview];
+   [self ShyNavBar:tableview];
     
 
    

@@ -13,6 +13,7 @@
 @interface HomeViewController ()<JSCollectionViewControllerDelegate,JSWaterFlowLayoutDelegate>
 {
     CGFloat offsety;
+    BOOL flag;
 }
 
 @property(nonatomic,strong) JSCollectionViewController *collectionViewController;
@@ -107,28 +108,29 @@
 #pragma mark -显示数目
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-
+    [JSTabBarControllerConfig shareInstance].tabBarController.tabBar.hidden = NO;
 
 }
 
 
-//-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-//    
-//   //1；隐藏底部
-//    CGFloat y=self.collectionViewController.collectionView.contentOffset.y;
-//    NSLog(@"--y=%f",y);
-//    if (self.collectionViewController.collectionView.contentOffset.y<IPHONScreenHeight-100) {//隐藏
-//        [[JSTabbarViewController shareInstance] showTabbar];
-//    }
-//    else{//显示
-//        [[JSTabbarViewController shareInstance] hiddenTabbar];
-//        
-//
-//        
-//    }
-//    
-//    
-//}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+   //1；隐藏底部
+    CGFloat y=self.collectionViewController.collectionView.contentOffset.y;
+    NSLog(@"--y=%f",y);
+    if (self.collectionViewController.collectionView.contentOffset.y<IPHONScreenHeight-20) {//隐藏
+        [JSTabBarControllerConfig shareInstance].tabBarController.tabBar.hidden = NO;
+    }
+    else{//隐藏
+                     [JSTabBarControllerConfig shareInstance].tabBarController.tabBar.hidden = YES;
+      
+            
+
+        
+    }
+    
+    
+}
 
 
 

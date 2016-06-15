@@ -61,10 +61,10 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
 
-//    [(CYLTabBarController *)self.tabBarController rootWindow].backgroundColor = [UIColor whiteColor];
-//    if (self.viewControllers.count > 0) {
-//        viewController.hidesBottomBarWhenPushed = YES;
-//    }
+
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
     [super pushViewController:viewController animated:animated];
 }
 

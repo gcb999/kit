@@ -107,13 +107,13 @@
     }
     else if ([text isEqualToString:@"UITabbar"]){
         if (indexPath.row==0) {
-            [[JSTabbarViewController shareInstance] showBadge:@"50" tabbarIndex:2 Animation:NO];
+            [[JSTabBarControllerConfig shareInstance] showBadgeWithStyle:WBadgeStyleNumber badge:1000 tabbarIndex:1 animationType:WBadgeAnimTypeNone];
         }
         else if (indexPath.row==1){
-                 [[JSTabbarViewController shareInstance] showBadge:@"100" tabbarIndex:2 Animation:YES];
+                  [[JSTabBarControllerConfig shareInstance] showBadgeWithStyle:WBadgeStyleNumber badge:1000 tabbarIndex:1 animationType:WBadgeAnimTypeNone];
         }
         else if (indexPath.row==2){
-                [[JSTabbarViewController shareInstance] hiddenBageWithTabbarIndex:2];
+                [[JSTabBarControllerConfig shareInstance] hiddenBageWithTabbarIndex:1];
         }
         
     }

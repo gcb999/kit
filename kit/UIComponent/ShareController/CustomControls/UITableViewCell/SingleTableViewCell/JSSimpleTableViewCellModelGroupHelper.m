@@ -100,14 +100,14 @@
                          @{
                              @"title":@"UICollectionView导航栏滚动隐藏",
                              @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"JSMJNIndexTableViewController",
+                             @"ctrl":@"HomeViewController",
                              @"flag":@"1"
                              }
                          ,
                          @{
                              @"title":@"UISCrollerView 导航栏滚动隐藏",
                              @"iconUrl" : @"home_highlight",
-                             @"ctrl":@"JSMJNIndexTableViewController",
+                             @"ctrl":@"TestViewController",
                              @"flag":@"1"
                              }
                          

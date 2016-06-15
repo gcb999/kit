@@ -9,10 +9,13 @@
 #ifndef JSTabbarViewControllerHeader_h
 #define JSTabbarViewControllerHeader_h
 
-#import "JSTabbarViewController.h"
-#import "JSTabbarViewController+shareInstance.h"
-#import "JSTabbarViewController+Badge.h"
-#import "JSTabbarViewController+NavigationControllerDelegate.h"
+#import "WZLBadgeImport.h"
 #import "JSTabbarItemHelpModel.h"
+#import "CYLTabBarController.h"
+#import "JSTabBarControllerConfig.h"
+#import "JSTabBarControllerConfig+shareInstance.h"
+#import "JSTabBarControllerConfig+Badge.h"
+
+
 
 #endif /* JSTabbarViewControllerHeader_h */

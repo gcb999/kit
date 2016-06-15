@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
-#import "JSTabbarViewController.h"
 #import "TestViewController.h"
+
 
 
 @interface AppDelegate ()
@@ -27,30 +27,18 @@
     
 #pragma mark -配置导航栏
 //    [JSNavigationController initialize];
+//    [[JSTabBarControllerConfig shareInstance] customizeTabBarAppearance];
     
    
     // 侧滑
 //    JSSideSlippingControllerConfig* config= [[JSSideSlippingControllerConfig alloc] initWithLeftPanel:[HomeViewController class] centerPanel:[HomeViewController class] rightPanel:[HomeViewController class]];
     
     //横栏
-   JSTabbarViewController *config=[[JSTabbarViewController alloc] init];
-//    
-//    TestViewController *ctrl1=[[TestViewController alloc] init];
-//    UINavigationController *nav1=[[UINavigationController alloc] initWithRootViewController:ctrl1];
-//    
-//     TestViewController *ctrl2=[[TestViewController alloc] init];
-//     UINavigationController *nav2=[[UINavigationController alloc] initWithRootViewController:ctrl2];
-//    
-//     TestViewController *ctrl3=[[TestViewController alloc] init];
-//     UINavigationController *nav3=[[UINavigationController alloc] initWithRootViewController:ctrl3];
-//    
-//    UITabBarController *config=[[UITabBarController alloc] init];
-////    config.viewControllers = @[ctrl1,ctrl2,ctrl3];
-//    config.viewControllers = @[nav1,nav2,nav3];
+   JSTabBarControllerConfig *config=[[JSTabBarControllerConfig alloc] init];
+
     
     
-    
-    [self.window setRootViewController:config];
+    [self.window setRootViewController:config.tabBarController];
     self.window.backgroundColor=[UIColor whiteColor];
     [self.window makeKeyAndVisible];
     

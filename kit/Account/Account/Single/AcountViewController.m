@@ -84,6 +84,11 @@
     return _tableViewController;
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"---dd");
+    
+}
 
 
 

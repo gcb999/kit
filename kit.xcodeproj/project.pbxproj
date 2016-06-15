@@ -8,18 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		47B0D1699B79813D5F5812AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEE6E7B51FE480A31B50DE7 /* libPods.a */; };
+		9014E45F1D0FB11E0075218F /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4581D0FB11E0075218F /* CYLPlusButton.m */; };
+		9014E4601D0FB11E0075218F /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E45A1D0FB11E0075218F /* CYLTabBar.m */; };
+		9014E4611D0FB11E0075218F /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E45C1D0FB11E0075218F /* CYLTabBarController.m */; };
+		9014E4621D0FB11E0075218F /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E45E1D0FB11E0075218F /* UIViewController+CYLTabBarControllerExtention.m */; };
+		9014E46E1D0FB4B80075218F /* JSTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E46D1D0FB4B80075218F /* JSTabBarControllerConfig.m */; };
+		9014E4711D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4701D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m */; };
+		9014E4741D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4731D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m */; };
+		9014E4841D0FC1570075218F /* UIBarButtonItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4781D0FC1570075218F /* UIBarButtonItem+WZLBadge.m */; };
+		9014E4851D0FC1570075218F /* UITabBarItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E47A1D0FC1570075218F /* UITabBarItem+WZLBadge.m */; };
+		9014E4861D0FC1570075218F /* CAAnimation+WAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E47D1D0FC1570075218F /* CAAnimation+WAnimation.m */; };
+		9014E4871D0FC1570075218F /* UIView+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4821D0FC1570075218F /* UIView+WZLBadge.m */; };
 		90175B311D0BA93600F40976 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B301D0BA93600F40976 /* TestViewController.m */; };
 		90175B371D0BACED00F40976 /* UIViewController+ShyNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B361D0BACED00F40976 /* UIViewController+ShyNavBar.m */; };
 		90175B481D0BB91C00F40976 /* JSFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B471D0BB91C00F40976 /* JSFaceBook.m */; };
 		903998741D0A56740030C138 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998731D0A56740030C138 /* UIView+Badge.m */; };
 		903998871D0A61840030C138 /* JSTabbarItemHelpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987A1D0A61840030C138 /* JSTabbarItemHelpModel.m */; };
 		903998881D0A61840030C138 /* JSTabbarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987C1D0A61840030C138 /* JSTabbarItemModel.m */; };
-		903998891D0A61840030C138 /* JSTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987F1D0A61840030C138 /* JSTabbar.m */; };
-		9039988A1D0A61840030C138 /* JSTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998811D0A61840030C138 /* JSTabbarItem.m */; };
-		9039988B1D0A61840030C138 /* JSTabbarViewController+shareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998841D0A61840030C138 /* JSTabbarViewController+shareInstance.m */; };
-		9039988C1D0A61840030C138 /* JSTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998861D0A61840030C138 /* JSTabbarViewController.m */; };
-		9039988F1D0A64120030C138 /* JSTabbarViewController+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */; };
-		903998921D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998911D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m */; };
 		903998A11D0A90740030C138 /* JSSimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998A01D0A90740030C138 /* JSSimpleTableViewCell.m */; };
 		903998A41D0A90E30030C138 /* JSSimpleTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998A31D0A90E30030C138 /* JSSimpleTableViewCellModel.m */; };
 		903998AD1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998AC1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m */; };
@@ -178,6 +183,30 @@
 
 /* Begin PBXFileReference section */
 		4FEE6E7B51FE480A31B50DE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9014E4571D0FB11E0075218F /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
+		9014E4581D0FB11E0075218F /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
+		9014E4591D0FB11E0075218F /* CYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBar.h; sourceTree = "<group>"; };
+		9014E45A1D0FB11E0075218F /* CYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBar.m; sourceTree = "<group>"; };
+		9014E45B1D0FB11E0075218F /* CYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarController.h; sourceTree = "<group>"; };
+		9014E45C1D0FB11E0075218F /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
+		9014E45D1D0FB11E0075218F /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		9014E45E1D0FB11E0075218F /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		9014E46C1D0FB4B80075218F /* JSTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBarControllerConfig.h; sourceTree = "<group>"; };
+		9014E46D1D0FB4B80075218F /* JSTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBarControllerConfig.m; sourceTree = "<group>"; };
+		9014E46F1D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabBarControllerConfig+shareInstance.h"; sourceTree = "<group>"; };
+		9014E4701D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabBarControllerConfig+shareInstance.m"; sourceTree = "<group>"; };
+		9014E4721D0FB53B0075218F /* JSTabBarControllerConfig+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabBarControllerConfig+Badge.h"; sourceTree = "<group>"; };
+		9014E4731D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabBarControllerConfig+Badge.m"; sourceTree = "<group>"; };
+		9014E4771D0FC1570075218F /* UIBarButtonItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WZLBadge.h"; sourceTree = "<group>"; };
+		9014E4781D0FC1570075218F /* UIBarButtonItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WZLBadge.m"; sourceTree = "<group>"; };
+		9014E4791D0FC1570075218F /* UITabBarItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+WZLBadge.h"; sourceTree = "<group>"; };
+		9014E47A1D0FC1570075218F /* UITabBarItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+WZLBadge.m"; sourceTree = "<group>"; };
+		9014E47C1D0FC1570075218F /* CAAnimation+WAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+WAnimation.h"; sourceTree = "<group>"; };
+		9014E47D1D0FC1570075218F /* CAAnimation+WAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+WAnimation.m"; sourceTree = "<group>"; };
+		9014E47F1D0FC1570075218F /* WZLBadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeProtocol.h; sourceTree = "<group>"; };
+		9014E4811D0FC1570075218F /* UIView+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZLBadge.h"; sourceTree = "<group>"; };
+		9014E4821D0FC1570075218F /* UIView+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZLBadge.m"; sourceTree = "<group>"; };
+		9014E4831D0FC1570075218F /* WZLBadgeImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeImport.h; sourceTree = "<group>"; };
 		90175B2F1D0BA93600F40976 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		90175B301D0BA93600F40976 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		90175B351D0BACED00F40976 /* UIViewController+ShyNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShyNavBar.h"; sourceTree = "<group>"; };
@@ -204,18 +233,6 @@
 		9039987A1D0A61840030C138 /* JSTabbarItemHelpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItemHelpModel.m; sourceTree = "<group>"; };
 		9039987B1D0A61840030C138 /* JSTabbarItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemModel.h; sourceTree = "<group>"; };
 		9039987C1D0A61840030C138 /* JSTabbarItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItemModel.m; sourceTree = "<group>"; };
-		9039987E1D0A61840030C138 /* JSTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbar.h; sourceTree = "<group>"; };
-		9039987F1D0A61840030C138 /* JSTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbar.m; sourceTree = "<group>"; };
-		903998801D0A61840030C138 /* JSTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItem.h; sourceTree = "<group>"; };
-		903998811D0A61840030C138 /* JSTabbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItem.m; sourceTree = "<group>"; };
-		903998831D0A61840030C138 /* JSTabbarViewController+shareInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabbarViewController+shareInstance.h"; sourceTree = "<group>"; };
-		903998841D0A61840030C138 /* JSTabbarViewController+shareInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+shareInstance.m"; sourceTree = "<group>"; };
-		903998851D0A61840030C138 /* JSTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarViewController.h; sourceTree = "<group>"; };
-		903998861D0A61840030C138 /* JSTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarViewController.m; sourceTree = "<group>"; };
-		9039988D1D0A64120030C138 /* JSTabbarViewController+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabbarViewController+Badge.h"; sourceTree = "<group>"; };
-		9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+Badge.m"; sourceTree = "<group>"; };
-		903998901D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabbarViewController+NavigationControllerDelegate.h"; sourceTree = "<group>"; };
-		903998911D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabbarViewController+NavigationControllerDelegate.m"; sourceTree = "<group>"; };
 		9039989F1D0A90740030C138 /* JSSimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCell.h; sourceTree = "<group>"; };
 		903998A01D0A90740030C138 /* JSSimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCell.m; sourceTree = "<group>"; };
 		903998A21D0A90E30030C138 /* JSSimpleTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModel.h; sourceTree = "<group>"; };
@@ -551,6 +568,70 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9014E4561D0FB11D0075218F /* CYLTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				9014E4571D0FB11E0075218F /* CYLPlusButton.h */,
+				9014E4581D0FB11E0075218F /* CYLPlusButton.m */,
+				9014E4591D0FB11E0075218F /* CYLTabBar.h */,
+				9014E45A1D0FB11E0075218F /* CYLTabBar.m */,
+				9014E45B1D0FB11E0075218F /* CYLTabBarController.h */,
+				9014E45C1D0FB11E0075218F /* CYLTabBarController.m */,
+				9014E45D1D0FB11E0075218F /* UIViewController+CYLTabBarControllerExtention.h */,
+				9014E45E1D0FB11E0075218F /* UIViewController+CYLTabBarControllerExtention.m */,
+			);
+			path = CYLTabBarController;
+			sourceTree = "<group>";
+		};
+		9014E4751D0FC1570075218F /* WZLBadge */ = {
+			isa = PBXGroup;
+			children = (
+				9014E4761D0FC1570075218F /* BarItem */,
+				9014E47B1D0FC1570075218F /* CategorySupport */,
+				9014E47E1D0FC1570075218F /* Protocol */,
+				9014E4801D0FC1570075218F /* View */,
+				9014E4831D0FC1570075218F /* WZLBadgeImport.h */,
+			);
+			path = WZLBadge;
+			sourceTree = "<group>";
+		};
+		9014E4761D0FC1570075218F /* BarItem */ = {
+			isa = PBXGroup;
+			children = (
+				9014E4771D0FC1570075218F /* UIBarButtonItem+WZLBadge.h */,
+				9014E4781D0FC1570075218F /* UIBarButtonItem+WZLBadge.m */,
+				9014E4791D0FC1570075218F /* UITabBarItem+WZLBadge.h */,
+				9014E47A1D0FC1570075218F /* UITabBarItem+WZLBadge.m */,
+			);
+			path = BarItem;
+			sourceTree = "<group>";
+		};
+		9014E47B1D0FC1570075218F /* CategorySupport */ = {
+			isa = PBXGroup;
+			children = (
+				9014E47C1D0FC1570075218F /* CAAnimation+WAnimation.h */,
+				9014E47D1D0FC1570075218F /* CAAnimation+WAnimation.m */,
+			);
+			path = CategorySupport;
+			sourceTree = "<group>";
+		};
+		9014E47E1D0FC1570075218F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9014E47F1D0FC1570075218F /* WZLBadgeProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9014E4801D0FC1570075218F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9014E4811D0FC1570075218F /* UIView+WZLBadge.h */,
+				9014E4821D0FC1570075218F /* UIView+WZLBadge.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		90175B451D0BB91C00F40976 /* FaceBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -571,28 +652,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9039987D1D0A61840030C138 /* Tabbar */ = {
-			isa = PBXGroup;
-			children = (
-				9039987E1D0A61840030C138 /* JSTabbar.h */,
-				9039987F1D0A61840030C138 /* JSTabbar.m */,
-				903998801D0A61840030C138 /* JSTabbarItem.h */,
-				903998811D0A61840030C138 /* JSTabbarItem.m */,
-			);
-			path = Tabbar;
-			sourceTree = "<group>";
-		};
 		903998821D0A61840030C138 /* TabbarViewController */ = {
 			isa = PBXGroup;
 			children = (
-				903998831D0A61840030C138 /* JSTabbarViewController+shareInstance.h */,
-				903998841D0A61840030C138 /* JSTabbarViewController+shareInstance.m */,
-				903998851D0A61840030C138 /* JSTabbarViewController.h */,
-				903998861D0A61840030C138 /* JSTabbarViewController.m */,
-				9039988D1D0A64120030C138 /* JSTabbarViewController+Badge.h */,
-				9039988E1D0A64120030C138 /* JSTabbarViewController+Badge.m */,
-				903998901D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.h */,
-				903998911D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m */,
+				9014E46C1D0FB4B80075218F /* JSTabBarControllerConfig.h */,
+				9014E46D1D0FB4B80075218F /* JSTabBarControllerConfig.m */,
+				9014E46F1D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.h */,
+				9014E4701D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m */,
+				9014E4721D0FB53B0075218F /* JSTabBarControllerConfig+Badge.h */,
+				9014E4731D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m */,
 			);
 			path = TabbarViewController;
 			sourceTree = "<group>";
@@ -862,7 +930,6 @@
 			isa = PBXGroup;
 			children = (
 				903998781D0A61840030C138 /* Model */,
-				9039987D1D0A61840030C138 /* Tabbar */,
 				903998821D0A61840030C138 /* TabbarViewController */,
 				90175B3F1D0BB2DC00F40976 /* JSTabbarViewControllerHeader.h */,
 			);
@@ -1404,6 +1471,8 @@
 		90E3CC001D0584FD00F4AD20 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9014E4751D0FC1570075218F /* WZLBadge */,
+				9014E4561D0FB11D0075218F /* CYLTabBarController */,
 				90F0BB1B1D07AAD200CD24D6 /* FaceBook */,
 				90F0BAE51D065D8E00CD24D6 /* SDCycleScrollView */,
 				90E3CC011D0584FD00F4AD20 /* CardIO */,
@@ -1885,13 +1954,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				903998921D0A67C60030C138 /* JSTabbarViewController+NavigationControllerDelegate.m in Sources */,
 				90E3CC4C1D0584FD00F4AD20 /* JSNetWork+GET.m in Sources */,
 				90E3CC351D0584FD00F4AD20 /* JSCollectionViewController+ThreeDTouch.m in Sources */,
 				90E3CC471D0584FD00F4AD20 /* JSTableViewController+UIScrollView.m in Sources */,
 				90E3CC6D1D0584FD00F4AD20 /* UIWindow+Launch.m in Sources */,
 				90E3CC911D05850600F4AD20 /* AccountGroupViewController.m in Sources */,
 				903998881D0A61840030C138 /* JSTabbarItemModel.m in Sources */,
+				9014E4621D0FB11E0075218F /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				90F0BAFA1D065D8E00CD24D6 /* SDCycleScrollView.m in Sources */,
 				90E3CC391D0584FD00F4AD20 /* JSLineLayout.m in Sources */,
 				90E3CC701D0584FD00F4AD20 /* JSPayPal.m in Sources */,
@@ -1910,6 +1979,7 @@
 				90E3CC521D0584FD00F4AD20 /* CALayer+Transition.m in Sources */,
 				90E3CC4B1D0584FD00F4AD20 /* JSError.m in Sources */,
 				90F0BB021D0668B500CD24D6 /* HomeDetailViewController.m in Sources */,
+				9014E4611D0FB11E0075218F /* CYLTabBarController.m in Sources */,
 				90E3CC341D0584FD00F4AD20 /* JSCollectionViewController+NotWorkView.m in Sources */,
 				90F0BAE41D06583800CD24D6 /* HomeViewController.m in Sources */,
 				90E3CC381D0584FD00F4AD20 /* JSBaseFlowLayout.m in Sources */,
@@ -1917,7 +1987,6 @@
 				90F0BB311D07CB0A00CD24D6 /* JSLoginViewController.m in Sources */,
 				90E3CC5F1D0584FD00F4AD20 /* NSString+Extend.m in Sources */,
 				90E3CC751D0584FD00F4AD20 /* UIView+ViewController.m in Sources */,
-				9039988B1D0A61840030C138 /* JSTabbarViewController+shareInstance.m in Sources */,
 				90175B371D0BACED00F40976 /* UIViewController+ShyNavBar.m in Sources */,
 				90E3CC421D0584FD00F4AD20 /* JSTableViewController+NotWorkView.m in Sources */,
 				90E3CC6C1D0584FD00F4AD20 /* UIViewController+NavigationItem.m in Sources */,
@@ -1934,6 +2003,7 @@
 				90E3CC4A1D0584FD00F4AD20 /* JSUserSingletonModel.m in Sources */,
 				90E3CC3E1D0584FD00F4AD20 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
 				90E3CC721D0584FD00F4AD20 /* MJNIndexView.m in Sources */,
+				9014E45F1D0FB11E0075218F /* CYLPlusButton.m in Sources */,
 				90E3CC691D0584FD00F4AD20 /* UIImage+Water.m in Sources */,
 				90E3CC461D0584FD00F4AD20 /* JSTableViewController+ThreeDTouch.m in Sources */,
 				903998A11D0A90740030C138 /* JSSimpleTableViewCell.m in Sources */,
@@ -1945,10 +2015,13 @@
 				90E3CC321D0584FD00F4AD20 /* JSCollectionViewController+CollectionView.m in Sources */,
 				90E3CC401D0584FD00F4AD20 /* JSStretchableTableHeaderView.m in Sources */,
 				90E3CC621D0584FD00F4AD20 /* UIColor+Extend.m in Sources */,
+				9014E4861D0FC1570075218F /* CAAnimation+WAnimation.m in Sources */,
 				90E3CC581D0584FD00F4AD20 /* NSDictionary+Extension.m in Sources */,
 				90E3CC6B1D0584FD00F4AD20 /* UIView+Extend.m in Sources */,
 				90E3CC2C1D0584FD00F4AD20 /* JSItemImgageViewCell.m in Sources */,
 				90F0BADD1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.m in Sources */,
+				9014E46E1D0FB4B80075218F /* JSTabBarControllerConfig.m in Sources */,
+				9014E4851D0FC1570075218F /* UITabBarItem+WZLBadge.m in Sources */,
 				90E3CC4E1D0584FD00F4AD20 /* JSNetWork.m in Sources */,
 				90E3CC631D0584FD00F4AD20 /* UIDevice+Extend.m in Sources */,
 				90E3CC6F1D0584FD00F4AD20 /* JSBraintree.m in Sources */,
@@ -1963,6 +2036,7 @@
 				90F0BB0C1D0672AA00CD24D6 /* JSMJNIndexTableViewController.m in Sources */,
 				903998BE1D0AB5640030C138 /* JSPresentBaseTransition.m in Sources */,
 				90F0BADF1D06569F00CD24D6 /* JSProductListCollectionViewCell.m in Sources */,
+				9014E4741D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m in Sources */,
 				90E3CC5E1D0584FD00F4AD20 /* NSString+dateFromString.m in Sources */,
 				90E3CC611D0584FD00F4AD20 /* JSDIYButton.m in Sources */,
 				90E3CC491D0584FD00F4AD20 /* JSMD5.m in Sources */,
@@ -1977,10 +2051,11 @@
 				903998B71D0AA5330030C138 /* JSPickerViewController.m in Sources */,
 				90F0BAD91D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.m in Sources */,
 				90E3CC601D0584FD00F4AD20 /* NSString+Password.m in Sources */,
+				9014E4841D0FC1570075218F /* UIBarButtonItem+WZLBadge.m in Sources */,
 				90E3CC4D1D0584FD00F4AD20 /* JSNetWork+POST.m in Sources */,
 				90E3CC331D0584FD00F4AD20 /* JSCollectionViewController+MJRefresh.m in Sources */,
+				9014E4871D0FC1570075218F /* UIView+WZLBadge.m in Sources */,
 				90E3CC741D0584FD00F4AD20 /* NinaPagerView.m in Sources */,
-				9039988C1D0A61840030C138 /* JSTabbarViewController.m in Sources */,
 				90E3CC531D0584FD00F4AD20 /* CoreArchive.m in Sources */,
 				90E3CC511D0584FD00F4AD20 /* CALayer+Anim.m in Sources */,
 				90F0BB171D069AF000CD24D6 /* HotCountryCell.m in Sources */,
@@ -1996,17 +2071,15 @@
 				90E3CC291D0584FD00F4AD20 /* JSBigItemImageViewController.m in Sources */,
 				90E3CC411D0584FD00F4AD20 /* JSTableViewController+MJRefresh.m in Sources */,
 				90F0BAD61D06569F00CD24D6 /* JSBaseProductCollectionCellFrameModel+Layout.m in Sources */,
-				9039988F1D0A64120030C138 /* JSTabbarViewController+Badge.m in Sources */,
 				90E3CC681D0584FD00F4AD20 /* UIImage+FixOrientation.m in Sources */,
 				90E3CC5D1D0584FD00F4AD20 /* NSObject+Utilty.m in Sources */,
 				90F0BB121D06735A00CD24D6 /* CountryModel.m in Sources */,
-				903998891D0A61840030C138 /* JSTabbar.m in Sources */,
 				90F0BAD81D06569F00CD24D6 /* JSBaseProductCollectionCellModel.m in Sources */,
 				90F0BAF61D065D8E00CD24D6 /* TAAnimatedDotView.m in Sources */,
 				90F0BB111D06735A00CD24D6 /* CountryCell.m in Sources */,
 				90E3CC5C1D0584FD00F4AD20 /* NSObject+UICateGory.m in Sources */,
 				90E3CC501D0584FD00F4AD20 /* UIViewController+ThreeDTouch.m in Sources */,
-				9039988A1D0A61840030C138 /* JSTabbarItem.m in Sources */,
+				9014E4711D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m in Sources */,
 				90E3CC661D0584FD00F4AD20 /* UIImage+Cut.m in Sources */,
 				90E3CC641D0584FD00F4AD20 /* UIFont+Extend.m in Sources */,
 				90E3CC3C1D0584FD00F4AD20 /* WeChatStylePlaceHolder.m in Sources */,
@@ -2019,6 +2092,7 @@
 				90F0BADB1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m in Sources */,
 				903998741D0A56740030C138 /* UIView+Badge.m in Sources */,
 				90E3CC921D05850600F4AD20 /* HeadView.m in Sources */,
+				9014E4601D0FB11E0075218F /* CYLTabBar.m in Sources */,
 				90E3CC371D0584FD00F4AD20 /* JSCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

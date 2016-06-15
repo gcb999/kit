@@ -30,6 +30,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "__36-[JSTabbarController viewDidAppear:]_block_invoke:JSTabbarController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "tabBarButton.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[JSTableGroupViewController numberOfSectionsInTableView:]:JSTableGroupViewController.m">
          <PersistentStrings>
             <PersistentString
