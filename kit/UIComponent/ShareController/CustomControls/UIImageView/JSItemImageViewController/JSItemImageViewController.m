@@ -17,7 +17,6 @@
     
 }
 
-@property(nonatomic,assign)CGRect contentRect;
 
 @property(nonatomic,strong)NSArray *smallImgUrls;
 
@@ -33,12 +32,11 @@
 @implementation JSItemImageViewController
 
 
-- (instancetype)initWithFrame:(CGRect)frame smallImgUrl:(NSArray *)smallImgUrls bigImgUrl:(NSArray *)bigImgUrls
+- (instancetype)initWithSmallImgUrl:(NSArray *)smallImgUrls bigImgUrl:(NSArray *)bigImgUrls
 {
     self = [super init];
     if (self) {
        
-        self.contentRect=frame;
         self.smallImgUrls=smallImgUrls;
         self.bigImgUrls=bigImgUrls;
         
@@ -64,12 +62,6 @@
     [self.collectionViewController.view addSubview:self.pageControl];
     
     
-
-    //3： 添加流水布局
-    
-    CGSize size=self.contentRect.size;
-    JSBaseFlowLayout *flowout=[[JSBaseFlowLayout alloc] initWithContentFrame:self.contentRect DirectionHorizontal:size minimumLineSpacing:0];
-    self.collectionViewController.flowLayout=flowout;
    
  
 }
@@ -125,6 +117,7 @@
       
         _collectionViewController.pagingEnabled=YES;
         _collectionViewController.view.tag=1;
+      
         
     }
     
@@ -145,14 +138,15 @@
 }
 
 
+
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     
     //1：CollectionView
-    self.collectionViewController.view.frame=self.contentRect;
+    self.collectionViewController.view.frame=self.view.bounds;
     
     //2: 页码
-    CGSize size=self.contentRect.size;
+    CGSize size=self.view.bounds.size;
     self.pageControl.frame= CGRectMake(0, size.height-20, size.width, 20);
     
     

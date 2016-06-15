@@ -12,7 +12,7 @@
 
 
 
-- (instancetype)initWithFrame:(CGRect)frame smallImgUrl:(NSArray *)smallImgUrls bigImgUrl:(NSArray *)bigImgUrls;
+- (instancetype)initWithSmallImgUrl:(NSArray *)smallImgUrls bigImgUrl:(NSArray *)bigImgUrls;
 
 
 

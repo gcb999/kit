@@ -11,13 +11,7 @@
 @implementation UIView (Coordinates)
 
 
--(CGRect)centerForParentViewFrame:(CGRect)rect subsize:(CGSize)size{
-    
 
-    CGFloat width=(rect.size.width-size.width)*0.5f;
-    CGFloat heigth=(rect.size.height-size.height)*0.5f;
-    return UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(heigth, width, heigth, width));
-}
 
 - (UIViewController *)viewController {
     //通过响应者链，获取此视图所在的视图控制器

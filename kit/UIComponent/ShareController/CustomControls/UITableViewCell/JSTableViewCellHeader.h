@@ -26,5 +26,8 @@
 #import "JSSimpleTableViewCellModelSingleHelper.h"//分组
 
 
+#import "JSSelectedTableViewCell.h"
+
+
 
 #endif /* JSTableViewCellHeader_h */

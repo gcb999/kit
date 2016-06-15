@@ -26,8 +26,8 @@
                                     @"http://pic.cnblogs.com/avatar/291306/20150909092523.png"
                                     
                                     ];
-      self.itemImageViewController=[[JSItemImageViewController alloc] initWithFrame:CGRectMake(0, 0, IPHONScreenWidth, 200) smallImgUrl:imagesURLStrings bigImgUrl:imagesURLStrings];
-     
+      self.itemImageViewController=[[JSItemImageViewController alloc] initWithSmallImgUrl:imagesURLStrings bigImgUrl:imagesURLStrings];
+    self.itemImageViewController.view.frame=CGRectMake(0, 64, self.view.bounds.size.width, 300);
     [self.view addSubview:self.itemImageViewController.view];
     [self addChildViewController:self.itemImageViewController];
 

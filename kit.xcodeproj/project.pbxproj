@@ -19,13 +19,18 @@
 		90175B371D0BACED00F40976 /* UIViewController+ShyNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B361D0BACED00F40976 /* UIViewController+ShyNavBar.m */; };
 		90175B481D0BB91C00F40976 /* JSFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B471D0BB91C00F40976 /* JSFaceBook.m */; };
 		901FA19D1D11089300120066 /* UITabBar+littleRedDotBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA19C1D11089300120066 /* UITabBar+littleRedDotBadge.m */; };
+		901FA1A11D11310F00120066 /* SingleTableViewCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 901FA1A01D11310F00120066 /* SingleTableViewCell.png */; };
+		901FA1A51D11315400120066 /* JSSelectedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA1A41D11315400120066 /* JSSelectedTableViewCell.m */; };
+		901FA1A91D11329200120066 /* JSSelectedTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA1A81D11329200120066 /* JSSelectedTableViewCellModel.m */; };
+		901FA1B11D1132D300120066 /* JSSimpleTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA1AC1D1132D300120066 /* JSSimpleTableViewCellModel.m */; };
+		901FA1B21D1132D300120066 /* JSSimpleTableViewCellModelGroupHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA1AE1D1132D300120066 /* JSSimpleTableViewCellModelGroupHelper.m */; };
+		901FA1B31D1132D300120066 /* JSSimpleTableViewCellModelSingleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA1B01D1132D300120066 /* JSSimpleTableViewCellModelSingleHelper.m */; };
+		901FA1B61D11342E00120066 /* JSSelectedTableViewCellModelFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA1B51D11342E00120066 /* JSSelectedTableViewCellModelFrame.m */; };
+		901FA1B91D11391A00120066 /* NSObject+Coordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA1B81D11391A00120066 /* NSObject+Coordinates.m */; };
 		903998741D0A56740030C138 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998731D0A56740030C138 /* UIView+Badge.m */; };
 		903998871D0A61840030C138 /* JSTabbarItemHelpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987A1D0A61840030C138 /* JSTabbarItemHelpModel.m */; };
 		903998881D0A61840030C138 /* JSTabbarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987C1D0A61840030C138 /* JSTabbarItemModel.m */; };
 		903998A11D0A90740030C138 /* JSSimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998A01D0A90740030C138 /* JSSimpleTableViewCell.m */; };
-		903998A41D0A90E30030C138 /* JSSimpleTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998A31D0A90E30030C138 /* JSSimpleTableViewCellModel.m */; };
-		903998AD1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998AC1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m */; };
-		903998B01D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */; };
 		903998B71D0AA5330030C138 /* JSPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998B61D0AA5330030C138 /* JSPickerViewController.m */; };
 		903998BA1D0AAD900030C138 /* JSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998B91D0AAD900030C138 /* JSDatePickerViewController.m */; };
 		903998BE1D0AB5640030C138 /* JSPresentBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998BD1D0AB5640030C138 /* JSPresentBaseTransition.m */; };
@@ -216,6 +221,21 @@
 		90175B4A1D0BBC8F00F40976 /* JSShareControllerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSShareControllerHeader.h; sourceTree = "<group>"; };
 		901FA19B1D11089300120066 /* UITabBar+littleRedDotBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+littleRedDotBadge.h"; sourceTree = "<group>"; };
 		901FA19C1D11089300120066 /* UITabBar+littleRedDotBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+littleRedDotBadge.m"; sourceTree = "<group>"; };
+		901FA1A01D11310F00120066 /* SingleTableViewCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SingleTableViewCell.png; sourceTree = "<group>"; };
+		901FA1A31D11315400120066 /* JSSelectedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSelectedTableViewCell.h; sourceTree = "<group>"; };
+		901FA1A41D11315400120066 /* JSSelectedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSelectedTableViewCell.m; sourceTree = "<group>"; };
+		901FA1A71D11329200120066 /* JSSelectedTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSelectedTableViewCellModel.h; sourceTree = "<group>"; };
+		901FA1A81D11329200120066 /* JSSelectedTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSelectedTableViewCellModel.m; sourceTree = "<group>"; };
+		901FA1AB1D1132D300120066 /* JSSimpleTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModel.h; sourceTree = "<group>"; };
+		901FA1AC1D1132D300120066 /* JSSimpleTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModel.m; sourceTree = "<group>"; };
+		901FA1AD1D1132D300120066 /* JSSimpleTableViewCellModelGroupHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModelGroupHelper.h; sourceTree = "<group>"; };
+		901FA1AE1D1132D300120066 /* JSSimpleTableViewCellModelGroupHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModelGroupHelper.m; sourceTree = "<group>"; };
+		901FA1AF1D1132D300120066 /* JSSimpleTableViewCellModelSingleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModelSingleHelper.h; sourceTree = "<group>"; };
+		901FA1B01D1132D300120066 /* JSSimpleTableViewCellModelSingleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModelSingleHelper.m; sourceTree = "<group>"; };
+		901FA1B41D11342E00120066 /* JSSelectedTableViewCellModelFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSelectedTableViewCellModelFrame.h; sourceTree = "<group>"; };
+		901FA1B51D11342E00120066 /* JSSelectedTableViewCellModelFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSelectedTableViewCellModelFrame.m; sourceTree = "<group>"; };
+		901FA1B71D11391A00120066 /* NSObject+Coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Coordinates.h"; sourceTree = "<group>"; };
+		901FA1B81D11391A00120066 /* NSObject+Coordinates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Coordinates.m"; sourceTree = "<group>"; };
 		903998721D0A56740030C138 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		903998731D0A56740030C138 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		903998791D0A61840030C138 /* JSTabbarItemHelpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemHelpModel.h; sourceTree = "<group>"; };
@@ -224,12 +244,6 @@
 		9039987C1D0A61840030C138 /* JSTabbarItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItemModel.m; sourceTree = "<group>"; };
 		9039989F1D0A90740030C138 /* JSSimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCell.h; sourceTree = "<group>"; };
 		903998A01D0A90740030C138 /* JSSimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCell.m; sourceTree = "<group>"; };
-		903998A21D0A90E30030C138 /* JSSimpleTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModel.h; sourceTree = "<group>"; };
-		903998A31D0A90E30030C138 /* JSSimpleTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModel.m; sourceTree = "<group>"; };
-		903998AB1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModelGroupHelper.h; sourceTree = "<group>"; };
-		903998AC1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModelGroupHelper.m; sourceTree = "<group>"; };
-		903998AE1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleTableViewCellModelSingleHelper.h; sourceTree = "<group>"; };
-		903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleTableViewCellModelSingleHelper.m; sourceTree = "<group>"; };
 		903998B51D0AA5330030C138 /* JSPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPickerViewController.h; sourceTree = "<group>"; };
 		903998B61D0AA5330030C138 /* JSPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPickerViewController.m; sourceTree = "<group>"; };
 		903998B81D0AAD900030C138 /* JSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDatePickerViewController.h; sourceTree = "<group>"; };
@@ -581,6 +595,40 @@
 			path = FaceBook;
 			sourceTree = "<group>";
 		};
+		901FA1A21D11313600120066 /* SelectedTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				901FA1A61D11328100120066 /* Model */,
+				901FA1A31D11315400120066 /* JSSelectedTableViewCell.h */,
+				901FA1A41D11315400120066 /* JSSelectedTableViewCell.m */,
+			);
+			path = SelectedTableViewCell;
+			sourceTree = "<group>";
+		};
+		901FA1A61D11328100120066 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				901FA1A71D11329200120066 /* JSSelectedTableViewCellModel.h */,
+				901FA1A81D11329200120066 /* JSSelectedTableViewCellModel.m */,
+				901FA1B41D11342E00120066 /* JSSelectedTableViewCellModelFrame.h */,
+				901FA1B51D11342E00120066 /* JSSelectedTableViewCellModelFrame.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		901FA1AA1D1132D300120066 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				901FA1AB1D1132D300120066 /* JSSimpleTableViewCellModel.h */,
+				901FA1AC1D1132D300120066 /* JSSimpleTableViewCellModel.m */,
+				901FA1AD1D1132D300120066 /* JSSimpleTableViewCellModelGroupHelper.h */,
+				901FA1AE1D1132D300120066 /* JSSimpleTableViewCellModelGroupHelper.m */,
+				901FA1AF1D1132D300120066 /* JSSimpleTableViewCellModelSingleHelper.h */,
+				901FA1B01D1132D300120066 /* JSSimpleTableViewCellModelSingleHelper.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		903998781D0A61840030C138 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +658,7 @@
 		9039989D1D0A900C0030C138 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				901FA1A21D11313600120066 /* SelectedTableViewCell */,
 				9039989E1D0A90590030C138 /* SingleTableViewCell */,
 				90175B3C1D0BB15400F40976 /* JSTableViewCellHeader.h */,
 			);
@@ -619,14 +668,10 @@
 		9039989E1D0A90590030C138 /* SingleTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				901FA1AA1D1132D300120066 /* Model */,
+				901FA1A01D11310F00120066 /* SingleTableViewCell.png */,
 				9039989F1D0A90740030C138 /* JSSimpleTableViewCell.h */,
 				903998A01D0A90740030C138 /* JSSimpleTableViewCell.m */,
-				903998A21D0A90E30030C138 /* JSSimpleTableViewCellModel.h */,
-				903998A31D0A90E30030C138 /* JSSimpleTableViewCellModel.m */,
-				903998AB1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.h */,
-				903998AC1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m */,
-				903998AE1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.h */,
-				903998AF1D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m */,
 			);
 			path = SingleTableViewCell;
 			sourceTree = "<group>";
@@ -1293,6 +1338,8 @@
 				90E3CBCD1D0584FD00F4AD20 /* NSObject+UICateGory.m */,
 				90E3CBCE1D0584FD00F4AD20 /* NSObject+Utilty.h */,
 				90E3CBCF1D0584FD00F4AD20 /* NSObject+Utilty.m */,
+				901FA1B71D11391A00120066 /* NSObject+Coordinates.h */,
+				901FA1B81D11391A00120066 /* NSObject+Coordinates.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1819,6 +1866,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F0BB141D0679F900CD24D6 /* address.plist in Resources */,
+				901FA1A11D11310F00120066 /* SingleTableViewCell.png in Resources */,
 				90E3CAF11D05845900F4AD20 /* LaunchScreen.storyboard in Resources */,
 				90E3CAEE1D05845900F4AD20 /* Assets.xcassets in Resources */,
 				90E3CAEC1D05845900F4AD20 /* Main.storyboard in Resources */,
@@ -1936,10 +1984,9 @@
 				90F0BADC1D06569F00CD24D6 /* JSProductCollectionViewCell.m in Sources */,
 				90E3CC2A1D0584FD00F4AD20 /* JSItemImageViewController.m in Sources */,
 				901FA19D1D11089300120066 /* UITabBar+littleRedDotBadge.m in Sources */,
-				903998AD1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m in Sources */,
-				903998B01D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m in Sources */,
 				903998C11D0AB5B50030C138 /* JSPresentTransformScaleTransition.m in Sources */,
 				90E3CC241D0584FD00F4AD20 /* JSBasicViewController+ThreeDTouch.m in Sources */,
+				901FA1A91D11329200120066 /* JSSelectedTableViewCellModel.m in Sources */,
 				90E3CC431D0584FD00F4AD20 /* JSTableViewController+StretchableTableHeaderView.m in Sources */,
 				90E3CC591D0584FD00F4AD20 /* NSMutableAttributedString+CBAttributedString.m in Sources */,
 				90E3CC4A1D0584FD00F4AD20 /* JSUserSingletonModel.m in Sources */,
@@ -1956,6 +2003,7 @@
 				90E3CC671D0584FD00F4AD20 /* UIImage+Extend.m in Sources */,
 				90E3CC321D0584FD00F4AD20 /* JSCollectionViewController+CollectionView.m in Sources */,
 				90E3CC401D0584FD00F4AD20 /* JSStretchableTableHeaderView.m in Sources */,
+				901FA1B91D11391A00120066 /* NSObject+Coordinates.m in Sources */,
 				90E3CC621D0584FD00F4AD20 /* UIColor+Extend.m in Sources */,
 				90E3CC581D0584FD00F4AD20 /* NSDictionary+Extension.m in Sources */,
 				90E3CC6B1D0584FD00F4AD20 /* UIView+Extend.m in Sources */,
@@ -1963,6 +2011,7 @@
 				90F0BADD1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.m in Sources */,
 				9014E46E1D0FB4B80075218F /* JSTabBarControllerConfig.m in Sources */,
 				90E3CC4E1D0584FD00F4AD20 /* JSNetWork.m in Sources */,
+				901FA1B11D1132D300120066 /* JSSimpleTableViewCellModel.m in Sources */,
 				90E3CC631D0584FD00F4AD20 /* UIDevice+Extend.m in Sources */,
 				90E3CC6F1D0584FD00F4AD20 /* JSBraintree.m in Sources */,
 				90F0BAE01D06569F00CD24D6 /* JSProductListCollectionViewCellFrameModel.m in Sources */,
@@ -1983,6 +2032,7 @@
 				90E3CAE31D05845900F4AD20 /* main.m in Sources */,
 				90E3CC3A1D0584FD00F4AD20 /* JSWaterFlowLayout.m in Sources */,
 				90E3CC5B1D0584FD00F4AD20 /* NSObject+SDWebImage.m in Sources */,
+				901FA1B21D1132D300120066 /* JSSimpleTableViewCellModelGroupHelper.m in Sources */,
 				90F0BAD51D06569F00CD24D6 /* JSBaseProductCollectionCell.m in Sources */,
 				90E3CC481D0584FD00F4AD20 /* JSTableViewController.m in Sources */,
 				90F0BADE1D06569F00CD24D6 /* JSProductCollectionViewCellModel.m in Sources */,
@@ -2001,9 +2051,9 @@
 				90E3CC3F1D0584FD00F4AD20 /* JSTableGroupViewController.m in Sources */,
 				90F0BAE11D06569F00CD24D6 /* JSProductListCollectionViewCellModel.m in Sources */,
 				90E3CC1E1D0584FD00F4AD20 /* HYBBaseTransition.m in Sources */,
+				901FA1B31D1132D300120066 /* JSSimpleTableViewCellModelSingleHelper.m in Sources */,
 				90E3CC2D1D0584FD00F4AD20 /* JSSideSlippingControllerConfig.m in Sources */,
 				90175B481D0BB91C00F40976 /* JSFaceBook.m in Sources */,
-				903998A41D0A90E30030C138 /* JSSimpleTableViewCellModel.m in Sources */,
 				90E3CC651D0584FD00F4AD20 /* UIImage+Color.m in Sources */,
 				90E3CC561D0584FD00F4AD20 /* NSDate+Extend.m in Sources */,
 				90E3CC291D0584FD00F4AD20 /* JSBigItemImageViewController.m in Sources */,
@@ -2017,6 +2067,7 @@
 				90F0BB111D06735A00CD24D6 /* CountryCell.m in Sources */,
 				90E3CC5C1D0584FD00F4AD20 /* NSObject+UICateGory.m in Sources */,
 				90E3CC501D0584FD00F4AD20 /* UIViewController+ThreeDTouch.m in Sources */,
+				901FA1B61D11342E00120066 /* JSSelectedTableViewCellModelFrame.m in Sources */,
 				9014E4711D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m in Sources */,
 				90E3CC661D0584FD00F4AD20 /* UIImage+Cut.m in Sources */,
 				90E3CC641D0584FD00F4AD20 /* UIFont+Extend.m in Sources */,
@@ -2030,6 +2081,7 @@
 				90F0BADB1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellModel.m in Sources */,
 				903998741D0A56740030C138 /* UIView+Badge.m in Sources */,
 				90E3CC921D05850600F4AD20 /* HeadView.m in Sources */,
+				901FA1A51D11315400120066 /* JSSelectedTableViewCell.m in Sources */,
 				9014E4601D0FB11E0075218F /* CYLTabBar.m in Sources */,
 				90E3CC371D0584FD00F4AD20 /* JSCollectionViewController.m in Sources */,
 			);

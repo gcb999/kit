@@ -27,13 +27,21 @@
 
 -(void)loadingBannerPlaceholderImageName:(NSString *)imageName  imgview:(UIImageView *)imgview{
     
+
     
-    //商品图片
-    [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:KBANNER_DEAFAULT_IMGURL] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        if (error) {
-            imgview.image=[UIImage imageNamed:KBANNER_ERROR_IMGURL];
-        }
-    }];
+    if ([imageName hasPrefix:@"http"]){
+        
+        [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:KBANNER_DEAFAULT_IMGURL] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            if (error) {
+                imgview.image=[UIImage imageNamed:KBANNER_ERROR_IMGURL];
+            }
+        }];
+        
+    }
+    else{
+        imgview.image=[UIImage imageNamed:imageName];
+    }
+
 }
 
 
@@ -41,12 +49,21 @@
 
 -(void)loadingBigPlaceholderImageName:(NSString *)imageName  imgview:(UIImageView *)imgview{
     
-    //商品图片
-    [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:KBIGPRODUCT_DEAFAULT_IMGURL] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        if (error) {
-            imgview.image=[UIImage imageNamed:KBIGPRODUCT_ERROR_IMGURL];
-        }
-    }];
+    if ([imageName hasPrefix:@"http"]){
+        
+        [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:KMIDDLEPRODUCT_DEAFAULT_IMGURL] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            if (error) {
+                imgview.image=[UIImage imageNamed:KMIDDLEPRODUCT_ERROR_IMGURL];
+            }
+        }];
+        
+    }
+    else{
+        imgview.image=[UIImage imageNamed:imageName];
+    }
+
+    
+    
 }
 
 
@@ -54,12 +71,22 @@
 //中图
 -(void)loadingMiddlePlaceholderImageName:(NSString *)imageName  imgview:(UIImageView *)imgview{
     
-    //商品图片
-    [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:KMIDDLEPRODUCT_DEAFAULT_IMGURL] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        if (error) {
-            imgview.image=[UIImage imageNamed:KMIDDLEPRODUCT_ERROR_IMGURL];
-        }
-    }];
+    if ([imageName hasPrefix:@"http"]){
+        
+        [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:KMIDDLEPRODUCT_DEAFAULT_IMGURL] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            if (error) {
+                imgview.image=[UIImage imageNamed:KMIDDLEPRODUCT_ERROR_IMGURL];
+            }
+        }];
+        
+    }
+    else{
+        imgview.image=[UIImage imageNamed:imageName];
+    }
+    
+    
+
+
 }
 
 
@@ -69,12 +96,21 @@
 
 -(void)loadingSmallPlaceholderImageName:(NSString *)imageName  imgview:(UIImageView *)imgview{
     
-    //商品图片
-    [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:KSMALLPRODUCT_DEAFAULT_IMGURL] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        if (error) {
-            imgview.image=[UIImage imageNamed:KSMALLPRODUCT_ERROR_IMGURL];
-        }
-    }];
+    if ([imageName hasPrefix:@"http"]){
+        
+        //商品图片
+        [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:KSMALLPRODUCT_DEAFAULT_IMGURL] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            if (error) {
+                imgview.image=[UIImage imageNamed:KSMALLPRODUCT_ERROR_IMGURL];
+            }
+        }];
+        
+    }
+    else{
+        imgview.image=[UIImage imageNamed:imageName];
+    }
+    
+ 
 }
 
 

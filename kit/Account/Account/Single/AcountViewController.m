@@ -43,7 +43,21 @@
 //1：加载数据源
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
    
-    [self.tableViewController.data addObjectsFromArray:[JSSimpleTableViewCellModelSingleHelper shareInstance].singleTableViewModel];
+    
+    for(int i=0;i<20;i++){
+    
+    JSSelectedTableViewCellModel *model=[[JSSelectedTableViewCellModel alloc] init];
+    model.title=@"张三";
+    model.iconUrl=@"photo";
+    
+        JSSelectedTableViewCellModelFrame *modelFrame=[[JSSelectedTableViewCellModelFrame alloc]initWithUpAndDownModel:model];
+
+        
+        
+        
+        [self.tableViewController.data addObject:modelFrame];
+    }
+//    [self.tableViewController.data addObjectsFromArray:[JSSimpleTableViewCellModelSingleHelper shareInstance].singleTableViewModel];
     if (currentPage==1) {
         [self.tableViewController reloadHeader];
     }
@@ -71,7 +85,8 @@
 
 
 -(CGFloat)JSTableViewController:(JSTableViewController *)JSCtrl heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    JSSelectedTableViewCellModelFrame *model=self.tableViewController.data[indexPath.row];
+    return model.rowHeight;
 }
 
 
@@ -79,7 +94,7 @@
 
 -(JSTableViewController *)tableViewController{
     if (_tableViewController==nil) {
-        _tableViewController=[[JSTableViewController alloc] initWithStyle:UITableViewStylePlain state:JSTableViewPullHeaderFooter tableViewCellClass:[JSSimpleTableViewCell class] delegate:self];
+        _tableViewController=[[JSTableViewController alloc] initWithStyle:UITableViewStylePlain state:JSTableViewPullHeaderFooter tableViewCellClass:[JSSelectedTableViewCell class] delegate:self];
         _tableViewController.view.frame=self.view.bounds;
     }
     return _tableViewController;

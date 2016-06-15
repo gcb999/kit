@@ -26,8 +26,8 @@
     [[JSFaceBook shareInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
 #pragma mark -配置导航栏
-//    [JSNavigationController initialize];
-//    [[JSTabBarControllerConfig shareInstance] customizeTabBarAppearance];
+   [JSNavigationController initialize];
+
     
    
     // 侧滑
