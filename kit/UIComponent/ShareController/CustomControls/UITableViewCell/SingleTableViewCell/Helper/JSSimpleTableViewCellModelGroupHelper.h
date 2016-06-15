@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSSimpleTableViewCellModel.h"
+#import "JSSimpleTableViewCellModelFrame.h"
 
 @interface JSSimpleTableViewCellModelGroupHelper : NSObject
 
 //1: 分组
-@property (nonatomic, strong)NSDictionary<NSString *,NSArray<JSSimpleTableViewCellModel*> *>   *groupTableViewModels;
+@property (nonatomic, strong)NSDictionary<NSString *,NSArray<JSSimpleTableViewCellModelFrame*> *>   *groupTableViewModels;
 
 
 +(instancetype) shareInstance;

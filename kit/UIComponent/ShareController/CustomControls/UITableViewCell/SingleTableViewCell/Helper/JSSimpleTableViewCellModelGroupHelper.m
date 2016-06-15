@@ -121,20 +121,21 @@
 
 #pragma mark -分组模型 (可以配置，也可以自己设置）
 
--( NSDictionary<NSString *,NSArray<JSSimpleTableViewCellModel*> *> *)groupTableViewModels{
+-( NSDictionary<NSString *,NSArray<JSSimpleTableViewCellModelFrame*> *> *)groupTableViewModels{
     if (_groupTableViewModels==nil) {
         
-        NSMutableDictionary<NSString *,NSArray<JSSimpleTableViewCellModel *> *> *tempDic=[NSMutableDictionary dictionary];
+        NSMutableDictionary<NSString *,NSArray<JSSimpleTableViewCellModelFrame *> *> *tempDic=[NSMutableDictionary dictionary];
         
         NSArray *datas=[self groupDataSoures];
         
         for (NSDictionary * sectionDic in datas) {
             NSString *key=[sectionDic.allKeys lastObject];
             
-            NSMutableArray<JSSimpleTableViewCellModel*> *tempArr=[NSMutableArray array];
+            NSMutableArray<JSSimpleTableViewCellModelFrame*> *tempArr=[NSMutableArray array];
             for (NSDictionary *dic in sectionDic[key]) {
                 JSSimpleTableViewCellModel *model = [JSSimpleTableViewCellModel objectWithKeyValues:dic];
-                [tempArr addObject:model];
+                JSSimpleTableViewCellModelFrame *frameModel=[[JSSimpleTableViewCellModelFrame alloc] initWithModel:model];
+                [tempArr addObject:frameModel];
             }
             [tempDic addEntriesFromDictionary: @{key:tempArr}];
         }

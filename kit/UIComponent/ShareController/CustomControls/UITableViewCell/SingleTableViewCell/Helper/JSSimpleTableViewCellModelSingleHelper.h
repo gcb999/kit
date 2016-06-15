@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSSimpleTableViewCellModelFrame.h"
 
 @interface JSSimpleTableViewCellModelSingleHelper : NSObject
 
-@property (nonatomic, strong)NSArray<JSSimpleTableViewCellModel*>  *singleTableViewModel;
+@property (nonatomic, strong)NSArray<JSSimpleTableViewCellModelFrame*>  *singleTableViewModel;
 
 +(instancetype) shareInstance;
 

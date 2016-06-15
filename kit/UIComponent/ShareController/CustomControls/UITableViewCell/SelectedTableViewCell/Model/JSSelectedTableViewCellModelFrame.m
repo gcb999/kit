@@ -13,7 +13,7 @@
 
 #pragma mark -------------------- 横排坐标--------------------
 
--(JSSelectedTableViewCellModelFrame *)initWithHorizontallyModel:(JSSelectedTableViewCellModel *)model
+-(instancetype)initWithHorizontallyModel:(JSSelectedTableViewCellModel *)model
 
 {
     if (self=[super init]) {
@@ -47,7 +47,7 @@
 
 
 //#pragma mark --------------------上下 Up and down--------------------
--(JSSelectedTableViewCellModelFrame *)initWithUpAndDownModel:(JSSelectedTableViewCellModel *)model{
+-(instancetype)initWithUpAndDownModel:(JSSelectedTableViewCellModel *)model{
     
     if (self=[super init]) {
         

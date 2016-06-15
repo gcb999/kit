@@ -28,13 +28,13 @@
 
 @property(nonatomic,strong)JSSelectedTableViewCellModel *model;
 
-#pragma mark -------------------- 横排坐标--------------------
+#pragma mark -------------------- 横排布局--------------------
 
--(JSSelectedTableViewCellModelFrame *)initWithHorizontallyModel:(JSSelectedTableViewCellModel *)model;
+-(instancetype)initWithHorizontallyModel:(JSSelectedTableViewCellModel *)model;
 
-#pragma mark --------------------上下 Up and down--------------------
+#pragma mark --------------------上下布局 Up and down--------------------
 
--(JSSelectedTableViewCellModelFrame *)initWithUpAndDownModel:(JSSelectedTableViewCellModel *)model;
+-(instancetype)initWithUpAndDownModel:(JSSelectedTableViewCellModel *)model;
 
 
 @end

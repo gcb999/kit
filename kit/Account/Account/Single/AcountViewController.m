@@ -49,12 +49,9 @@
     JSSelectedTableViewCellModel *model=[[JSSelectedTableViewCellModel alloc] init];
     model.title=@"张三";
     model.iconUrl=@"photo";
-    
-        JSSelectedTableViewCellModelFrame *modelFrame=[[JSSelectedTableViewCellModelFrame alloc]initWithUpAndDownModel:model];
+    JSSelectedTableViewCellModelFrame *modelFrame=[[JSSelectedTableViewCellModelFrame alloc]initWithUpAndDownModel:model];
 
-        
-        
-        
+  
         [self.tableViewController.data addObject:modelFrame];
     }
 //    [self.tableViewController.data addObjectsFromArray:[JSSimpleTableViewCellModelSingleHelper shareInstance].singleTableViewModel];
@@ -75,11 +72,13 @@
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
  
 
-    JSSimpleTableViewCellModel *model=self.tableViewController.data[indexPath.row];
-    UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
-    if (ctrl) {
-        [self.navigationController pushViewController:ctrl animated:YES];
-    }
+    JSSelectedTableViewCellModelFrame *modelFrame=self.tableViewController.data[indexPath.row];
+    modelFrame.model.flag=YES;
+    [self.tableViewController reloadHeader];
+//    UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
+//    if (ctrl) {
+//        [self.navigationController pushViewController:ctrl animated:YES];
+//    }
     
 }
 

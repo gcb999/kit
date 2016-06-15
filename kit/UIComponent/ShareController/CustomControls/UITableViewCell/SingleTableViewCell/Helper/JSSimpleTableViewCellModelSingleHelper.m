@@ -100,14 +100,15 @@
 
 #pragma mark -getter
 
--(NSArray<JSSimpleTableViewCellModel *> *)singleTableViewModel{
+-(NSArray<JSSimpleTableViewCellModelFrame *> *)singleTableViewModel{
     if (_singleTableViewModel==nil) {
         
-        NSMutableArray<JSSimpleTableViewCellModel *> *arr=[NSMutableArray array];
+        NSMutableArray<JSSimpleTableViewCellModelFrame *> *arr=[NSMutableArray array];
         NSArray *date=[self singleDataSoures];
         for (NSDictionary *dic in date) {
             JSSimpleTableViewCellModel *model = [JSSimpleTableViewCellModel objectWithKeyValues:dic];
-            [arr addObject:model];
+            JSSimpleTableViewCellModelFrame *frameModel=[[JSSimpleTableViewCellModelFrame alloc] initWithModel:model];
+            [arr addObject:frameModel];
         }
         
         _singleTableViewModel=arr;

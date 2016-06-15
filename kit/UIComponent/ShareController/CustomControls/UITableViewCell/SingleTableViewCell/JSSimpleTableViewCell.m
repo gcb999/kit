@@ -14,7 +14,7 @@
 @property (nonatomic , strong) UIImageView *iconImageView;
 @property (nonatomic , strong) UILabel *titleLabel;
 @property (nonatomic , strong) UIImageView *JTImageView;
-@property (nonatomic , strong) JSSimpleTableViewCellModel *model;
+@property (nonatomic , strong) JSSimpleTableViewCellModelFrame *modelFrame;
 
 @end
 
@@ -54,9 +54,10 @@
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl sections:(NSArray *)sections rowsOfSections:(NSDictionary<NSString *,NSArray *> *)rowsOfSections content:(id)content indexPath:(NSIndexPath *)indexpath{
     
     
-    self.model=content;
-    self.titleLabel.text=self.model.title;
-    self.iconImageView.image=[UIImage imageNamed:self.model.iconUrl];
+    self.modelFrame=content;
+    self.titleLabel.text=self.modelFrame.model.title;
+    [self loadingSmallPlaceholderImageName:self.modelFrame.model.iconUrl imgview:self.iconImageView];
+    self.iconImageView.image=[UIImage imageNamed:self.modelFrame.model.iconUrl];
     //accountarrow
     self.JTImageView.image = [UIImage imageNamed:@"accountarrow"];
     
@@ -64,9 +65,9 @@
 
 #pragma mark - 单个
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl TableViewDateArr:(NSArray *)dateArr content:(id)content indexPath:(NSIndexPath *)indexpath{
-    self.model=content;
-    self.titleLabel.text=self.model.title;
-    self.iconImageView.image=[UIImage imageNamed:self.model.iconUrl];
+    self.modelFrame=content;
+    self.titleLabel.text=self.modelFrame.model.title;
+    [self loadingSmallPlaceholderImageName:self.modelFrame.model.iconUrl imgview:self.iconImageView];
     self.JTImageView.image = [UIImage imageNamed:@"accountarrow"];;
 }
 
@@ -74,37 +75,21 @@
 
 
 -(void)layoutSubviews{
+    
     [super layoutSubviews];
     
-    CGRect lrect, rect=self.contentView.bounds;
-    rect=UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(0, 5, 0, 0));
+    
+    //背景
+    self.bgImageView.frame=self.modelFrame.bgImageView_Frame;
     
     //图标
-    if (IS_NSString(self.model.iconUrl)) {
-        CGRectDivide(rect, &lrect, &rect, 40, CGRectMinXEdge);
-        self.iconImageView.frame=[self centerForParentViewFrame:lrect subsize:CGSizeMake(30, 30)];
-        
-    }
-    else{
-        self.iconImageView.frame=CGRectZero;
-        CGRectDivide(rect, &lrect, &rect, 10, CGRectMinXEdge);
-        
-    }
+    self.iconImageView.frame=self.modelFrame.iconImageView_Frame;
     
-    //标题和箭头
-    if(self.model.flag){
-        
-        CGFloat width =rect.size.width-40;
-        CGRectDivide(rect, &lrect, &rect, width, CGRectMinXEdge);
-        self.titleLabel.frame=lrect;
-        self.JTImageView.frame=[self centerForParentViewFrame:rect subsize:CGSizeMake(12, 12)];
-        
-    }
-    else{
-        self.titleLabel.frame=rect;
-        self.JTImageView.frame=CGRectZero;
-    }
+    //标题
+    self.titleLabel.frame=self.modelFrame.titleLabel_Frame;
     
+    //选择图标
+    self.JTImageView.frame=self.modelFrame.jtImageView_Frame;
     
     
     

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JSSimpleTableViewCellModel.h"
+#import "JSSimpleTableViewCellModelFrame.h"
 
 
 @interface JSSimpleTableViewCell : UITableViewCell<JSTableViewCellDelegate>
