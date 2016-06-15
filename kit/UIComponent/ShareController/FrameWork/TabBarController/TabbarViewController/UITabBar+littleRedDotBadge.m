@@ -31,7 +31,7 @@
     CGRect tabFrame = self.frame;
     
     //确定小红点的位置
-    float percentX = (index +0.6) / 4;
+    float percentX = (index +0.6) / [JSTabbarItemHelpModel shareInstance].tabbarItemModels.count;
     CGFloat x = ceilf(percentX * tabFrame.size.width);
     CGFloat y = ceilf(0.1 * tabFrame.size.height);
     badgeLabel.frame = CGRectMake(x-3, y-3, 20, 20);
