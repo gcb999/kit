@@ -9,6 +9,10 @@
 #ifndef JSCustomControlsHeader_h
 #define JSCustomControlsHeader_h
 
+/*-----------------CollectionView----------------*/
+
+#import "JSUICollectionViewCellHeader.h"
+
 /*-----------------UITableViewCell-----------------*/
 
 #import"JSTableViewCellHeader.h"
