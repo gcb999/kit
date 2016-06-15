@@ -60,6 +60,7 @@
 //2：点击事件
 -(void)JSTableViewController:(JSTableViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
  
+
     JSSimpleTableViewCellModel *model=self.tableViewController.data[indexPath.row];
     UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
     if (ctrl) {

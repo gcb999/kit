@@ -1,14 +1,14 @@
 //
-//  JSTabBarControllerConfig+Badge.h
+//  UITabBar+littleRedDotBadge.h
 //  kit
 //
-//  Created by gcb999 on 16/6/14.
+//  Created by gcb999 on 16/6/15.
 //  Copyright © 2016年 com.sailvan.gcb999. All rights reserved.
 //
 
-#import "JSTabBarControllerConfig.h"
+#import <UIKit/UIKit.h>
 
-@interface JSTabBarControllerConfig (Badge)
+@interface UITabBar (littleRedDotBadge)
 
 - (void)showBadgeOnItemIndex:(int)index badge:(NSString *)badge animation:(BOOL)animation;
 

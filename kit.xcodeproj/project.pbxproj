@@ -15,13 +15,10 @@
 		9014E46E1D0FB4B80075218F /* JSTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E46D1D0FB4B80075218F /* JSTabBarControllerConfig.m */; };
 		9014E4711D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4701D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m */; };
 		9014E4741D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4731D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m */; };
-		9014E4841D0FC1570075218F /* UIBarButtonItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4781D0FC1570075218F /* UIBarButtonItem+WZLBadge.m */; };
-		9014E4851D0FC1570075218F /* UITabBarItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E47A1D0FC1570075218F /* UITabBarItem+WZLBadge.m */; };
-		9014E4861D0FC1570075218F /* CAAnimation+WAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E47D1D0FC1570075218F /* CAAnimation+WAnimation.m */; };
-		9014E4871D0FC1570075218F /* UIView+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9014E4821D0FC1570075218F /* UIView+WZLBadge.m */; };
 		90175B311D0BA93600F40976 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B301D0BA93600F40976 /* TestViewController.m */; };
 		90175B371D0BACED00F40976 /* UIViewController+ShyNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B361D0BACED00F40976 /* UIViewController+ShyNavBar.m */; };
 		90175B481D0BB91C00F40976 /* JSFaceBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 90175B471D0BB91C00F40976 /* JSFaceBook.m */; };
+		901FA19D1D11089300120066 /* UITabBar+littleRedDotBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 901FA19C1D11089300120066 /* UITabBar+littleRedDotBadge.m */; };
 		903998741D0A56740030C138 /* UIView+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 903998731D0A56740030C138 /* UIView+Badge.m */; };
 		903998871D0A61840030C138 /* JSTabbarItemHelpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987A1D0A61840030C138 /* JSTabbarItemHelpModel.m */; };
 		903998881D0A61840030C138 /* JSTabbarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9039987C1D0A61840030C138 /* JSTabbarItemModel.m */; };
@@ -197,16 +194,6 @@
 		9014E4701D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabBarControllerConfig+shareInstance.m"; sourceTree = "<group>"; };
 		9014E4721D0FB53B0075218F /* JSTabBarControllerConfig+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabBarControllerConfig+Badge.h"; sourceTree = "<group>"; };
 		9014E4731D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabBarControllerConfig+Badge.m"; sourceTree = "<group>"; };
-		9014E4771D0FC1570075218F /* UIBarButtonItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WZLBadge.h"; sourceTree = "<group>"; };
-		9014E4781D0FC1570075218F /* UIBarButtonItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WZLBadge.m"; sourceTree = "<group>"; };
-		9014E4791D0FC1570075218F /* UITabBarItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+WZLBadge.h"; sourceTree = "<group>"; };
-		9014E47A1D0FC1570075218F /* UITabBarItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+WZLBadge.m"; sourceTree = "<group>"; };
-		9014E47C1D0FC1570075218F /* CAAnimation+WAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+WAnimation.h"; sourceTree = "<group>"; };
-		9014E47D1D0FC1570075218F /* CAAnimation+WAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+WAnimation.m"; sourceTree = "<group>"; };
-		9014E47F1D0FC1570075218F /* WZLBadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeProtocol.h; sourceTree = "<group>"; };
-		9014E4811D0FC1570075218F /* UIView+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZLBadge.h"; sourceTree = "<group>"; };
-		9014E4821D0FC1570075218F /* UIView+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZLBadge.m"; sourceTree = "<group>"; };
-		9014E4831D0FC1570075218F /* WZLBadgeImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeImport.h; sourceTree = "<group>"; };
 		90175B2F1D0BA93600F40976 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		90175B301D0BA93600F40976 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		90175B351D0BACED00F40976 /* UIViewController+ShyNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShyNavBar.h"; sourceTree = "<group>"; };
@@ -227,6 +214,8 @@
 		90175B471D0BB91C00F40976 /* JSFaceBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFaceBook.m; sourceTree = "<group>"; };
 		90175B491D0BB98900F40976 /* JSFrameWorkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSFrameWorkHeader.h; sourceTree = "<group>"; };
 		90175B4A1D0BBC8F00F40976 /* JSShareControllerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSShareControllerHeader.h; sourceTree = "<group>"; };
+		901FA19B1D11089300120066 /* UITabBar+littleRedDotBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+littleRedDotBadge.h"; sourceTree = "<group>"; };
+		901FA19C1D11089300120066 /* UITabBar+littleRedDotBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+littleRedDotBadge.m"; sourceTree = "<group>"; };
 		903998721D0A56740030C138 /* UIView+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Badge.h"; sourceTree = "<group>"; };
 		903998731D0A56740030C138 /* UIView+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Badge.m"; sourceTree = "<group>"; };
 		903998791D0A61840030C138 /* JSTabbarItemHelpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemHelpModel.h; sourceTree = "<group>"; };
@@ -583,55 +572,6 @@
 			path = CYLTabBarController;
 			sourceTree = "<group>";
 		};
-		9014E4751D0FC1570075218F /* WZLBadge */ = {
-			isa = PBXGroup;
-			children = (
-				9014E4761D0FC1570075218F /* BarItem */,
-				9014E47B1D0FC1570075218F /* CategorySupport */,
-				9014E47E1D0FC1570075218F /* Protocol */,
-				9014E4801D0FC1570075218F /* View */,
-				9014E4831D0FC1570075218F /* WZLBadgeImport.h */,
-			);
-			path = WZLBadge;
-			sourceTree = "<group>";
-		};
-		9014E4761D0FC1570075218F /* BarItem */ = {
-			isa = PBXGroup;
-			children = (
-				9014E4771D0FC1570075218F /* UIBarButtonItem+WZLBadge.h */,
-				9014E4781D0FC1570075218F /* UIBarButtonItem+WZLBadge.m */,
-				9014E4791D0FC1570075218F /* UITabBarItem+WZLBadge.h */,
-				9014E47A1D0FC1570075218F /* UITabBarItem+WZLBadge.m */,
-			);
-			path = BarItem;
-			sourceTree = "<group>";
-		};
-		9014E47B1D0FC1570075218F /* CategorySupport */ = {
-			isa = PBXGroup;
-			children = (
-				9014E47C1D0FC1570075218F /* CAAnimation+WAnimation.h */,
-				9014E47D1D0FC1570075218F /* CAAnimation+WAnimation.m */,
-			);
-			path = CategorySupport;
-			sourceTree = "<group>";
-		};
-		9014E47E1D0FC1570075218F /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				9014E47F1D0FC1570075218F /* WZLBadgeProtocol.h */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		9014E4801D0FC1570075218F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9014E4811D0FC1570075218F /* UIView+WZLBadge.h */,
-				9014E4821D0FC1570075218F /* UIView+WZLBadge.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		90175B451D0BB91C00F40976 /* FaceBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,6 +601,8 @@
 				9014E4701D0FB4CF0075218F /* JSTabBarControllerConfig+shareInstance.m */,
 				9014E4721D0FB53B0075218F /* JSTabBarControllerConfig+Badge.h */,
 				9014E4731D0FB53B0075218F /* JSTabBarControllerConfig+Badge.m */,
+				901FA19B1D11089300120066 /* UITabBar+littleRedDotBadge.h */,
+				901FA19C1D11089300120066 /* UITabBar+littleRedDotBadge.m */,
 			);
 			path = TabbarViewController;
 			sourceTree = "<group>";
@@ -1471,7 +1413,6 @@
 		90E3CC001D0584FD00F4AD20 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				9014E4751D0FC1570075218F /* WZLBadge */,
 				9014E4561D0FB11D0075218F /* CYLTabBarController */,
 				90F0BB1B1D07AAD200CD24D6 /* FaceBook */,
 				90F0BAE51D065D8E00CD24D6 /* SDCycleScrollView */,
@@ -1994,6 +1935,7 @@
 				90F0BADA1D06569F00CD24D6 /* JSPlaceOrderCollectionViewCellFrameModel.m in Sources */,
 				90F0BADC1D06569F00CD24D6 /* JSProductCollectionViewCell.m in Sources */,
 				90E3CC2A1D0584FD00F4AD20 /* JSItemImageViewController.m in Sources */,
+				901FA19D1D11089300120066 /* UITabBar+littleRedDotBadge.m in Sources */,
 				903998AD1D0A93DF0030C138 /* JSSimpleTableViewCellModelGroupHelper.m in Sources */,
 				903998B01D0A96CA0030C138 /* JSSimpleTableViewCellModelSingleHelper.m in Sources */,
 				903998C11D0AB5B50030C138 /* JSPresentTransformScaleTransition.m in Sources */,
@@ -2015,13 +1957,11 @@
 				90E3CC321D0584FD00F4AD20 /* JSCollectionViewController+CollectionView.m in Sources */,
 				90E3CC401D0584FD00F4AD20 /* JSStretchableTableHeaderView.m in Sources */,
 				90E3CC621D0584FD00F4AD20 /* UIColor+Extend.m in Sources */,
-				9014E4861D0FC1570075218F /* CAAnimation+WAnimation.m in Sources */,
 				90E3CC581D0584FD00F4AD20 /* NSDictionary+Extension.m in Sources */,
 				90E3CC6B1D0584FD00F4AD20 /* UIView+Extend.m in Sources */,
 				90E3CC2C1D0584FD00F4AD20 /* JSItemImgageViewCell.m in Sources */,
 				90F0BADD1D06569F00CD24D6 /* JSProductCollectionViewCellFrameModel.m in Sources */,
 				9014E46E1D0FB4B80075218F /* JSTabBarControllerConfig.m in Sources */,
-				9014E4851D0FC1570075218F /* UITabBarItem+WZLBadge.m in Sources */,
 				90E3CC4E1D0584FD00F4AD20 /* JSNetWork.m in Sources */,
 				90E3CC631D0584FD00F4AD20 /* UIDevice+Extend.m in Sources */,
 				90E3CC6F1D0584FD00F4AD20 /* JSBraintree.m in Sources */,
@@ -2051,10 +1991,8 @@
 				903998B71D0AA5330030C138 /* JSPickerViewController.m in Sources */,
 				90F0BAD91D06569F00CD24D6 /* JSPlaceOrderCollectionViewCell.m in Sources */,
 				90E3CC601D0584FD00F4AD20 /* NSString+Password.m in Sources */,
-				9014E4841D0FC1570075218F /* UIBarButtonItem+WZLBadge.m in Sources */,
 				90E3CC4D1D0584FD00F4AD20 /* JSNetWork+POST.m in Sources */,
 				90E3CC331D0584FD00F4AD20 /* JSCollectionViewController+MJRefresh.m in Sources */,
-				9014E4871D0FC1570075218F /* UIView+WZLBadge.m in Sources */,
 				90E3CC741D0584FD00F4AD20 /* NinaPagerView.m in Sources */,
 				90E3CC531D0584FD00F4AD20 /* CoreArchive.m in Sources */,
 				90E3CC511D0584FD00F4AD20 /* CALayer+Anim.m in Sources */,
