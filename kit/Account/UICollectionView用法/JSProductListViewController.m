@@ -1,47 +1,46 @@
 //
-//  HomeViewController.m
+//  JSProductListViewController.m
 //  kit
 //
-//  Created by gcb999 on 16/6/7.
+//  Created by gcb999 on 16/6/16.
 //  Copyright © 2016年 com.sailvan.gcb999. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "HomeDetailViewController.h"
-#import "AcountViewController.h"
-@interface HomeViewController ()<JSCollectionViewControllerDelegate,JSWaterFlowLayoutDelegate>
-{
-    CGFloat offsety;
-    BOOL flag;
-}
+#import "JSProductListViewController.h"
+#import "JSProductListCollectionCell.h"
+
+@interface JSProductListViewController ()
+
 
 @property(nonatomic,strong) JSCollectionViewController *collectionViewController;
 
 @end
 
-@implementation HomeViewController
+@implementation JSProductListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
+    
     [self.view addSubview:self.collectionViewController.view];
     [self addChildViewController:self.collectionViewController];
-    JSBaseFlowLayout *flowOut=[[JSBaseFlowLayout alloc] initWithDirectionVertical:1 itemHeight:250];
-    self.collectionViewController.flowLayout=flowOut;
+    
+    JSWaterFlowLayout *layout = [[JSWaterFlowLayout alloc]init];
+    layout.delegate = self;
+    self.collectionViewController.flowLayout=layout;
     
     
     [ self ShyNavBar:self.collectionViewController.collectionView];
     
-
     
-
+    
+    
 }
 #pragma mark -getter
 
 -(JSCollectionViewController *)collectionViewController{
     if (_collectionViewController==nil) {
-        _collectionViewController=[[JSCollectionViewController alloc] initWithState:JSCollectionViewNormal CollectionViewCellClass:[JSProductBasisCollectionCell class] delegate:self HeaderViewType:[HeadBannerReusableView class]];
+        _collectionViewController=[[JSCollectionViewController alloc] initWithState:JSCollectionViewNormal CollectionViewCellClass:[JSProductListCollectionCell class] delegate:self];
         _collectionViewController.view.frame=self.view.bounds;
     }
     return _collectionViewController;
@@ -49,25 +48,43 @@
 
 -(void)JSCollectionViewController:(JSCollectionViewController *)JSCtrl didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-
     
-
-     HomeDetailViewController *ctrl=[[HomeDetailViewController alloc] init];
-
     
-    //        self.navigationController.delegate=self.transition;
-    [self.navigationController pushViewController:ctrl animated:YES];
-
     
 }
 
+
+#pragma mark -  流水布局的方法<CYXWaterFlowLayoutDelegate>
+
+//设置每个Item高度
+- (CGFloat)waterflowLayout:(JSWaterFlowLayout *)waterflowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth
+{
+    JSProductListCollectionCellModelFrame *modelFrame= self.collectionViewController.data[index];
+    return modelFrame.rowHeight;
+}
+
+- (CGFloat)rowMarginInWaterflowLayout:(JSWaterFlowLayout *)waterflowLayout
+{
+    return 10;
+}
+
+#pragma mark -设置一行几列
+- (CGFloat)columnCountInWaterflowLayout:(JSWaterFlowLayout *)waterflowLayout
+{
+    return 1;
+}
+#pragma mark-设置 section
+- (UIEdgeInsets)edgeInsetsInWaterflowLayout:(JSWaterFlowLayout *)waterflowLayout
+{
+    return UIEdgeInsetsMake(10, 10, 10, 10);
+}
 
 
 #pragma mark -实现网络请求数据
 
 -(void)JSCollectionViewController:(JSCollectionViewController *)SWCtrl LoadRequestCurrentPage:(NSInteger)currentPage{
     
-
+    
     if (currentPage==1 ||currentPage==2) {
         if (currentPage==1) {
             [SWCtrl.data removeAllObjects];
@@ -107,7 +124,7 @@
             model.product_DiscountPrice=@"$50";
             
             //edit buy
-//            model.is_edit_buy=YES;
+            //            model.is_edit_buy=YES;
             
             
             //卖光
@@ -115,59 +132,29 @@
             
             model.is_edit_buy=YES;
             
-
+            
             JSProductListCollectionCellModelFrame *frameModel=[[JSProductListCollectionCellModelFrame alloc] initWithModel:model];
-                                                               
-                                                               
-                        [SWCtrl.data addObject:frameModel];
+            
+            
+            [SWCtrl.data addObject:frameModel];
         }
         
         if (currentPage==1) {
-                [SWCtrl reloadHeader];
+            [SWCtrl reloadHeader];
         }
         else{
             [SWCtrl reloadFooter];
         }
-    
+        
     }
-
+    
     else{
         
         [SWCtrl.data removeAllObjects];
-            [SWCtrl reloadFooter];
+        [SWCtrl reloadFooter];
     }
-
     
     
-    
-}
-
--(CGSize)JSCollectionViewController:(JSCollectionViewController *)JSCtrl layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    
-    return CGSizeMake(IPHONScreenWidth, 200);
-}
-
-
-#pragma mark -显示数目
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-
-
-}
-
-
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
-   //1；隐藏底部
-    CGFloat y=self.collectionViewController.collectionView.contentOffset.y;
-    NSLog(@"--y=%f",y);
-    if (self.collectionViewController.collectionView.contentOffset.y<IPHONScreenHeight-100) {//隐藏
-        [JSTabBarControllerConfig shareInstance].tabBarController.tabBar.hidden = NO;
-    }
-    else{//隐藏
-            [JSTabBarControllerConfig shareInstance].tabBarController.tabBar.hidden = YES;
-
-    }
     
     
 }

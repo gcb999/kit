@@ -9,9 +9,19 @@
 #ifndef JSUICollectionViewCellHeader_h
 #define JSUICollectionViewCellHeader_h
 
+/*------------------------------父类--------------------------*/
+#import "JSProductBasisCollectionCell.h"
+#import "JSProductBasisCollectionCell+AssignValue.h"
+#import "JSProductBasisCollectionCell+Layout.h"
 
-#import "JSProductCollectionCell.h"
-#import "JSProductCollectionCellModelFrame.h"
-#import "JSProductDetailCollectionCellModelFrame.h"
+/*------------------------------Product--------------------------*/
+
+
+
+/*------------------------------ProductList--------------------------*/
+#import "JSProductListCollectionCell.h"
+
+
+/*------------------------------PlaceOrder--------------------------*/
 
 #endif /* JSUICollectionViewCellHeader_h */

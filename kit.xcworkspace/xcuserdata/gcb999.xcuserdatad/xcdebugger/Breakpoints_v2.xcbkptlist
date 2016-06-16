@@ -19,22 +19,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "kit/Home/HomeViewController.m"
-            timestampString = "487590590.313174"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "-JSCollectionViewController:didSelectRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "kit/UIComponent/ShareController/FrameWork/TabBarController/TabbarViewController/JSTabbarController.m"
             timestampString = "487651272.673166"
             startingColumnNumber = "9223372036854775807"
@@ -115,13 +99,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "kit/UIComponent/ShareController/CustomControls/UITableViewCell/SelectedTableViewCell/JSSelectedTableViewCell.m"
-            timestampString = "487669477.385814"
+            filePath = "kit/Account/UICollectionView&#x7528;&#x6cd5;/JSProductViewController.m"
+            timestampString = "487754091.931752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "-JSTableViewController:TableViewDateArr:content:indexPath:"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "-JSCollectionViewController:LoadRequestCurrentPage:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -131,12 +115,60 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "kit/UIComponent/ShareController/CustomControls/UITableViewCell/SingleTableViewCell/Model/JSSimpleTableViewCellModelFrame.m"
-            timestampString = "487673856.443894"
+            filePath = "kit/Account/UICollectionView&#x7528;&#x6cd5;/JSProductViewController.m"
+            timestampString = "487754094.155715"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "-JSCollectionViewController:LoadRequestCurrentPage:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kit/UIComponent/ShareController/CustomControls/UICollectionViewCell/Product/ProductCollectionCellModelFrame/JSProductCollectionCellModelFrame.m"
+            timestampString = "487757524.888969"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "-layoutSubFrame:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kit/Account/UICollectionView&#x7528;&#x6cd5;/JSProductListViewController.m"
+            timestampString = "487757362.265347"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-waterflowLayout:heightForItemAtIndex:itemWidth:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kit/UIComponent/ShareController/CustomControls/UICollectionViewCell/ BasisCollectionCell/ ProductBasisCollectionCellModelFrame/JSProductBasisCollectionCellModelFrame.m"
+            timestampString = "487757679.69277"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "-initWithModel:"
             landmarkType = "5">
          </BreakpointContent>

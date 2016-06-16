@@ -68,14 +68,6 @@
 
 #pragma mark -----------自定义商品Cell--------------------
 
-#import "JSBaseProductCollectionCellModel.h"//实体类
-
-#import "JSBaseProductCollectionCellFrameModel.h"//实体布局类
-
-#import "JSBaseProductCollectionCellFrameModel+Layout.h"//实体布局扩展类
-
-#import "JSBaseProductCollectionCell.h"//商品类
-
 /*
 
 一：JSBaseProductCollectionCell用法

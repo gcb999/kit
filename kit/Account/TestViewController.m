@@ -7,7 +7,7 @@
 //
 
 #import "TestViewController.h"
-#import "JSProductCollectionViewCell.h"
+
 #import "HeadBannerReusableView.h"
 
 @implementation TestViewController

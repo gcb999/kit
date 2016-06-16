@@ -113,6 +113,31 @@
                          
                          ]
                  },
+             @{
+                 @"UICollectionViewCell":@[
+                         
+                         @{
+                             @"title":@"商品CollectionViewCell",
+                             @"iconUrl" : @"home_highlight",
+                             @"ctrl":@"JSProductViewController",
+                             @"flag":@"1"
+                             },
+                         @{
+                             @"title":@"商品列表CollectionViewCell",
+                             @"iconUrl" : @"home_highlight",
+                             @"ctrl":@"JSProductListViewController",
+                             @"flag":@"1"
+                             },
+                         @{
+                             @"title":@"Pl&CollectionViewCell",
+                             @"iconUrl" : @"home_highlight",
+                             @"ctrl":@"JSPlaceOrderViewController",
+                             @"flag":@"1"
+                             }
+                       
+                         
+                         ]
+                 },
              
              ];
     

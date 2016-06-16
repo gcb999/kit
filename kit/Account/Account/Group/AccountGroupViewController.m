@@ -112,7 +112,7 @@
    
         }
         else if (indexPath.row==1){
-                    [[JSTabBarControllerConfig shareInstance] showBadgeOnItemIndex:1 badge:@"50" animation:NO];
+            [[JSTabBarControllerConfig shareInstance] showBadgeOnItemIndex:1 badge:@"50" animation:NO];
         
         }
         else if (indexPath.row==2){
@@ -120,11 +120,13 @@
         }
         
     }
+    else{
 
-    JSSimpleTableViewCellModel *model=self.tableGroupViewController.rowsOfSectionDic[text][indexPath.row];
-    UIViewController *ctrl=(UIViewController *)[[NSClassFromString(model.ctrl) alloc] init];
+    JSSimpleTableViewCellModelFrame *modelFrame=self.tableGroupViewController.rowsOfSectionDic[text][indexPath.row];
+    UIViewController *ctrl=(UIViewController *)[[NSClassFromString(modelFrame.model.ctrl) alloc] init];
     if (ctrl) {
         [self.navigationController pushViewController:ctrl animated:YES];
+    }
     }
     
    
